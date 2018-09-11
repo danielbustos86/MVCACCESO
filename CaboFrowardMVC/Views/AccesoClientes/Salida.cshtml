@@ -1,0 +1,83 @@
+
+@{
+	ViewBag.Title = "Salida";
+	Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@Scripts.Render("~/bundles/AccesoClientes")
+<div class="row">
+
+
+	<div class="col-md-6">
+		<h4 style="padding-top:10px;padding-bottom:10px;padding-left:5px;background-color:#F8F8F8">Salida</h4>
+
+
+		<div class="col-md-12">
+			<div class="form-group" style="margin-bottom: 5px;">
+				<label class="control-label" for="Patentesal">Patente</label>
+
+				<input class="form-control" type="text" id="Patentesal">
+
+			</div>
+		</div>
+		<div class="col-md-8">
+			<div class="form-group" style="margin-bottom: 5px;">
+				<label class="control-label" for="Puerto">Fecha Ingreso</label>
+				@*<input id="fechainicio" type="text">*@
+				<input class="form-control" type="text" id="fechainicio" readonly="readonly">
+
+			</div>
+		</div>
+
+		<div class="col-md-4">
+			<div class="form-group" style="margin-bottom: 5px;">
+				<label class="control-label" for="idac">ID Ingreso</label>
+
+				<input class="form-control" type="text" id="idsa" readonly="readonly">
+
+			</div>
+		</div>
+
+
+		<div class="col-md-12">
+			<div class="form-group" style="margin-bottom: 5px;">
+				<label class="control-label" for="detallesa">Detalle</label>
+				<select id="detallesa" class="form-control">
+
+					<option value="0">Seleccione</option>
+					<option value="1">Vacio</option>
+					<option value="2">Lleno</option>
+
+				</select>
+
+
+
+			</div>
+		</div>
+		<div class="col-md-12 detalle">
+			<div class="form-group" style="margin-bottom: 5px;">
+				<label class="control-label" for="nguiaac">Numero de Guia</label>
+				<input class="form-control" type="text" id="nguiasa">
+			</div>
+		</div>
+		<div class="col-md-12 detalle">
+			<div class="form-group" style="margin-bottom: 5px;">
+				<label class="control-label" for="toneladas">Toneladas</label>
+				<input class="form-control" type="text" id="toneladassa">
+			</div>
+		</div>
+		<div class="col-md-12">
+			<div class="form-group" style="margin-bottom: 5px;">
+				<label class="control-label" for="pcsa">PC</label>
+				<input class="form-control" type="text" id="pcsa">
+			</div>
+		</div>
+
+	
+	</div>
+	<div class="col-md-1"></div>
+	<div class="col-md-4" style="padding-top:60px">
+		<button id="btnRegistraSal" class="btn btn-success btn-block btn-lg" style="padding-top:25px;padding-bottom:25px" type="button">REGISTRAR</button>
+	</div>
+	<div class="col-md-1"></div>
+</div>

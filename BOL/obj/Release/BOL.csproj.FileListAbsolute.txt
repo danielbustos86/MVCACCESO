@@ -1,0 +1,30 @@
+C:\cabo froward}\CaboFrowardMVC\BOL\bin\Release\BOL.dll
+C:\cabo froward}\CaboFrowardMVC\BOL\bin\Release\BOL.pdb
+C:\cabo froward}\CaboFrowardMVC\BOL\obj\Release\BOL.csprojResolveAssemblyReference.cache
+C:\cabo froward}\CaboFrowardMVC\BOL\obj\Release\BOL.csproj.CoreCompileInputs.cache
+C:\cabo froward}\CaboFrowardMVC\BOL\obj\Release\BOL.dll
+C:\cabo froward}\CaboFrowardMVC\BOL\obj\Release\BOL.pdb
+C:\git\sistema-acceso-web\CaboFrowardMVC\BOL\bin\Release\BOL.dll
+C:\git\sistema-acceso-web\CaboFrowardMVC\BOL\bin\Release\BOL.pdb
+C:\git\sistema-acceso-web\CaboFrowardMVC\BOL\obj\Release\BOL.csprojResolveAssemblyReference.cache
+C:\git\sistema-acceso-web\CaboFrowardMVC\BOL\obj\Release\BOL.csproj.CoreCompileInputs.cache
+C:\git\sistema-acceso-web\CaboFrowardMVC\BOL\obj\Release\BOL.dll
+C:\git\sistema-acceso-web\CaboFrowardMVC\BOL\obj\Release\BOL.pdb
+C:\cabo froward}\yerko\BOL\bin\Release\BOL.dll
+C:\cabo froward}\yerko\BOL\bin\Release\BOL.pdb
+C:\cabo froward}\yerko\BOL\obj\Release\BOL.csprojResolveAssemblyReference.cache
+C:\cabo froward}\yerko\BOL\obj\Release\BOL.csproj.CoreCompileInputs.cache
+C:\cabo froward}\yerko\BOL\obj\Release\BOL.dll
+C:\cabo froward}\yerko\BOL\obj\Release\BOL.pdb
+C:\daniel\ConsultorIt\FROWARD ULTIMOS FUENTES\23052018\BOL\bin\Release\BOL.dll
+C:\daniel\ConsultorIt\FROWARD ULTIMOS FUENTES\23052018\BOL\bin\Release\BOL.pdb
+C:\daniel\ConsultorIt\FROWARD ULTIMOS FUENTES\23052018\BOL\obj\Release\BOL.csprojResolveAssemblyReference.cache
+C:\daniel\ConsultorIt\FROWARD ULTIMOS FUENTES\23052018\BOL\obj\Release\BOL.csproj.CoreCompileInputs.cache
+C:\daniel\ConsultorIt\FROWARD ULTIMOS FUENTES\23052018\BOL\obj\Release\BOL.dll
+C:\daniel\ConsultorIt\FROWARD ULTIMOS FUENTES\23052018\BOL\obj\Release\BOL.pdb
+C:\daniel\ConsultorIt\TTP\Fuente\08062018\08062018\BOL\bin\Release\BOL.dll
+C:\daniel\ConsultorIt\TTP\Fuente\08062018\08062018\BOL\bin\Release\BOL.pdb
+C:\daniel\ConsultorIt\TTP\Fuente\08062018\08062018\BOL\obj\Release\BOL.csprojResolveAssemblyReference.cache
+C:\daniel\ConsultorIt\TTP\Fuente\08062018\08062018\BOL\obj\Release\BOL.csproj.CoreCompileInputs.cache
+C:\daniel\ConsultorIt\TTP\Fuente\08062018\08062018\BOL\obj\Release\BOL.dll
+C:\daniel\ConsultorIt\TTP\Fuente\08062018\08062018\BOL\obj\Release\BOL.pdb

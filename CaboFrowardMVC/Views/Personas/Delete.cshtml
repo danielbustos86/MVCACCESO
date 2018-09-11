@@ -1,0 +1,105 @@
+@model CaboFrowardMVC.Models.PERSONAS
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@if (Session["MisMenus"].ToString().Contains("PERSONAS"))
+{
+
+
+    <h2>Eliminar</h2>
+
+    <h3>Esta seguro de eliminar registro?</h3>
+    <div>
+        <h4>PERSONAS</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.RUT)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.RUT)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.DV)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.DV)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.NOMBRE)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.NOMBRE)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.APELLIDOMATERNO)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.APELLIDOMATERNO)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.APELLIDOPATERNO)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.APELLIDOPATERNO)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.INACTIVO)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.INACTIVO)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.PASAPORTE)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.PASAPORTE)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.NACIONALIDADES.NACIONALIDAD)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.NACIONALIDADES.NACIONALIDAD)
+            </dd>
+
+        </dl>
+
+        @using (Html.BeginForm())
+        {
+            @Html.AntiForgeryToken()
+
+            <div class="form-actions no-color">
+                <input type="submit" value="Borrar" class="btn btn-danger" /> |
+                @Html.ActionLink("Volver", "Index")
+            </div>
+        }
+    </div>
+}
+else
+{
+
+
+    <div class="alert alert-danger alert-dismissible">
+    <strong>Acceso Restringido!</strong> No está autorizado para ver esta página, pongase en contacto con el administrador
+    </div>
+
+    <input type="hidden" id="txt_acceso" value="SIN_ACCESO" />
+}

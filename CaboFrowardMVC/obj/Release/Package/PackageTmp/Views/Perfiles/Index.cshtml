@@ -1,0 +1,49 @@
+﻿@model IEnumerable<CaboFrowardMVC.Models.PERFILES>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@if (Session["MisMenus"].ToString().Contains("PERFILES"))
+{
+
+    <h2>Listado</h2>
+
+    <p>
+        @Html.ActionLink("Crear Nuevo", "Create", null, new { @class = "btn btn-primary btn-xs" })
+    </p>
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.NOMBRE)
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.NOMBRE)
+                </td>
+                <td>
+                    @Html.ActionLink("Editar", "Edit", new { id = item.ID_PERFIL }, new { @class = "btn btn-info btn-xs" }) |
+                    @Html.ActionLink("Detalle", "Details", new { id = item.ID_PERFIL }) |
+                    @Html.ActionLink("Borrar", "Delete", new { id = item.ID_PERFIL }, new { @class = "btn btn-danger btn-xs" })
+                </td>
+            </tr>
+        }
+
+    </table>
+}
+
+else
+{
+
+
+    <div class="alert alert-danger alert-dismissible">
+        <strong>Acceso Restringido!</strong> No está autorizado para ver esta página, pongase en contacto con el administrador
+    </div>
+
+    <input type="hidden" id="txt_acceso" value="SIN_ACCESO" />
+}

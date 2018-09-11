@@ -1,0 +1,46 @@
+﻿@model CaboFrowardMVC.Models.PERFILES
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@if (Session["MisMenus"].ToString().Contains("PERFILES"))
+{
+    <h2>Eliminar</h2>
+
+    <h3>Esta seguro de eliminar registro?</h3>
+    <div>
+        <h4>PERFILES</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.NOMBRE)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.NOMBRE)
+            </dd>
+
+        </dl>
+
+        @using (Html.BeginForm())
+        {
+            @Html.AntiForgeryToken()
+
+            <div class="form-actions no-color">
+                <input type="submit" value="Delete" class="btn btn-default" /> |
+                @Html.ActionLink("Volver", "Index")
+            </div>
+        }
+    </div>
+}
+
+else
+{
+
+    <div class="alert alert-danger alert-dismissible">
+        <strong>Acceso Restringido!</strong> No está autorizado para ver esta página, pongase en contacto con el administrador
+    </div>
+
+    <input type="hidden" id="txt_acceso" value="SIN_ACCESO" />
+}

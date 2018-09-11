@@ -1,0 +1,250 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="CaboFroward2018ModelStoreContainer" CdmEntityContainer="Entities">
+    <EntitySetMapping Name="DISPOSITIVOS">
+      <EntityTypeMapping TypeName="CaboFroward2018Model.DISPOSITIVO">
+        <MappingFragment StoreEntitySet="DISPOSITIVOS">
+          <ScalarProperty Name="ID_DISPOSITIVO" ColumnName="ID_DISPOSITIVO" />
+          <ScalarProperty Name="NOMBRE" ColumnName="NOMBRE" />
+          <ScalarProperty Name="IP" ColumnName="IP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EMPRESAS">
+      <EntityTypeMapping TypeName="CaboFroward2018Model.EMPRESA">
+        <MappingFragment StoreEntitySet="EMPRESAS">
+          <ScalarProperty Name="ID_EMPRESA" ColumnName="ID_EMPRESA" />
+          <ScalarProperty Name="ID_TIPO_EMPRESA" ColumnName="ID_TIPO_EMPRESA" />
+          <ScalarProperty Name="RUT" ColumnName="RUT" />
+          <ScalarProperty Name="DV" ColumnName="DV" />
+          <ScalarProperty Name="NOMBRES" ColumnName="NOMBRES" />
+          <ScalarProperty Name="GIRO" ColumnName="GIRO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LOCACIONES">
+      <EntityTypeMapping TypeName="CaboFroward2018Model.LOCACIONE">
+        <MappingFragment StoreEntitySet="LOCACIONES">
+          <ScalarProperty Name="ID_LOCACION" ColumnName="ID_LOCACION" />
+          <ScalarProperty Name="ES_INFORMADA" ColumnName="ES_INFORMADA" />
+          <ScalarProperty Name="NOMBRE" ColumnName="NOMBRE" />
+          <ScalarProperty Name="ID_PUERTO" ColumnName="ID_PUERTO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MENUS">
+      <EntityTypeMapping TypeName="CaboFroward2018Model.MENU">
+        <MappingFragment StoreEntitySet="MENUS">
+          <ScalarProperty Name="ID_MENU" ColumnName="ID_MENU" />
+          <ScalarProperty Name="MENU1" ColumnName="MENU" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MOVIMIENTOS">
+      <EntityTypeMapping TypeName="CaboFroward2018Model.MOVIMIENTO">
+        <MappingFragment StoreEntitySet="MOVIMIENTOS">
+          <ScalarProperty Name="ID_MOVIMIENTO" ColumnName="ID_MOVIMIENTO" />
+          <ScalarProperty Name="NOMBRE" ColumnName="NOMBRE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MOVIMIENTOS_HISTORICOS">
+      <EntityTypeMapping TypeName="CaboFroward2018Model.MOVIMIENTOS_HISTORICOS">
+        <MappingFragment StoreEntitySet="MOVIMIENTOS_HISTORICOS">
+          <ScalarProperty Name="ID_MOVIMIENTO" ColumnName="ID_MOVIMIENTO" />
+          <ScalarProperty Name="ID_VEHICULO" ColumnName="ID_VEHICULO" />
+          <ScalarProperty Name="MOV_ID_MOVIMIENTO" ColumnName="MOV_ID_MOVIMIENTO" />
+          <ScalarProperty Name="ID_DISPOSITIVO" ColumnName="ID_DISPOSITIVO" />
+          <ScalarProperty Name="ID_PERSONA_APROBADA" ColumnName="ID_PERSONA_APROBADA" />
+          <ScalarProperty Name="FECHA" ColumnName="FECHA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NACIONALIDADES">
+      <EntityTypeMapping TypeName="CaboFroward2018Model.NACIONALIDADE">
+        <MappingFragment StoreEntitySet="NACIONALIDADES">
+          <ScalarProperty Name="ID_NACIONALIDAD" ColumnName="ID_NACIONALIDAD" />
+          <ScalarProperty Name="NACIONALIDAD" ColumnName="NACIONALIDAD" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NAVES">
+      <EntityTypeMapping TypeName="CaboFroward2018Model.NAVE">
+        <MappingFragment StoreEntitySet="NAVES">
+          <ScalarProperty Name="ID_NAVE" ColumnName="ID_NAVE" />
+          <ScalarProperty Name="NOMBRE" ColumnName="NOMBRE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NAVES_PROGRAMADAS">
+      <EntityTypeMapping TypeName="CaboFroward2018Model.NAVES_PROGRAMADAS">
+        <MappingFragment StoreEntitySet="NAVES_PROGRAMADAS">
+          <ScalarProperty Name="ID_NAVES_PROGRAMADAS" ColumnName="ID_NAVES_PROGRAMADAS" />
+          <ScalarProperty Name="ID_NAVE" ColumnName="ID_NAVE" />
+          <ScalarProperty Name="FECHA_ARRIBO" ColumnName="FECHA_ARRIBO" />
+          <ScalarProperty Name="FECHA_ZARPE" ColumnName="FECHA_ZARPE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PERF_US_ADMIN_LOC">
+      <EntityTypeMapping TypeName="CaboFroward2018Model.PERF_US_ADMIN_LOC">
+        <MappingFragment StoreEntitySet="PERF_US_ADMIN_LOC">
+          <ScalarProperty Name="ID_LOCACION" ColumnName="ID_LOCACION" />
+          <ScalarProperty Name="ID_USUARIO" ColumnName="ID_USUARIO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PERFILES">
+      <EntityTypeMapping TypeName="CaboFroward2018Model.PERFILE">
+        <MappingFragment StoreEntitySet="PERFILES">
+          <ScalarProperty Name="ID_PERFIL" ColumnName="ID_PERFIL" />
+          <ScalarProperty Name="NOMBRE" ColumnName="NOMBRE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PERSONAS">
+      <EntityTypeMapping TypeName="CaboFroward2018Model.PERSONA">
+        <MappingFragment StoreEntitySet="PERSONAS">
+          <ScalarProperty Name="ID_PERSONA" ColumnName="ID_PERSONA" />
+          <ScalarProperty Name="ID_NACIONALIDAD" ColumnName="ID_NACIONALIDAD" />
+          <ScalarProperty Name="RUT" ColumnName="RUT" />
+          <ScalarProperty Name="DV" ColumnName="DV" />
+          <ScalarProperty Name="NOMBRE" ColumnName="NOMBRE" />
+          <ScalarProperty Name="APELLIDOMATERNO" ColumnName="APELLIDOMATERNO" />
+          <ScalarProperty Name="APELLIDOPATERNO" ColumnName="APELLIDOPATERNO" />
+          <ScalarProperty Name="INACTIVO" ColumnName="INACTIVO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PERSONAS_APROBADAS">
+      <EntityTypeMapping TypeName="CaboFroward2018Model.PERSONAS_APROBADAS">
+        <MappingFragment StoreEntitySet="PERSONAS_APROBADAS">
+          <ScalarProperty Name="ID_PERSONA_APROBADA" ColumnName="ID_PERSONA_APROBADA" />
+          <ScalarProperty Name="ID_USUARIO" ColumnName="ID_USUARIO" />
+          <ScalarProperty Name="ID_PERSONA_SOLICITUD" ColumnName="ID_PERSONA_SOLICITUD" />
+          <ScalarProperty Name="FECHA_APROBACION" ColumnName="FECHA_APROBACION" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PERSONAS_EN_SOLICITUDES">
+      <EntityTypeMapping TypeName="CaboFroward2018Model.PERSONAS_EN_SOLICITUDES">
+        <MappingFragment StoreEntitySet="PERSONAS_EN_SOLICITUDES">
+          <ScalarProperty Name="ID_PERSONA_SOLICITUD" ColumnName="ID_PERSONA_SOLICITUD" />
+          <ScalarProperty Name="ID_NAVE" ColumnName="ID_NAVE" />
+          <ScalarProperty Name="ID_PERSONA" ColumnName="ID_PERSONA" />
+          <ScalarProperty Name="ID_LOCACION" ColumnName="ID_LOCACION" />
+          <ScalarProperty Name="ID_SOLICITUD" ColumnName="ID_SOLICITUD" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PUERTOS">
+      <EntityTypeMapping TypeName="CaboFroward2018Model.PUERTO">
+        <MappingFragment StoreEntitySet="PUERTOS">
+          <ScalarProperty Name="ID_PUERTO" ColumnName="ID_PUERTO" />
+          <ScalarProperty Name="NOMBRE" ColumnName="NOMBRE" />
+          <ScalarProperty Name="rut" ColumnName="rut" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SOLICITUDES">
+      <EntityTypeMapping TypeName="CaboFroward2018Model.SOLICITUDE">
+        <MappingFragment StoreEntitySet="SOLICITUDES">
+          <ScalarProperty Name="ID_SOLICITUD" ColumnName="ID_SOLICITUD" />
+          <ScalarProperty Name="ID_TIPO_INGRESO" ColumnName="ID_TIPO_INGRESO" />
+          <ScalarProperty Name="ID_PUERTO" ColumnName="ID_PUERTO" />
+          <ScalarProperty Name="ID_USUARIO" ColumnName="ID_USUARIO" />
+          <ScalarProperty Name="ID_EMPRESA" ColumnName="ID_EMPRESA" />
+          <ScalarProperty Name="FECHA_SOLICITUD" ColumnName="FECHA_SOLICITUD" />
+          <ScalarProperty Name="FECHA_DESDE" ColumnName="FECHA_DESDE" />
+          <ScalarProperty Name="FECHA_HASTA" ColumnName="FECHA_HASTA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TIPOS_EMPRESAS">
+      <EntityTypeMapping TypeName="CaboFroward2018Model.TIPOS_EMPRESAS">
+        <MappingFragment StoreEntitySet="TIPOS_EMPRESAS">
+          <ScalarProperty Name="ID_TIPO_EMPRESA" ColumnName="ID_TIPO_EMPRESA" />
+          <ScalarProperty Name="NOMBRE" ColumnName="NOMBRE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TIPOS_INGRESOS">
+      <EntityTypeMapping TypeName="CaboFroward2018Model.TIPOS_INGRESOS">
+        <MappingFragment StoreEntitySet="TIPOS_INGRESOS">
+          <ScalarProperty Name="ID_TIPO_INGRESO" ColumnName="ID_TIPO_INGRESO" />
+          <ScalarProperty Name="NOMBRE" ColumnName="NOMBRE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TIPOS_VEHICULOS">
+      <EntityTypeMapping TypeName="CaboFroward2018Model.TIPOS_VEHICULOS">
+        <MappingFragment StoreEntitySet="TIPOS_VEHICULOS">
+          <ScalarProperty Name="ID_TIPO_VEHICULO" ColumnName="ID_TIPO_VEHICULO" />
+          <ScalarProperty Name="NOMBRE" ColumnName="NOMBRE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="USUARIOS">
+      <EntityTypeMapping TypeName="CaboFroward2018Model.USUARIO">
+        <MappingFragment StoreEntitySet="USUARIOS">
+          <ScalarProperty Name="ID_USUARIO" ColumnName="ID_USUARIO" />
+          <ScalarProperty Name="NOMBRE" ColumnName="NOMBRE" />
+          <ScalarProperty Name="PASSWORD" ColumnName="PASSWORD" />
+          <ScalarProperty Name="TELEFONO" ColumnName="TELEFONO" />
+          <ScalarProperty Name="INACTIVO" ColumnName="INACTIVO" />
+          <ScalarProperty Name="aprueba_nave" ColumnName="aprueba_nave" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VEHICULOS">
+      <EntityTypeMapping TypeName="CaboFroward2018Model.VEHICULO">
+        <MappingFragment StoreEntitySet="VEHICULOS">
+          <ScalarProperty Name="ID_VEHICULO" ColumnName="ID_VEHICULO" />
+          <ScalarProperty Name="ID_TIPO_VEHICULO" ColumnName="ID_TIPO_VEHICULO" />
+          <ScalarProperty Name="PATENTE" ColumnName="PATENTE" />
+          <ScalarProperty Name="INACTIVO" ColumnName="INACTIVO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="PERFIL_ADMIN_MENU" TypeName="CaboFroward2018Model.PERFIL_ADMIN_MENU" StoreEntitySet="PERFIL_ADMIN_MENU">
+      <EndProperty Name="MENUS">
+        <ScalarProperty Name="ID_MENU" ColumnName="ID_MENU" />
+      </EndProperty>
+      <EndProperty Name="PERFILES">
+        <ScalarProperty Name="ID_PERFIL" ColumnName="ID_PERFIL" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="PERFILES_USUARIOS" TypeName="CaboFroward2018Model.PERFILES_USUARIOS" StoreEntitySet="PERFILES_USUARIOS">
+      <EndProperty Name="PERFILES">
+        <ScalarProperty Name="ID_PERFIL" ColumnName="ID_PERFIL" />
+      </EndProperty>
+      <EndProperty Name="USUARIOS">
+        <ScalarProperty Name="ID_USUARIO" ColumnName="ID_USUARIO" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="PERSONAS_EN_NAVE_PROGRAMADA" TypeName="CaboFroward2018Model.PERSONAS_EN_NAVE_PROGRAMADA" StoreEntitySet="PERSONAS_EN_NAVE_PROGRAMADA">
+      <EndProperty Name="NAVES_PROGRAMADAS">
+        <ScalarProperty Name="ID_NAVES_PROGRAMADAS" ColumnName="ID_NAVES_PROGRAMADAS" />
+      </EndProperty>
+      <EndProperty Name="PERSONAS_APROBADAS">
+        <ScalarProperty Name="ID_PERSONA_APROBADA" ColumnName="ID_PERSONA_APROBADA" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="VEHICULOS_EN_EMPRESA" TypeName="CaboFroward2018Model.VEHICULOS_EN_EMPRESA" StoreEntitySet="VEHICULOS_EN_EMPRESA">
+      <EndProperty Name="EMPRESAS">
+        <ScalarProperty Name="ID_EMPRESA" ColumnName="ID_EMPRESA" />
+      </EndProperty>
+      <EndProperty Name="VEHICULOS">
+        <ScalarProperty Name="ID_VEHICULO" ColumnName="ID_VEHICULO" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="VEHICULOS_EN_SOLICITUDES" TypeName="CaboFroward2018Model.VEHICULOS_EN_SOLICITUDES" StoreEntitySet="VEHICULOS_EN_SOLICITUDES">
+      <EndProperty Name="SOLICITUDES">
+        <ScalarProperty Name="ID_SOLICITUD" ColumnName="ID_SOLICITUD" />
+      </EndProperty>
+      <EndProperty Name="VEHICULOS">
+        <ScalarProperty Name="ID_VEHICULO" ColumnName="ID_VEHICULO" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping>

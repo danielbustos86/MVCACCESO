@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="12963cdaa82743529d7410d587000745" Name="Diagram1">
+        <EntityTypeShape EntityType="CaboFroward2018Model.DISPOSITIVOS" Width="1.5" PointX="10.5" PointY="5.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaboFroward2018Model.EMPRESAS" Width="1.5" PointX="0.75" PointY="9.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaboFroward2018Model.LOCACIONES" Width="1.5" PointX="3" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaboFroward2018Model.MENUS" Width="1.5" PointX="1.5" PointY="25.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaboFroward2018Model.MOVIMIENTOS" Width="1.5" PointX="10.5" PointY="7.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaboFroward2018Model.MOVIMIENTOS_HISTORICOS" Width="1.5" PointX="12.75" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaboFroward2018Model.NACIONALIDADES" Width="1.5" PointX="0.75" PointY="29.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaboFroward2018Model.NAVES" Width="1.5" PointX="3" PointY="9.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaboFroward2018Model.NAVES_PROGRAMADAS" Width="1.5" PointX="8.25" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaboFroward2018Model.PERF_US_ADMIN_LOC" Width="1.5" PointX="5.25" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaboFroward2018Model.PERFILES" Width="1.5" PointX="1.5" PointY="22.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaboFroward2018Model.PERSONAS" Width="1.5" PointX="3" PointY="28.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaboFroward2018Model.PERSONAS_APROBADAS" Width="1.5" PointX="10.5" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaboFroward2018Model.PERSONAS_EN_SOLICITUDES" Width="1.5" PointX="5.25" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaboFroward2018Model.PUERTOS" Width="1.5" PointX="0.75" PointY="5.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaboFroward2018Model.SOLICITUDES" Width="1.5" PointX="3" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaboFroward2018Model.TIPOS_EMPRESAS" Width="1.5" PointX="1.5" PointY="12.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaboFroward2018Model.TIPOS_INGRESOS" Width="1.5" PointX="0.75" PointY="15.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaboFroward2018Model.TIPOS_VEHICULOS" Width="1.5" PointX="6" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaboFroward2018Model.USUARIOS" Width="1.5" PointX="0.75" PointY="18" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaboFroward2018Model.VEHICULOS" Width="1.5" PointX="8.25" PointY="1.375" IsExpanded="true" />
+        <AssociationConnector Association="CaboFroward2018Model.FK_MOVIMIEN_RELATIONS_DISPOSIT" ManuallyRouted="false" />
+        <AssociationConnector Association="CaboFroward2018Model.FK_EMPRESAS_RELATIONS_TIPOS_EM" ManuallyRouted="false" />
+        <AssociationConnector Association="CaboFroward2018Model.FK_SOLICITU_RELATIONS_EMPRESAS" ManuallyRouted="false" />
+        <AssociationConnector Association="CaboFroward2018Model.FK_LOCACION_REFERENCE_PUERTOS" ManuallyRouted="false" />
+        <AssociationConnector Association="CaboFroward2018Model.FK_PERFIL_LOCACION" ManuallyRouted="false" />
+        <AssociationConnector Association="CaboFroward2018Model.FK_MOVIMIEN_RELATIONS_MOVIMIEN" ManuallyRouted="false" />
+        <AssociationConnector Association="CaboFroward2018Model.FK_MOVIMIEN_RELATIONS_PERSONAS" ManuallyRouted="false" />
+        <AssociationConnector Association="CaboFroward2018Model.FK_MOVIMIEN_RELATIONS_VEHICULO" ManuallyRouted="false" />
+        <AssociationConnector Association="CaboFroward2018Model.FK_PERSONAS_RELATIONS_NACIONAL" ManuallyRouted="false" />
+        <AssociationConnector Association="CaboFroward2018Model.FK_NAVES_PR_RELATIONS_NAVES" ManuallyRouted="false" />
+        <AssociationConnector Association="CaboFroward2018Model.FK_PERSONAS_RELATIONS_NAVES" ManuallyRouted="false" />
+        <AssociationConnector Association="CaboFroward2018Model.FK_PERF_US__RELATIONS_PERFILES" ManuallyRouted="false" />
+        <AssociationConnector Association="CaboFroward2018Model.FK_PERF_US_ADMIN_LOC_PERF_US_ADMIN_LOC" ManuallyRouted="false" />
+        <AssociationConnector Association="CaboFroward2018Model.FK_PERSONAS_RELATIONS_PERSONAS" ManuallyRouted="false" />
+        <AssociationConnector Association="CaboFroward2018Model.FK_PERSONAS_RELATIONS_PERSONAS_1" ManuallyRouted="false" />
+        <AssociationConnector Association="CaboFroward2018Model.FK_PERSONAS_RELATIONS_USUARIOS" ManuallyRouted="false" />
+        <AssociationConnector Association="CaboFroward2018Model.FK_PERSONAS_RELATIONS_SOLICITU" ManuallyRouted="false" />
+        <AssociationConnector Association="CaboFroward2018Model.FK_SOLICITU_RELATIONS_PUERTOS" ManuallyRouted="false" />
+        <AssociationConnector Association="CaboFroward2018Model.FK_SOLICITU_RELATIONS_TIPOS_IN" ManuallyRouted="false" />
+        <AssociationConnector Association="CaboFroward2018Model.FK_SOLICITU_RELATIONS_USUARIOS" ManuallyRouted="false" />
+        <AssociationConnector Association="CaboFroward2018Model.FK_VEHICULO_RELATIONS_TIPOS_VE" ManuallyRouted="false" />
+        <AssociationConnector Association="CaboFroward2018Model.PERFIL_ADMIN_MENU" ManuallyRouted="false" />
+        <AssociationConnector Association="CaboFroward2018Model.PERFILES_USUARIOS" ManuallyRouted="false" />
+        <AssociationConnector Association="CaboFroward2018Model.PERSONAS_EN_NAVE_PROGRAMADA" ManuallyRouted="false" />
+        <AssociationConnector Association="CaboFroward2018Model.VEHICULOS_EN_EMPRESA" ManuallyRouted="false" />
+        <AssociationConnector Association="CaboFroward2018Model.VEHICULOS_EN_SOLICITUDES" ManuallyRouted="false" />
+        <AssociationConnector Association="CaboFroward2018Model.FK_PERSONAS_USUARIOS" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

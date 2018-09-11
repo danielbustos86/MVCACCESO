@@ -1,0 +1,1739 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="CaboFroward2018Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="DISPOSITIVOS">
+          <Key>
+            <PropertyRef Name="ID_DISPOSITIVO" />
+          </Key>
+          <Property Name="ID_DISPOSITIVO" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="NOMBRE" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="IP" Type="varchar" MaxLength="100" Nullable="false" />
+        </EntityType>
+        <EntityType Name="EMPRESAS">
+          <Key>
+            <PropertyRef Name="ID_EMPRESA" />
+          </Key>
+          <Property Name="ID_EMPRESA" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ID_TIPO_EMPRESA" Type="int" Nullable="false" />
+          <Property Name="RUT" Type="int" Nullable="false" />
+          <Property Name="DV" Type="char" MaxLength="1" />
+          <Property Name="NOMBRES" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="GIRO" Type="varchar" MaxLength="100" />
+          <Property Name="INACTIVO" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="LOCACIONES">
+          <Key>
+            <PropertyRef Name="ID_LOCACION" />
+          </Key>
+          <Property Name="ID_LOCACION" Type="int" Nullable="false" />
+          <Property Name="ES_INFORMADA" Type="char" MaxLength="2" Nullable="false" />
+          <Property Name="NOMBRE" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="ID_PUERTO" Type="int" />
+          <Property Name="INACTIVO" Type="bit" />
+        </EntityType>
+        <EntityType Name="MENUS">
+          <Key>
+            <PropertyRef Name="ID_MENU" />
+          </Key>
+          <Property Name="ID_MENU" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="MENU" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="ORDEN" Type="int" />
+        </EntityType>
+        <EntityType Name="MOVIMIENTOS">
+          <Key>
+            <PropertyRef Name="ID_MOVIMIENTO" />
+          </Key>
+          <Property Name="ID_MOVIMIENTO" Type="int" Nullable="false" />
+          <Property Name="NOMBRE" Type="varchar" MaxLength="100" Nullable="false" />
+        </EntityType>
+        <EntityType Name="MOVIMIENTOS_HISTORICOS">
+          <Key>
+            <PropertyRef Name="ID_MOVIMIENTO" />
+          </Key>
+          <Property Name="ID_MOVIMIENTO" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ID_VEHICULO" Type="int" />
+          <Property Name="MOV_ID_MOVIMIENTO" Type="int" />
+          <Property Name="ID_DISPOSITIVO" Type="int" />
+          <Property Name="ID_PERSONA_APROBADA" Type="bigint" />
+          <Property Name="FECHA" Type="datetime" Nullable="false" />
+          <Property Name="COBRAR" Type="char" MaxLength="1" />
+        </EntityType>
+        <EntityType Name="NACIONALIDADES">
+          <Key>
+            <PropertyRef Name="ID_NACIONALIDAD" />
+          </Key>
+          <Property Name="ID_NACIONALIDAD" Type="int" Nullable="false" />
+          <Property Name="NACIONALIDAD" Type="varchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="NAVES">
+          <Key>
+            <PropertyRef Name="ID_NAVE" />
+          </Key>
+          <Property Name="ID_NAVE" Type="int" Nullable="false" />
+          <Property Name="NOMBRE" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="INACTIVO" Type="bit" />
+        </EntityType>
+        <EntityType Name="NAVES_PROGRAMADAS">
+          <Key>
+            <PropertyRef Name="ID_NAVES_PROGRAMADAS" />
+          </Key>
+          <Property Name="ID_NAVES_PROGRAMADAS" Type="bigint" Nullable="false" />
+          <Property Name="ID_NAVE" Type="int" Nullable="false" />
+          <Property Name="FECHA_ARRIBO" Type="datetime" Nullable="false" />
+          <Property Name="FECHA_ZARPE" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="PERF_US_ADMIN_LOC">
+          <Key>
+            <PropertyRef Name="ID_LOCACION" />
+            <PropertyRef Name="ID_USUARIO" />
+          </Key>
+          <Property Name="ID_LOCACION" Type="int" Nullable="false" />
+          <Property Name="ID_USUARIO" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="PERFIL_ADMIN_MENU">
+          <Key>
+            <PropertyRef Name="ID_MENU" />
+            <PropertyRef Name="ID_PERFIL" />
+          </Key>
+          <Property Name="ID_MENU" Type="int" Nullable="false" />
+          <Property Name="ID_PERFIL" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="PERFILES">
+          <Key>
+            <PropertyRef Name="ID_PERFIL" />
+          </Key>
+          <Property Name="ID_PERFIL" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="NOMBRE" Type="varchar" MaxLength="100" Nullable="false" />
+        </EntityType>
+        <EntityType Name="PERFILES_USUARIOS">
+          <Key>
+            <PropertyRef Name="ID_USUARIO" />
+            <PropertyRef Name="ID_PERFIL" />
+          </Key>
+          <Property Name="ID_USUARIO" Type="int" Nullable="false" />
+          <Property Name="ID_PERFIL" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="PERSONAS">
+          <Key>
+            <PropertyRef Name="ID_PERSONA" />
+          </Key>
+          <Property Name="ID_PERSONA" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ID_NACIONALIDAD" Type="int" />
+          <Property Name="RUT" Type="int" Nullable="false" />
+          <Property Name="DV" Type="char" MaxLength="1" />
+          <Property Name="NOMBRE" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="APELLIDOMATERNO" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="APELLIDOPATERNO" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="INACTIVO" Type="bit" Nullable="false" />
+          <Property Name="PASAPORTE" Type="varchar" MaxLength="100" />
+          <Property Name="FECHAINDUCCION" Type="date" />
+        </EntityType>
+        <EntityType Name="PERSONAS_APROBADAS">
+          <Key>
+            <PropertyRef Name="ID_PERSONA_APROBADA" />
+          </Key>
+          <Property Name="ID_PERSONA_APROBADA" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ID_USUARIO" Type="int" Nullable="false" />
+          <Property Name="ID_PERSONA_SOLICITUD" Type="bigint" />
+          <Property Name="FECHA_APROBACION" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="PERSONAS_EN_NAVE_PROGRAMADA">
+          <Key>
+            <PropertyRef Name="ID_PERSONA_APROBADA" />
+          </Key>
+          <Property Name="ID_PERSONA_APROBADA" Type="bigint" Nullable="false" />
+          <Property Name="ID_NAVES_PROGRAMADAS" Type="bigint" Nullable="false" />
+        </EntityType>
+        <EntityType Name="PERSONAS_EN_SOLICITUDES">
+          <Key>
+            <PropertyRef Name="ID_PERSONA_SOLICITUD" />
+          </Key>
+          <Property Name="ID_PERSONA_SOLICITUD" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ID_NAVE" Type="int" />
+          <Property Name="ID_PERSONA" Type="int" Nullable="false" />
+          <Property Name="ID_LOCACION" Type="int" />
+          <Property Name="ID_SOLICITUD" Type="bigint" Nullable="false" />
+        </EntityType>
+        <EntityType Name="PUERTOS">
+          <Key>
+            <PropertyRef Name="ID_PUERTO" />
+          </Key>
+          <Property Name="ID_PUERTO" Type="int" Nullable="false" />
+          <Property Name="NOMBRE" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="rut" Type="varchar" MaxLength="20" />
+        </EntityType>
+        <EntityType Name="SOLICITUDES">
+          <Key>
+            <PropertyRef Name="ID_SOLICITUD" />
+          </Key>
+          <Property Name="ID_SOLICITUD" Type="bigint" Nullable="false" />
+          <Property Name="ID_TIPO_INGRESO" Type="int" Nullable="false" />
+          <Property Name="ID_PUERTO" Type="int" Nullable="false" />
+          <Property Name="ID_USUARIO" Type="int" Nullable="false" />
+          <Property Name="ID_EMPRESA" Type="int" Nullable="false" />
+          <Property Name="FECHA_SOLICITUD" Type="datetime" Nullable="false" />
+          <Property Name="FECHA_DESDE" Type="datetime" Nullable="false" />
+          <Property Name="FECHA_HASTA" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="TIPOS_EMPRESAS">
+          <Key>
+            <PropertyRef Name="ID_TIPO_EMPRESA" />
+          </Key>
+          <Property Name="ID_TIPO_EMPRESA" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="NOMBRE" Type="varchar" MaxLength="100" Nullable="false" />
+        </EntityType>
+        <EntityType Name="TIPOS_INGRESOS">
+          <Key>
+            <PropertyRef Name="ID_TIPO_INGRESO" />
+          </Key>
+          <Property Name="ID_TIPO_INGRESO" Type="int" Nullable="false" />
+          <Property Name="NOMBRE" Type="varchar" MaxLength="100" Nullable="false" />
+        </EntityType>
+        <EntityType Name="TIPOS_VEHICULOS">
+          <Key>
+            <PropertyRef Name="ID_TIPO_VEHICULO" />
+          </Key>
+          <Property Name="ID_TIPO_VEHICULO" Type="int" Nullable="false" />
+          <Property Name="NOMBRE" Type="varchar" MaxLength="100" />
+          <Property Name="NUEVO" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="USUARIOS">
+          <Key>
+            <PropertyRef Name="ID_USUARIO" />
+          </Key>
+          <Property Name="ID_USUARIO" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ID_PERSONA" Type="int" />
+          <Property Name="NOMBRE" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="PASSWORD" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="TELEFONO" Type="varchar" MaxLength="50" />
+          <Property Name="INACTIVO" Type="bit" />
+          <Property Name="aprueba_nave" Type="bit" />
+          <Property Name="CLAVE_INICIAL" Type="varchar" MaxLength="1" />
+        </EntityType>
+        <EntityType Name="VEHICULOS">
+          <Key>
+            <PropertyRef Name="ID_VEHICULO" />
+          </Key>
+          <Property Name="ID_VEHICULO" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ID_TIPO_VEHICULO" Type="int" Nullable="false" />
+          <Property Name="PATENTE" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="INACTIVO" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="VEHICULOS_EN_EMPRESA">
+          <Key>
+            <PropertyRef Name="ID_VEHICULO" />
+            <PropertyRef Name="ID_EMPRESA" />
+          </Key>
+          <Property Name="ID_VEHICULO" Type="int" Nullable="false" />
+          <Property Name="ID_EMPRESA" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="VEHICULOS_EN_SOLICITUDES">
+          <Key>
+            <PropertyRef Name="ID_VEHICULO" />
+            <PropertyRef Name="ID_SOLICITUD" />
+          </Key>
+          <Property Name="ID_VEHICULO" Type="int" Nullable="false" />
+          <Property Name="ID_SOLICITUD" Type="bigint" Nullable="false" />
+          <Property Name="aprobado" Type="bit" />
+        </EntityType>
+        <Association Name="FK_EMPRESAS_RELATIONS_TIPOS_EM">
+          <End Role="TIPOS_EMPRESAS" Type="Self.TIPOS_EMPRESAS" Multiplicity="1" />
+          <End Role="EMPRESAS" Type="Self.EMPRESAS" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TIPOS_EMPRESAS">
+              <PropertyRef Name="ID_TIPO_EMPRESA" />
+            </Principal>
+            <Dependent Role="EMPRESAS">
+              <PropertyRef Name="ID_TIPO_EMPRESA" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_LOCACION_REFERENCE_PUERTOS">
+          <End Role="PUERTOS" Type="Self.PUERTOS" Multiplicity="0..1" />
+          <End Role="LOCACIONES" Type="Self.LOCACIONES" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PUERTOS">
+              <PropertyRef Name="ID_PUERTO" />
+            </Principal>
+            <Dependent Role="LOCACIONES">
+              <PropertyRef Name="ID_PUERTO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_MOVIMIEN_RELATIONS_DISPOSIT">
+          <End Role="DISPOSITIVOS" Type="Self.DISPOSITIVOS" Multiplicity="0..1" />
+          <End Role="MOVIMIENTOS_HISTORICOS" Type="Self.MOVIMIENTOS_HISTORICOS" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="DISPOSITIVOS">
+              <PropertyRef Name="ID_DISPOSITIVO" />
+            </Principal>
+            <Dependent Role="MOVIMIENTOS_HISTORICOS">
+              <PropertyRef Name="ID_DISPOSITIVO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_MOVIMIEN_RELATIONS_MOVIMIEN">
+          <End Role="MOVIMIENTOS" Type="Self.MOVIMIENTOS" Multiplicity="0..1" />
+          <End Role="MOVIMIENTOS_HISTORICOS" Type="Self.MOVIMIENTOS_HISTORICOS" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="MOVIMIENTOS">
+              <PropertyRef Name="ID_MOVIMIENTO" />
+            </Principal>
+            <Dependent Role="MOVIMIENTOS_HISTORICOS">
+              <PropertyRef Name="MOV_ID_MOVIMIENTO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_MOVIMIEN_RELATIONS_PERSONAS">
+          <End Role="PERSONAS_APROBADAS" Type="Self.PERSONAS_APROBADAS" Multiplicity="0..1" />
+          <End Role="MOVIMIENTOS_HISTORICOS" Type="Self.MOVIMIENTOS_HISTORICOS" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PERSONAS_APROBADAS">
+              <PropertyRef Name="ID_PERSONA_APROBADA" />
+            </Principal>
+            <Dependent Role="MOVIMIENTOS_HISTORICOS">
+              <PropertyRef Name="ID_PERSONA_APROBADA" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_MOVIMIEN_RELATIONS_VEHICULO">
+          <End Role="VEHICULOS" Type="Self.VEHICULOS" Multiplicity="0..1" />
+          <End Role="MOVIMIENTOS_HISTORICOS" Type="Self.MOVIMIENTOS_HISTORICOS" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="VEHICULOS">
+              <PropertyRef Name="ID_VEHICULO" />
+            </Principal>
+            <Dependent Role="MOVIMIENTOS_HISTORICOS">
+              <PropertyRef Name="ID_VEHICULO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_NAVES_PR_RELATIONS_NAVES">
+          <End Role="NAVES" Type="Self.NAVES" Multiplicity="1" />
+          <End Role="NAVES_PROGRAMADAS" Type="Self.NAVES_PROGRAMADAS" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="NAVES">
+              <PropertyRef Name="ID_NAVE" />
+            </Principal>
+            <Dependent Role="NAVES_PROGRAMADAS">
+              <PropertyRef Name="ID_NAVE" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PERF_US__RELATIONS_PERFILES">
+          <End Role="USUARIOS" Type="Self.USUARIOS" Multiplicity="1" />
+          <End Role="PERF_US_ADMIN_LOC" Type="Self.PERF_US_ADMIN_LOC" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="USUARIOS">
+              <PropertyRef Name="ID_USUARIO" />
+            </Principal>
+            <Dependent Role="PERF_US_ADMIN_LOC">
+              <PropertyRef Name="ID_USUARIO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PERF_US_ADMIN_LOC_PERF_US_ADMIN_LOC">
+          <End Role="PERF_US_ADMIN_LOC" Type="Self.PERF_US_ADMIN_LOC" Multiplicity="1" />
+          <End Role="PERF_US_ADMIN_LOC1" Type="Self.PERF_US_ADMIN_LOC" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="PERF_US_ADMIN_LOC">
+              <PropertyRef Name="ID_LOCACION" />
+              <PropertyRef Name="ID_USUARIO" />
+            </Principal>
+            <Dependent Role="PERF_US_ADMIN_LOC1">
+              <PropertyRef Name="ID_LOCACION" />
+              <PropertyRef Name="ID_USUARIO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PERFIL_A_RELATIONS_MENUS">
+          <End Role="MENUS" Type="Self.MENUS" Multiplicity="1" />
+          <End Role="PERFIL_ADMIN_MENU" Type="Self.PERFIL_ADMIN_MENU" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="MENUS">
+              <PropertyRef Name="ID_MENU" />
+            </Principal>
+            <Dependent Role="PERFIL_ADMIN_MENU">
+              <PropertyRef Name="ID_MENU" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PERFIL_A_RELATIONS_PERFILES">
+          <End Role="PERFILES" Type="Self.PERFILES" Multiplicity="1" />
+          <End Role="PERFIL_ADMIN_MENU" Type="Self.PERFIL_ADMIN_MENU" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PERFILES">
+              <PropertyRef Name="ID_PERFIL" />
+            </Principal>
+            <Dependent Role="PERFIL_ADMIN_MENU">
+              <PropertyRef Name="ID_PERFIL" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PERFIL_LOCACION">
+          <End Role="LOCACIONES" Type="Self.LOCACIONES" Multiplicity="1" />
+          <End Role="PERF_US_ADMIN_LOC" Type="Self.PERF_US_ADMIN_LOC" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="LOCACIONES">
+              <PropertyRef Name="ID_LOCACION" />
+            </Principal>
+            <Dependent Role="PERF_US_ADMIN_LOC">
+              <PropertyRef Name="ID_LOCACION" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PERFILES_RELATIONS_PERFILES">
+          <End Role="PERFILES" Type="Self.PERFILES" Multiplicity="1" />
+          <End Role="PERFILES_USUARIOS" Type="Self.PERFILES_USUARIOS" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PERFILES">
+              <PropertyRef Name="ID_PERFIL" />
+            </Principal>
+            <Dependent Role="PERFILES_USUARIOS">
+              <PropertyRef Name="ID_PERFIL" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PERFILES_RELATIONS_USUARIOS">
+          <End Role="USUARIOS" Type="Self.USUARIOS" Multiplicity="1" />
+          <End Role="PERFILES_USUARIOS" Type="Self.PERFILES_USUARIOS" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="USUARIOS">
+              <PropertyRef Name="ID_USUARIO" />
+            </Principal>
+            <Dependent Role="PERFILES_USUARIOS">
+              <PropertyRef Name="ID_USUARIO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PERSONAS_RELATIONS_NACIONAL">
+          <End Role="NACIONALIDADES" Type="Self.NACIONALIDADES" Multiplicity="0..1" />
+          <End Role="PERSONAS" Type="Self.PERSONAS" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="NACIONALIDADES">
+              <PropertyRef Name="ID_NACIONALIDAD" />
+            </Principal>
+            <Dependent Role="PERSONAS">
+              <PropertyRef Name="ID_NACIONALIDAD" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PERSONAS_RELATIONS_NAVES">
+          <End Role="NAVES" Type="Self.NAVES" Multiplicity="0..1" />
+          <End Role="PERSONAS_EN_SOLICITUDES" Type="Self.PERSONAS_EN_SOLICITUDES" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="NAVES">
+              <PropertyRef Name="ID_NAVE" />
+            </Principal>
+            <Dependent Role="PERSONAS_EN_SOLICITUDES">
+              <PropertyRef Name="ID_NAVE" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PERSONAS_RELATIONS_NAVES_PR">
+          <End Role="NAVES_PROGRAMADAS" Type="Self.NAVES_PROGRAMADAS" Multiplicity="1" />
+          <End Role="PERSONAS_EN_NAVE_PROGRAMADA" Type="Self.PERSONAS_EN_NAVE_PROGRAMADA" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="NAVES_PROGRAMADAS">
+              <PropertyRef Name="ID_NAVES_PROGRAMADAS" />
+            </Principal>
+            <Dependent Role="PERSONAS_EN_NAVE_PROGRAMADA">
+              <PropertyRef Name="ID_NAVES_PROGRAMADAS" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PERSONAS_RELATIONS_PERSONAS">
+          <End Role="PERSONAS" Type="Self.PERSONAS" Multiplicity="1" />
+          <End Role="PERSONAS_EN_SOLICITUDES" Type="Self.PERSONAS_EN_SOLICITUDES" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PERSONAS">
+              <PropertyRef Name="ID_PERSONA" />
+            </Principal>
+            <Dependent Role="PERSONAS_EN_SOLICITUDES">
+              <PropertyRef Name="ID_PERSONA" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PERSONAS_RELATIONS_PERSONAS_1">
+          <End Role="PERSONAS_EN_SOLICITUDES" Type="Self.PERSONAS_EN_SOLICITUDES" Multiplicity="0..1" />
+          <End Role="PERSONAS_APROBADAS" Type="Self.PERSONAS_APROBADAS" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PERSONAS_EN_SOLICITUDES">
+              <PropertyRef Name="ID_PERSONA_SOLICITUD" />
+            </Principal>
+            <Dependent Role="PERSONAS_APROBADAS">
+              <PropertyRef Name="ID_PERSONA_SOLICITUD" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PERSONAS_RELATIONS_PERSONAS_3">
+          <End Role="PERSONAS_APROBADAS" Type="Self.PERSONAS_APROBADAS" Multiplicity="1" />
+          <End Role="PERSONAS_EN_NAVE_PROGRAMADA" Type="Self.PERSONAS_EN_NAVE_PROGRAMADA" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="PERSONAS_APROBADAS">
+              <PropertyRef Name="ID_PERSONA_APROBADA" />
+            </Principal>
+            <Dependent Role="PERSONAS_EN_NAVE_PROGRAMADA">
+              <PropertyRef Name="ID_PERSONA_APROBADA" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PERSONAS_RELATIONS_SOLICITU">
+          <End Role="SOLICITUDES" Type="Self.SOLICITUDES" Multiplicity="1" />
+          <End Role="PERSONAS_EN_SOLICITUDES" Type="Self.PERSONAS_EN_SOLICITUDES" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SOLICITUDES">
+              <PropertyRef Name="ID_SOLICITUD" />
+            </Principal>
+            <Dependent Role="PERSONAS_EN_SOLICITUDES">
+              <PropertyRef Name="ID_SOLICITUD" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PERSONAS_RELATIONS_USUARIOS">
+          <End Role="USUARIOS" Type="Self.USUARIOS" Multiplicity="1" />
+          <End Role="PERSONAS_APROBADAS" Type="Self.PERSONAS_APROBADAS" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="USUARIOS">
+              <PropertyRef Name="ID_USUARIO" />
+            </Principal>
+            <Dependent Role="PERSONAS_APROBADAS">
+              <PropertyRef Name="ID_USUARIO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PERSONAS_USUARIOS">
+          <End Role="PERSONAS" Type="Self.PERSONAS" Multiplicity="0..1" />
+          <End Role="USUARIOS" Type="Self.USUARIOS" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PERSONAS">
+              <PropertyRef Name="ID_PERSONA" />
+            </Principal>
+            <Dependent Role="USUARIOS">
+              <PropertyRef Name="ID_PERSONA" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SOLICITU_RELATIONS_EMPRESAS">
+          <End Role="EMPRESAS" Type="Self.EMPRESAS" Multiplicity="1" />
+          <End Role="SOLICITUDES" Type="Self.SOLICITUDES" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="EMPRESAS">
+              <PropertyRef Name="ID_EMPRESA" />
+            </Principal>
+            <Dependent Role="SOLICITUDES">
+              <PropertyRef Name="ID_EMPRESA" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SOLICITU_RELATIONS_PUERTOS">
+          <End Role="PUERTOS" Type="Self.PUERTOS" Multiplicity="1" />
+          <End Role="SOLICITUDES" Type="Self.SOLICITUDES" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PUERTOS">
+              <PropertyRef Name="ID_PUERTO" />
+            </Principal>
+            <Dependent Role="SOLICITUDES">
+              <PropertyRef Name="ID_PUERTO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SOLICITU_RELATIONS_TIPOS_IN">
+          <End Role="TIPOS_INGRESOS" Type="Self.TIPOS_INGRESOS" Multiplicity="1" />
+          <End Role="SOLICITUDES" Type="Self.SOLICITUDES" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TIPOS_INGRESOS">
+              <PropertyRef Name="ID_TIPO_INGRESO" />
+            </Principal>
+            <Dependent Role="SOLICITUDES">
+              <PropertyRef Name="ID_TIPO_INGRESO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SOLICITU_RELATIONS_USUARIOS">
+          <End Role="USUARIOS" Type="Self.USUARIOS" Multiplicity="1" />
+          <End Role="SOLICITUDES" Type="Self.SOLICITUDES" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="USUARIOS">
+              <PropertyRef Name="ID_USUARIO" />
+            </Principal>
+            <Dependent Role="SOLICITUDES">
+              <PropertyRef Name="ID_USUARIO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_VEHICULO_RELATIONS_EMPRESAS">
+          <End Role="EMPRESAS" Type="Self.EMPRESAS" Multiplicity="1" />
+          <End Role="VEHICULOS_EN_EMPRESA" Type="Self.VEHICULOS_EN_EMPRESA" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="EMPRESAS">
+              <PropertyRef Name="ID_EMPRESA" />
+            </Principal>
+            <Dependent Role="VEHICULOS_EN_EMPRESA">
+              <PropertyRef Name="ID_EMPRESA" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_VEHICULO_RELATIONS_SOLICITU">
+          <End Role="SOLICITUDES" Type="Self.SOLICITUDES" Multiplicity="1" />
+          <End Role="VEHICULOS_EN_SOLICITUDES" Type="Self.VEHICULOS_EN_SOLICITUDES" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SOLICITUDES">
+              <PropertyRef Name="ID_SOLICITUD" />
+            </Principal>
+            <Dependent Role="VEHICULOS_EN_SOLICITUDES">
+              <PropertyRef Name="ID_SOLICITUD" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_VEHICULO_RELATIONS_TIPOS_VE">
+          <End Role="TIPOS_VEHICULOS" Type="Self.TIPOS_VEHICULOS" Multiplicity="1" />
+          <End Role="VEHICULOS" Type="Self.VEHICULOS" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TIPOS_VEHICULOS">
+              <PropertyRef Name="ID_TIPO_VEHICULO" />
+            </Principal>
+            <Dependent Role="VEHICULOS">
+              <PropertyRef Name="ID_TIPO_VEHICULO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_VEHICULO_RELATIONS_VEHICULO_2">
+          <End Role="VEHICULOS" Type="Self.VEHICULOS" Multiplicity="1" />
+          <End Role="VEHICULOS_EN_SOLICITUDES" Type="Self.VEHICULOS_EN_SOLICITUDES" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="VEHICULOS">
+              <PropertyRef Name="ID_VEHICULO" />
+            </Principal>
+            <Dependent Role="VEHICULOS_EN_SOLICITUDES">
+              <PropertyRef Name="ID_VEHICULO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_VEHICULO_RELATIONS_VEHICULO_4">
+          <End Role="VEHICULOS" Type="Self.VEHICULOS" Multiplicity="1" />
+          <End Role="VEHICULOS_EN_EMPRESA" Type="Self.VEHICULOS_EN_EMPRESA" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="VEHICULOS">
+              <PropertyRef Name="ID_VEHICULO" />
+            </Principal>
+            <Dependent Role="VEHICULOS_EN_EMPRESA">
+              <PropertyRef Name="ID_VEHICULO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="CaboFroward2018ModelStoreContainer">
+          <EntitySet Name="DISPOSITIVOS" EntityType="Self.DISPOSITIVOS" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="EMPRESAS" EntityType="Self.EMPRESAS" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="LOCACIONES" EntityType="Self.LOCACIONES" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="MENUS" EntityType="Self.MENUS" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="MOVIMIENTOS" EntityType="Self.MOVIMIENTOS" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="MOVIMIENTOS_HISTORICOS" EntityType="Self.MOVIMIENTOS_HISTORICOS" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="NACIONALIDADES" EntityType="Self.NACIONALIDADES" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="NAVES" EntityType="Self.NAVES" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="NAVES_PROGRAMADAS" EntityType="Self.NAVES_PROGRAMADAS" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="PERF_US_ADMIN_LOC" EntityType="Self.PERF_US_ADMIN_LOC" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="PERFIL_ADMIN_MENU" EntityType="Self.PERFIL_ADMIN_MENU" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="PERFILES" EntityType="Self.PERFILES" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="PERFILES_USUARIOS" EntityType="Self.PERFILES_USUARIOS" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="PERSONAS" EntityType="Self.PERSONAS" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="PERSONAS_APROBADAS" EntityType="Self.PERSONAS_APROBADAS" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="PERSONAS_EN_NAVE_PROGRAMADA" EntityType="Self.PERSONAS_EN_NAVE_PROGRAMADA" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="PERSONAS_EN_SOLICITUDES" EntityType="Self.PERSONAS_EN_SOLICITUDES" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="PUERTOS" EntityType="Self.PUERTOS" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="SOLICITUDES" EntityType="Self.SOLICITUDES" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TIPOS_EMPRESAS" EntityType="Self.TIPOS_EMPRESAS" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TIPOS_INGRESOS" EntityType="Self.TIPOS_INGRESOS" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TIPOS_VEHICULOS" EntityType="Self.TIPOS_VEHICULOS" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="USUARIOS" EntityType="Self.USUARIOS" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="VEHICULOS" EntityType="Self.VEHICULOS" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="VEHICULOS_EN_EMPRESA" EntityType="Self.VEHICULOS_EN_EMPRESA" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="VEHICULOS_EN_SOLICITUDES" EntityType="Self.VEHICULOS_EN_SOLICITUDES" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_EMPRESAS_RELATIONS_TIPOS_EM" Association="Self.FK_EMPRESAS_RELATIONS_TIPOS_EM">
+            <End Role="TIPOS_EMPRESAS" EntitySet="TIPOS_EMPRESAS" />
+            <End Role="EMPRESAS" EntitySet="EMPRESAS" />
+          </AssociationSet>
+          <AssociationSet Name="FK_LOCACION_REFERENCE_PUERTOS" Association="Self.FK_LOCACION_REFERENCE_PUERTOS">
+            <End Role="PUERTOS" EntitySet="PUERTOS" />
+            <End Role="LOCACIONES" EntitySet="LOCACIONES" />
+          </AssociationSet>
+          <AssociationSet Name="FK_MOVIMIEN_RELATIONS_DISPOSIT" Association="Self.FK_MOVIMIEN_RELATIONS_DISPOSIT">
+            <End Role="DISPOSITIVOS" EntitySet="DISPOSITIVOS" />
+            <End Role="MOVIMIENTOS_HISTORICOS" EntitySet="MOVIMIENTOS_HISTORICOS" />
+          </AssociationSet>
+          <AssociationSet Name="FK_MOVIMIEN_RELATIONS_MOVIMIEN" Association="Self.FK_MOVIMIEN_RELATIONS_MOVIMIEN">
+            <End Role="MOVIMIENTOS" EntitySet="MOVIMIENTOS" />
+            <End Role="MOVIMIENTOS_HISTORICOS" EntitySet="MOVIMIENTOS_HISTORICOS" />
+          </AssociationSet>
+          <AssociationSet Name="FK_MOVIMIEN_RELATIONS_PERSONAS" Association="Self.FK_MOVIMIEN_RELATIONS_PERSONAS">
+            <End Role="PERSONAS_APROBADAS" EntitySet="PERSONAS_APROBADAS" />
+            <End Role="MOVIMIENTOS_HISTORICOS" EntitySet="MOVIMIENTOS_HISTORICOS" />
+          </AssociationSet>
+          <AssociationSet Name="FK_MOVIMIEN_RELATIONS_VEHICULO" Association="Self.FK_MOVIMIEN_RELATIONS_VEHICULO">
+            <End Role="VEHICULOS" EntitySet="VEHICULOS" />
+            <End Role="MOVIMIENTOS_HISTORICOS" EntitySet="MOVIMIENTOS_HISTORICOS" />
+          </AssociationSet>
+          <AssociationSet Name="FK_NAVES_PR_RELATIONS_NAVES" Association="Self.FK_NAVES_PR_RELATIONS_NAVES">
+            <End Role="NAVES" EntitySet="NAVES" />
+            <End Role="NAVES_PROGRAMADAS" EntitySet="NAVES_PROGRAMADAS" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PERF_US__RELATIONS_PERFILES" Association="Self.FK_PERF_US__RELATIONS_PERFILES">
+            <End Role="USUARIOS" EntitySet="USUARIOS" />
+            <End Role="PERF_US_ADMIN_LOC" EntitySet="PERF_US_ADMIN_LOC" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PERF_US_ADMIN_LOC_PERF_US_ADMIN_LOC" Association="Self.FK_PERF_US_ADMIN_LOC_PERF_US_ADMIN_LOC">
+            <End Role="PERF_US_ADMIN_LOC" EntitySet="PERF_US_ADMIN_LOC" />
+            <End Role="PERF_US_ADMIN_LOC1" EntitySet="PERF_US_ADMIN_LOC" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PERFIL_A_RELATIONS_MENUS" Association="Self.FK_PERFIL_A_RELATIONS_MENUS">
+            <End Role="MENUS" EntitySet="MENUS" />
+            <End Role="PERFIL_ADMIN_MENU" EntitySet="PERFIL_ADMIN_MENU" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PERFIL_A_RELATIONS_PERFILES" Association="Self.FK_PERFIL_A_RELATIONS_PERFILES">
+            <End Role="PERFILES" EntitySet="PERFILES" />
+            <End Role="PERFIL_ADMIN_MENU" EntitySet="PERFIL_ADMIN_MENU" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PERFIL_LOCACION" Association="Self.FK_PERFIL_LOCACION">
+            <End Role="LOCACIONES" EntitySet="LOCACIONES" />
+            <End Role="PERF_US_ADMIN_LOC" EntitySet="PERF_US_ADMIN_LOC" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PERFILES_RELATIONS_PERFILES" Association="Self.FK_PERFILES_RELATIONS_PERFILES">
+            <End Role="PERFILES" EntitySet="PERFILES" />
+            <End Role="PERFILES_USUARIOS" EntitySet="PERFILES_USUARIOS" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PERFILES_RELATIONS_USUARIOS" Association="Self.FK_PERFILES_RELATIONS_USUARIOS">
+            <End Role="USUARIOS" EntitySet="USUARIOS" />
+            <End Role="PERFILES_USUARIOS" EntitySet="PERFILES_USUARIOS" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PERSONAS_RELATIONS_NACIONAL" Association="Self.FK_PERSONAS_RELATIONS_NACIONAL">
+            <End Role="NACIONALIDADES" EntitySet="NACIONALIDADES" />
+            <End Role="PERSONAS" EntitySet="PERSONAS" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PERSONAS_RELATIONS_NAVES" Association="Self.FK_PERSONAS_RELATIONS_NAVES">
+            <End Role="NAVES" EntitySet="NAVES" />
+            <End Role="PERSONAS_EN_SOLICITUDES" EntitySet="PERSONAS_EN_SOLICITUDES" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PERSONAS_RELATIONS_NAVES_PR" Association="Self.FK_PERSONAS_RELATIONS_NAVES_PR">
+            <End Role="NAVES_PROGRAMADAS" EntitySet="NAVES_PROGRAMADAS" />
+            <End Role="PERSONAS_EN_NAVE_PROGRAMADA" EntitySet="PERSONAS_EN_NAVE_PROGRAMADA" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PERSONAS_RELATIONS_PERSONAS" Association="Self.FK_PERSONAS_RELATIONS_PERSONAS">
+            <End Role="PERSONAS" EntitySet="PERSONAS" />
+            <End Role="PERSONAS_EN_SOLICITUDES" EntitySet="PERSONAS_EN_SOLICITUDES" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PERSONAS_RELATIONS_PERSONAS_1" Association="Self.FK_PERSONAS_RELATIONS_PERSONAS_1">
+            <End Role="PERSONAS_EN_SOLICITUDES" EntitySet="PERSONAS_EN_SOLICITUDES" />
+            <End Role="PERSONAS_APROBADAS" EntitySet="PERSONAS_APROBADAS" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PERSONAS_RELATIONS_PERSONAS_3" Association="Self.FK_PERSONAS_RELATIONS_PERSONAS_3">
+            <End Role="PERSONAS_APROBADAS" EntitySet="PERSONAS_APROBADAS" />
+            <End Role="PERSONAS_EN_NAVE_PROGRAMADA" EntitySet="PERSONAS_EN_NAVE_PROGRAMADA" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PERSONAS_RELATIONS_SOLICITU" Association="Self.FK_PERSONAS_RELATIONS_SOLICITU">
+            <End Role="SOLICITUDES" EntitySet="SOLICITUDES" />
+            <End Role="PERSONAS_EN_SOLICITUDES" EntitySet="PERSONAS_EN_SOLICITUDES" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PERSONAS_RELATIONS_USUARIOS" Association="Self.FK_PERSONAS_RELATIONS_USUARIOS">
+            <End Role="USUARIOS" EntitySet="USUARIOS" />
+            <End Role="PERSONAS_APROBADAS" EntitySet="PERSONAS_APROBADAS" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PERSONAS_USUARIOS" Association="Self.FK_PERSONAS_USUARIOS">
+            <End Role="PERSONAS" EntitySet="PERSONAS" />
+            <End Role="USUARIOS" EntitySet="USUARIOS" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SOLICITU_RELATIONS_EMPRESAS" Association="Self.FK_SOLICITU_RELATIONS_EMPRESAS">
+            <End Role="EMPRESAS" EntitySet="EMPRESAS" />
+            <End Role="SOLICITUDES" EntitySet="SOLICITUDES" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SOLICITU_RELATIONS_PUERTOS" Association="Self.FK_SOLICITU_RELATIONS_PUERTOS">
+            <End Role="PUERTOS" EntitySet="PUERTOS" />
+            <End Role="SOLICITUDES" EntitySet="SOLICITUDES" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SOLICITU_RELATIONS_TIPOS_IN" Association="Self.FK_SOLICITU_RELATIONS_TIPOS_IN">
+            <End Role="TIPOS_INGRESOS" EntitySet="TIPOS_INGRESOS" />
+            <End Role="SOLICITUDES" EntitySet="SOLICITUDES" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SOLICITU_RELATIONS_USUARIOS" Association="Self.FK_SOLICITU_RELATIONS_USUARIOS">
+            <End Role="USUARIOS" EntitySet="USUARIOS" />
+            <End Role="SOLICITUDES" EntitySet="SOLICITUDES" />
+          </AssociationSet>
+          <AssociationSet Name="FK_VEHICULO_RELATIONS_EMPRESAS" Association="Self.FK_VEHICULO_RELATIONS_EMPRESAS">
+            <End Role="EMPRESAS" EntitySet="EMPRESAS" />
+            <End Role="VEHICULOS_EN_EMPRESA" EntitySet="VEHICULOS_EN_EMPRESA" />
+          </AssociationSet>
+          <AssociationSet Name="FK_VEHICULO_RELATIONS_SOLICITU" Association="Self.FK_VEHICULO_RELATIONS_SOLICITU">
+            <End Role="SOLICITUDES" EntitySet="SOLICITUDES" />
+            <End Role="VEHICULOS_EN_SOLICITUDES" EntitySet="VEHICULOS_EN_SOLICITUDES" />
+          </AssociationSet>
+          <AssociationSet Name="FK_VEHICULO_RELATIONS_TIPOS_VE" Association="Self.FK_VEHICULO_RELATIONS_TIPOS_VE">
+            <End Role="TIPOS_VEHICULOS" EntitySet="TIPOS_VEHICULOS" />
+            <End Role="VEHICULOS" EntitySet="VEHICULOS" />
+          </AssociationSet>
+          <AssociationSet Name="FK_VEHICULO_RELATIONS_VEHICULO_2" Association="Self.FK_VEHICULO_RELATIONS_VEHICULO_2">
+            <End Role="VEHICULOS" EntitySet="VEHICULOS" />
+            <End Role="VEHICULOS_EN_SOLICITUDES" EntitySet="VEHICULOS_EN_SOLICITUDES" />
+          </AssociationSet>
+          <AssociationSet Name="FK_VEHICULO_RELATIONS_VEHICULO_4" Association="Self.FK_VEHICULO_RELATIONS_VEHICULO_4">
+            <End Role="VEHICULOS" EntitySet="VEHICULOS" />
+            <End Role="VEHICULOS_EN_EMPRESA" EntitySet="VEHICULOS_EN_EMPRESA" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="CaboFroward2018Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="DISPOSITIVOS">
+          <Key>
+            <PropertyRef Name="ID_DISPOSITIVO" />
+          </Key>
+          <Property Name="ID_DISPOSITIVO" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="NOMBRE" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="IP" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="MOVIMIENTOS_HISTORICOS" Relationship="Self.FK_MOVIMIEN_RELATIONS_DISPOSIT" FromRole="DISPOSITIVOS" ToRole="MOVIMIENTOS_HISTORICOS" />
+        </EntityType>
+        <EntityType Name="EMPRESAS">
+          <Key>
+            <PropertyRef Name="ID_EMPRESA" />
+          </Key>
+          <Property Name="ID_EMPRESA" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ID_TIPO_EMPRESA" Type="Int32" Nullable="false" />
+          <Property Name="RUT" Type="Int32" Nullable="false" />
+          <Property Name="DV" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="NOMBRES" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="GIRO" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="TIPOS_EMPRESAS" Relationship="Self.FK_EMPRESAS_RELATIONS_TIPOS_EM" FromRole="EMPRESAS" ToRole="TIPOS_EMPRESAS" />
+          <NavigationProperty Name="SOLICITUDES" Relationship="Self.FK_SOLICITU_RELATIONS_EMPRESAS" FromRole="EMPRESAS" ToRole="SOLICITUDES" />
+          <NavigationProperty Name="VEHICULOS" Relationship="Self.VEHICULOS_EN_EMPRESA" FromRole="EMPRESAS" ToRole="VEHICULOS" />
+          <Property Name="INACTIVO" Type="Boolean" Nullable="false" />
+        </EntityType>
+        <EntityType Name="LOCACIONES">
+          <Key>
+            <PropertyRef Name="ID_LOCACION" />
+          </Key>
+          <Property Name="ID_LOCACION" Type="Int32" Nullable="false" />
+          <Property Name="ES_INFORMADA" Type="String" MaxLength="2" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="NOMBRE" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="ID_PUERTO" Type="Int32" />
+          <NavigationProperty Name="PUERTOS" Relationship="Self.FK_LOCACION_REFERENCE_PUERTOS" FromRole="LOCACIONES" ToRole="PUERTOS" />
+          <NavigationProperty Name="PERF_US_ADMIN_LOC" Relationship="Self.FK_PERFIL_LOCACION" FromRole="LOCACIONES" ToRole="PERF_US_ADMIN_LOC" />
+          <Property Name="INACTIVO" Type="Boolean" />
+        </EntityType>
+        <EntityType Name="MENUS">
+          <Key>
+            <PropertyRef Name="ID_MENU" />
+          </Key>
+          <Property Name="ID_MENU" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="MENU" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="PERFILES" Relationship="Self.PERFIL_ADMIN_MENU" FromRole="MENUS" ToRole="PERFILES" />
+          <Property Name="ORDEN" Type="Int32" />
+        </EntityType>
+        <EntityType Name="MOVIMIENTOS">
+          <Key>
+            <PropertyRef Name="ID_MOVIMIENTO" />
+          </Key>
+          <Property Name="ID_MOVIMIENTO" Type="Int32" Nullable="false" />
+          <Property Name="NOMBRE" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="MOVIMIENTOS_HISTORICOS" Relationship="Self.FK_MOVIMIEN_RELATIONS_MOVIMIEN" FromRole="MOVIMIENTOS" ToRole="MOVIMIENTOS_HISTORICOS" />
+        </EntityType>
+        <EntityType Name="MOVIMIENTOS_HISTORICOS">
+          <Key>
+            <PropertyRef Name="ID_MOVIMIENTO" />
+          </Key>
+          <Property Name="ID_MOVIMIENTO" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ID_VEHICULO" Type="Int32" />
+          <Property Name="MOV_ID_MOVIMIENTO" Type="Int32" />
+          <Property Name="ID_DISPOSITIVO" Type="Int32" />
+          <Property Name="ID_PERSONA_APROBADA" Type="Int64" />
+          <Property Name="FECHA" Type="DateTime" Nullable="false" Precision="3" />
+          <NavigationProperty Name="DISPOSITIVOS" Relationship="Self.FK_MOVIMIEN_RELATIONS_DISPOSIT" FromRole="MOVIMIENTOS_HISTORICOS" ToRole="DISPOSITIVOS" />
+          <NavigationProperty Name="MOVIMIENTOS" Relationship="Self.FK_MOVIMIEN_RELATIONS_MOVIMIEN" FromRole="MOVIMIENTOS_HISTORICOS" ToRole="MOVIMIENTOS" />
+          <NavigationProperty Name="PERSONAS_APROBADAS" Relationship="Self.FK_MOVIMIEN_RELATIONS_PERSONAS" FromRole="MOVIMIENTOS_HISTORICOS" ToRole="PERSONAS_APROBADAS" />
+          <NavigationProperty Name="VEHICULOS" Relationship="Self.FK_MOVIMIEN_RELATIONS_VEHICULO" FromRole="MOVIMIENTOS_HISTORICOS" ToRole="VEHICULOS" />
+          <Property Name="COBRAR" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+        </EntityType>
+        <EntityType Name="NACIONALIDADES">
+          <Key>
+            <PropertyRef Name="ID_NACIONALIDAD" />
+          </Key>
+          <Property Name="ID_NACIONALIDAD" Type="Int32" Nullable="false" />
+          <Property Name="NACIONALIDAD" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="PERSONAS" Relationship="Self.FK_PERSONAS_RELATIONS_NACIONAL" FromRole="NACIONALIDADES" ToRole="PERSONAS" />
+        </EntityType>
+        <EntityType Name="NAVES">
+          <Key>
+            <PropertyRef Name="ID_NAVE" />
+          </Key>
+          <Property Name="ID_NAVE" Type="Int32" Nullable="false" />
+          <Property Name="NOMBRE" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="NAVES_PROGRAMADAS" Relationship="Self.FK_NAVES_PR_RELATIONS_NAVES" FromRole="NAVES" ToRole="NAVES_PROGRAMADAS" />
+          <NavigationProperty Name="PERSONAS_EN_SOLICITUDES" Relationship="Self.FK_PERSONAS_RELATIONS_NAVES" FromRole="NAVES" ToRole="PERSONAS_EN_SOLICITUDES" />
+          <Property Name="INACTIVO" Type="Boolean" />
+        </EntityType>
+        <EntityType Name="NAVES_PROGRAMADAS">
+          <Key>
+            <PropertyRef Name="ID_NAVES_PROGRAMADAS" />
+          </Key>
+          <Property Name="ID_NAVES_PROGRAMADAS" Type="Int64" Nullable="false" />
+          <Property Name="ID_NAVE" Type="Int32" Nullable="false" />
+          <Property Name="FECHA_ARRIBO" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="FECHA_ZARPE" Type="DateTime" Nullable="false" Precision="3" />
+          <NavigationProperty Name="NAVES" Relationship="Self.FK_NAVES_PR_RELATIONS_NAVES" FromRole="NAVES_PROGRAMADAS" ToRole="NAVES" />
+          <NavigationProperty Name="PERSONAS_APROBADAS" Relationship="Self.PERSONAS_EN_NAVE_PROGRAMADA" FromRole="NAVES_PROGRAMADAS" ToRole="PERSONAS_APROBADAS" />
+        </EntityType>
+        <EntityType Name="PERF_US_ADMIN_LOC">
+          <Key>
+            <PropertyRef Name="ID_LOCACION" />
+            <PropertyRef Name="ID_USUARIO" />
+          </Key>
+          <Property Name="ID_LOCACION" Type="Int32" Nullable="false" />
+          <Property Name="ID_USUARIO" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="LOCACIONES" Relationship="Self.FK_PERFIL_LOCACION" FromRole="PERF_US_ADMIN_LOC" ToRole="LOCACIONES" />
+          <NavigationProperty Name="USUARIOS" Relationship="Self.FK_PERF_US__RELATIONS_PERFILES" FromRole="PERF_US_ADMIN_LOC" ToRole="USUARIOS" />
+          <NavigationProperty Name="PERF_US_ADMIN_LOC1" Relationship="Self.FK_PERF_US_ADMIN_LOC_PERF_US_ADMIN_LOC" FromRole="PERF_US_ADMIN_LOC" ToRole="PERF_US_ADMIN_LOC1" />
+          <NavigationProperty Name="PERF_US_ADMIN_LOC2" Relationship="Self.FK_PERF_US_ADMIN_LOC_PERF_US_ADMIN_LOC" FromRole="PERF_US_ADMIN_LOC1" ToRole="PERF_US_ADMIN_LOC" />
+        </EntityType>
+        <EntityType Name="PERFILES">
+          <Key>
+            <PropertyRef Name="ID_PERFIL" />
+          </Key>
+          <Property Name="ID_PERFIL" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="NOMBRE" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="MENUS" Relationship="Self.PERFIL_ADMIN_MENU" FromRole="PERFILES" ToRole="MENUS" />
+          <NavigationProperty Name="USUARIOS" Relationship="Self.PERFILES_USUARIOS" FromRole="PERFILES" ToRole="USUARIOS" />
+        </EntityType>
+        <EntityType Name="PERSONAS">
+          <Key>
+            <PropertyRef Name="ID_PERSONA" />
+          </Key>
+          <Property Name="ID_PERSONA" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ID_NACIONALIDAD" Type="Int32" />
+          <Property Name="RUT" Type="Int32" Nullable="false" />
+          <Property Name="DV" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="NOMBRE" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="APELLIDOMATERNO" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="APELLIDOPATERNO" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="INACTIVO" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="NACIONALIDADES" Relationship="Self.FK_PERSONAS_RELATIONS_NACIONAL" FromRole="PERSONAS" ToRole="NACIONALIDADES" />
+          <NavigationProperty Name="PERSONAS_EN_SOLICITUDES" Relationship="Self.FK_PERSONAS_RELATIONS_PERSONAS" FromRole="PERSONAS" ToRole="PERSONAS_EN_SOLICITUDES" />
+          <Property Name="PASAPORTE" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="USUARIOS" Relationship="CaboFroward2018Model.FK_PERSONAS_USUARIOS" FromRole="PERSONAS" ToRole="USUARIOS" />
+          <Property Name="FECHAINDUCCION" Type="DateTime" Precision="0" />
+        </EntityType>
+        <EntityType Name="PERSONAS_APROBADAS">
+          <Key>
+            <PropertyRef Name="ID_PERSONA_APROBADA" />
+          </Key>
+          <Property Name="ID_PERSONA_APROBADA" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ID_USUARIO" Type="Int32" Nullable="false" />
+          <Property Name="ID_PERSONA_SOLICITUD" Type="Int64" />
+          <Property Name="FECHA_APROBACION" Type="DateTime" Nullable="false" Precision="3" />
+          <NavigationProperty Name="MOVIMIENTOS_HISTORICOS" Relationship="Self.FK_MOVIMIEN_RELATIONS_PERSONAS" FromRole="PERSONAS_APROBADAS" ToRole="MOVIMIENTOS_HISTORICOS" />
+          <NavigationProperty Name="PERSONAS_EN_SOLICITUDES" Relationship="Self.FK_PERSONAS_RELATIONS_PERSONAS_1" FromRole="PERSONAS_APROBADAS" ToRole="PERSONAS_EN_SOLICITUDES" />
+          <NavigationProperty Name="USUARIOS" Relationship="Self.FK_PERSONAS_RELATIONS_USUARIOS" FromRole="PERSONAS_APROBADAS" ToRole="USUARIOS" />
+          <NavigationProperty Name="NAVES_PROGRAMADAS" Relationship="Self.PERSONAS_EN_NAVE_PROGRAMADA" FromRole="PERSONAS_APROBADAS" ToRole="NAVES_PROGRAMADAS" />
+        </EntityType>
+        <EntityType Name="PERSONAS_EN_SOLICITUDES">
+          <Key>
+            <PropertyRef Name="ID_PERSONA_SOLICITUD" />
+          </Key>
+          <Property Name="ID_PERSONA_SOLICITUD" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ID_NAVE" Type="Int32" />
+          <Property Name="ID_PERSONA" Type="Int32" Nullable="false" />
+          <Property Name="ID_LOCACION" Type="Int32" />
+          <Property Name="ID_SOLICITUD" Type="Int64" Nullable="false" />
+          <NavigationProperty Name="NAVES" Relationship="Self.FK_PERSONAS_RELATIONS_NAVES" FromRole="PERSONAS_EN_SOLICITUDES" ToRole="NAVES" />
+          <NavigationProperty Name="PERSONAS" Relationship="Self.FK_PERSONAS_RELATIONS_PERSONAS" FromRole="PERSONAS_EN_SOLICITUDES" ToRole="PERSONAS" />
+          <NavigationProperty Name="PERSONAS_APROBADAS" Relationship="Self.FK_PERSONAS_RELATIONS_PERSONAS_1" FromRole="PERSONAS_EN_SOLICITUDES" ToRole="PERSONAS_APROBADAS" />
+          <NavigationProperty Name="SOLICITUDES" Relationship="Self.FK_PERSONAS_RELATIONS_SOLICITU" FromRole="PERSONAS_EN_SOLICITUDES" ToRole="SOLICITUDES" />
+        </EntityType>
+        <EntityType Name="PUERTOS">
+          <Key>
+            <PropertyRef Name="ID_PUERTO" />
+          </Key>
+          <Property Name="ID_PUERTO" Type="Int32" Nullable="false" />
+          <Property Name="NOMBRE" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="rut" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="LOCACIONES" Relationship="Self.FK_LOCACION_REFERENCE_PUERTOS" FromRole="PUERTOS" ToRole="LOCACIONES" />
+          <NavigationProperty Name="SOLICITUDES" Relationship="Self.FK_SOLICITU_RELATIONS_PUERTOS" FromRole="PUERTOS" ToRole="SOLICITUDES" />
+        </EntityType>
+        <EntityType Name="SOLICITUDES">
+          <Key>
+            <PropertyRef Name="ID_SOLICITUD" />
+          </Key>
+          <Property Name="ID_SOLICITUD" Type="Int64" Nullable="false" />
+          <Property Name="ID_TIPO_INGRESO" Type="Int32" Nullable="false" />
+          <Property Name="ID_PUERTO" Type="Int32" Nullable="false" />
+          <Property Name="ID_USUARIO" Type="Int32" Nullable="false" />
+          <Property Name="ID_EMPRESA" Type="Int32" Nullable="false" />
+          <Property Name="FECHA_SOLICITUD" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="FECHA_DESDE" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="FECHA_HASTA" Type="DateTime" Nullable="false" Precision="3" />
+          <NavigationProperty Name="EMPRESAS" Relationship="Self.FK_SOLICITU_RELATIONS_EMPRESAS" FromRole="SOLICITUDES" ToRole="EMPRESAS" />
+          <NavigationProperty Name="PERSONAS_EN_SOLICITUDES" Relationship="Self.FK_PERSONAS_RELATIONS_SOLICITU" FromRole="SOLICITUDES" ToRole="PERSONAS_EN_SOLICITUDES" />
+          <NavigationProperty Name="PUERTOS" Relationship="Self.FK_SOLICITU_RELATIONS_PUERTOS" FromRole="SOLICITUDES" ToRole="PUERTOS" />
+          <NavigationProperty Name="TIPOS_INGRESOS" Relationship="Self.FK_SOLICITU_RELATIONS_TIPOS_IN" FromRole="SOLICITUDES" ToRole="TIPOS_INGRESOS" />
+          <NavigationProperty Name="USUARIOS" Relationship="Self.FK_SOLICITU_RELATIONS_USUARIOS" FromRole="SOLICITUDES" ToRole="USUARIOS" />
+          <NavigationProperty Name="VEHICULOS" Relationship="Self.VEHICULOS_EN_SOLICITUDES" FromRole="SOLICITUDES" ToRole="VEHICULOS" />
+        </EntityType>
+        <EntityType Name="TIPOS_EMPRESAS">
+          <Key>
+            <PropertyRef Name="ID_TIPO_EMPRESA" />
+          </Key>
+          <Property Name="ID_TIPO_EMPRESA" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="NOMBRE" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="EMPRESAS" Relationship="Self.FK_EMPRESAS_RELATIONS_TIPOS_EM" FromRole="TIPOS_EMPRESAS" ToRole="EMPRESAS" />
+        </EntityType>
+        <EntityType Name="TIPOS_INGRESOS">
+          <Key>
+            <PropertyRef Name="ID_TIPO_INGRESO" />
+          </Key>
+          <Property Name="ID_TIPO_INGRESO" Type="Int32" Nullable="false" />
+          <Property Name="NOMBRE" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="SOLICITUDES" Relationship="Self.FK_SOLICITU_RELATIONS_TIPOS_IN" FromRole="TIPOS_INGRESOS" ToRole="SOLICITUDES" />
+        </EntityType>
+        <EntityType Name="TIPOS_VEHICULOS">
+          <Key>
+            <PropertyRef Name="ID_TIPO_VEHICULO" />
+          </Key>
+          <Property Name="ID_TIPO_VEHICULO" Type="Int32" Nullable="false" />
+          <Property Name="NOMBRE" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="VEHICULOS" Relationship="Self.FK_VEHICULO_RELATIONS_TIPOS_VE" FromRole="TIPOS_VEHICULOS" ToRole="VEHICULOS" />
+          <Property Name="NUEVO" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="USUARIOS">
+          <Key>
+            <PropertyRef Name="ID_USUARIO" />
+          </Key>
+          <Property Name="ID_USUARIO" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="NOMBRE" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="PASSWORD" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="TELEFONO" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="INACTIVO" Type="Boolean" />
+          <Property Name="aprueba_nave" Type="Boolean" />
+          <NavigationProperty Name="PERF_US_ADMIN_LOC" Relationship="Self.FK_PERF_US__RELATIONS_PERFILES" FromRole="USUARIOS" ToRole="PERF_US_ADMIN_LOC" />
+          <NavigationProperty Name="PERSONAS_APROBADAS" Relationship="Self.FK_PERSONAS_RELATIONS_USUARIOS" FromRole="USUARIOS" ToRole="PERSONAS_APROBADAS" />
+          <NavigationProperty Name="SOLICITUDES" Relationship="Self.FK_SOLICITU_RELATIONS_USUARIOS" FromRole="USUARIOS" ToRole="SOLICITUDES" />
+          <NavigationProperty Name="PERFILES" Relationship="Self.PERFILES_USUARIOS" FromRole="USUARIOS" ToRole="PERFILES" />
+          <Property Name="ID_PERSONA" Type="Int32" />
+          <NavigationProperty Name="PERSONAS" Relationship="CaboFroward2018Model.FK_PERSONAS_USUARIOS" FromRole="USUARIOS" ToRole="PERSONAS" />
+          <Property Name="CLAVE_INICIAL" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="VEHICULOS">
+          <Key>
+            <PropertyRef Name="ID_VEHICULO" />
+          </Key>
+          <Property Name="ID_VEHICULO" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ID_TIPO_VEHICULO" Type="Int32" Nullable="false" />
+          <Property Name="PATENTE" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="INACTIVO" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="MOVIMIENTOS_HISTORICOS" Relationship="Self.FK_MOVIMIEN_RELATIONS_VEHICULO" FromRole="VEHICULOS" ToRole="MOVIMIENTOS_HISTORICOS" />
+          <NavigationProperty Name="TIPOS_VEHICULOS" Relationship="Self.FK_VEHICULO_RELATIONS_TIPOS_VE" FromRole="VEHICULOS" ToRole="TIPOS_VEHICULOS" />
+          <NavigationProperty Name="EMPRESAS" Relationship="Self.VEHICULOS_EN_EMPRESA" FromRole="VEHICULOS" ToRole="EMPRESAS" />
+          <NavigationProperty Name="SOLICITUDES" Relationship="Self.VEHICULOS_EN_SOLICITUDES" FromRole="VEHICULOS" ToRole="SOLICITUDES" />
+        </EntityType>
+        <Association Name="FK_MOVIMIEN_RELATIONS_DISPOSIT">
+          <End Role="DISPOSITIVOS" Type="Self.DISPOSITIVOS" Multiplicity="0..1" />
+          <End Role="MOVIMIENTOS_HISTORICOS" Type="Self.MOVIMIENTOS_HISTORICOS" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="DISPOSITIVOS">
+              <PropertyRef Name="ID_DISPOSITIVO" />
+            </Principal>
+            <Dependent Role="MOVIMIENTOS_HISTORICOS">
+              <PropertyRef Name="ID_DISPOSITIVO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_EMPRESAS_RELATIONS_TIPOS_EM">
+          <End Role="TIPOS_EMPRESAS" Type="Self.TIPOS_EMPRESAS" Multiplicity="1" />
+          <End Role="EMPRESAS" Type="Self.EMPRESAS" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TIPOS_EMPRESAS">
+              <PropertyRef Name="ID_TIPO_EMPRESA" />
+            </Principal>
+            <Dependent Role="EMPRESAS">
+              <PropertyRef Name="ID_TIPO_EMPRESA" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SOLICITU_RELATIONS_EMPRESAS">
+          <End Role="EMPRESAS" Type="Self.EMPRESAS" Multiplicity="1" />
+          <End Role="SOLICITUDES" Type="Self.SOLICITUDES" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="EMPRESAS">
+              <PropertyRef Name="ID_EMPRESA" />
+            </Principal>
+            <Dependent Role="SOLICITUDES">
+              <PropertyRef Name="ID_EMPRESA" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_LOCACION_REFERENCE_PUERTOS">
+          <End Role="PUERTOS" Type="Self.PUERTOS" Multiplicity="0..1" />
+          <End Role="LOCACIONES" Type="Self.LOCACIONES" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PUERTOS">
+              <PropertyRef Name="ID_PUERTO" />
+            </Principal>
+            <Dependent Role="LOCACIONES">
+              <PropertyRef Name="ID_PUERTO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PERFIL_LOCACION">
+          <End Role="LOCACIONES" Type="Self.LOCACIONES" Multiplicity="1" />
+          <End Role="PERF_US_ADMIN_LOC" Type="Self.PERF_US_ADMIN_LOC" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="LOCACIONES">
+              <PropertyRef Name="ID_LOCACION" />
+            </Principal>
+            <Dependent Role="PERF_US_ADMIN_LOC">
+              <PropertyRef Name="ID_LOCACION" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_MOVIMIEN_RELATIONS_MOVIMIEN">
+          <End Role="MOVIMIENTOS" Type="Self.MOVIMIENTOS" Multiplicity="0..1" />
+          <End Role="MOVIMIENTOS_HISTORICOS" Type="Self.MOVIMIENTOS_HISTORICOS" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="MOVIMIENTOS">
+              <PropertyRef Name="ID_MOVIMIENTO" />
+            </Principal>
+            <Dependent Role="MOVIMIENTOS_HISTORICOS">
+              <PropertyRef Name="MOV_ID_MOVIMIENTO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_MOVIMIEN_RELATIONS_PERSONAS">
+          <End Role="PERSONAS_APROBADAS" Type="Self.PERSONAS_APROBADAS" Multiplicity="0..1" />
+          <End Role="MOVIMIENTOS_HISTORICOS" Type="Self.MOVIMIENTOS_HISTORICOS" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PERSONAS_APROBADAS">
+              <PropertyRef Name="ID_PERSONA_APROBADA" />
+            </Principal>
+            <Dependent Role="MOVIMIENTOS_HISTORICOS">
+              <PropertyRef Name="ID_PERSONA_APROBADA" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_MOVIMIEN_RELATIONS_VEHICULO">
+          <End Role="VEHICULOS" Type="Self.VEHICULOS" Multiplicity="0..1" />
+          <End Role="MOVIMIENTOS_HISTORICOS" Type="Self.MOVIMIENTOS_HISTORICOS" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="VEHICULOS">
+              <PropertyRef Name="ID_VEHICULO" />
+            </Principal>
+            <Dependent Role="MOVIMIENTOS_HISTORICOS">
+              <PropertyRef Name="ID_VEHICULO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PERSONAS_RELATIONS_NACIONAL">
+          <End Role="NACIONALIDADES" Type="Self.NACIONALIDADES" Multiplicity="0..1" />
+          <End Role="PERSONAS" Type="Self.PERSONAS" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="NACIONALIDADES">
+              <PropertyRef Name="ID_NACIONALIDAD" />
+            </Principal>
+            <Dependent Role="PERSONAS">
+              <PropertyRef Name="ID_NACIONALIDAD" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_NAVES_PR_RELATIONS_NAVES">
+          <End Role="NAVES" Type="Self.NAVES" Multiplicity="1" />
+          <End Role="NAVES_PROGRAMADAS" Type="Self.NAVES_PROGRAMADAS" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="NAVES">
+              <PropertyRef Name="ID_NAVE" />
+            </Principal>
+            <Dependent Role="NAVES_PROGRAMADAS">
+              <PropertyRef Name="ID_NAVE" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PERSONAS_RELATIONS_NAVES">
+          <End Role="NAVES" Type="Self.NAVES" Multiplicity="0..1" />
+          <End Role="PERSONAS_EN_SOLICITUDES" Type="Self.PERSONAS_EN_SOLICITUDES" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="NAVES">
+              <PropertyRef Name="ID_NAVE" />
+            </Principal>
+            <Dependent Role="PERSONAS_EN_SOLICITUDES">
+              <PropertyRef Name="ID_NAVE" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PERF_US__RELATIONS_PERFILES">
+          <End Role="USUARIOS" Type="Self.USUARIOS" Multiplicity="1" />
+          <End Role="PERF_US_ADMIN_LOC" Type="Self.PERF_US_ADMIN_LOC" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="USUARIOS">
+              <PropertyRef Name="ID_USUARIO" />
+            </Principal>
+            <Dependent Role="PERF_US_ADMIN_LOC">
+              <PropertyRef Name="ID_USUARIO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PERF_US_ADMIN_LOC_PERF_US_ADMIN_LOC">
+          <End Role="PERF_US_ADMIN_LOC" Type="Self.PERF_US_ADMIN_LOC" Multiplicity="1" />
+          <End Role="PERF_US_ADMIN_LOC1" Type="Self.PERF_US_ADMIN_LOC" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="PERF_US_ADMIN_LOC">
+              <PropertyRef Name="ID_LOCACION" />
+              <PropertyRef Name="ID_USUARIO" />
+            </Principal>
+            <Dependent Role="PERF_US_ADMIN_LOC1">
+              <PropertyRef Name="ID_LOCACION" />
+              <PropertyRef Name="ID_USUARIO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PERSONAS_RELATIONS_PERSONAS">
+          <End Role="PERSONAS" Type="Self.PERSONAS" Multiplicity="1" />
+          <End Role="PERSONAS_EN_SOLICITUDES" Type="Self.PERSONAS_EN_SOLICITUDES" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PERSONAS">
+              <PropertyRef Name="ID_PERSONA" />
+            </Principal>
+            <Dependent Role="PERSONAS_EN_SOLICITUDES">
+              <PropertyRef Name="ID_PERSONA" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PERSONAS_RELATIONS_PERSONAS_1">
+          <End Role="PERSONAS_EN_SOLICITUDES" Type="Self.PERSONAS_EN_SOLICITUDES" Multiplicity="0..1" />
+          <End Role="PERSONAS_APROBADAS" Type="Self.PERSONAS_APROBADAS" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PERSONAS_EN_SOLICITUDES">
+              <PropertyRef Name="ID_PERSONA_SOLICITUD" />
+            </Principal>
+            <Dependent Role="PERSONAS_APROBADAS">
+              <PropertyRef Name="ID_PERSONA_SOLICITUD" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PERSONAS_RELATIONS_USUARIOS">
+          <End Role="USUARIOS" Type="Self.USUARIOS" Multiplicity="1" />
+          <End Role="PERSONAS_APROBADAS" Type="Self.PERSONAS_APROBADAS" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="USUARIOS">
+              <PropertyRef Name="ID_USUARIO" />
+            </Principal>
+            <Dependent Role="PERSONAS_APROBADAS">
+              <PropertyRef Name="ID_USUARIO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PERSONAS_RELATIONS_SOLICITU">
+          <End Role="SOLICITUDES" Type="Self.SOLICITUDES" Multiplicity="1" />
+          <End Role="PERSONAS_EN_SOLICITUDES" Type="Self.PERSONAS_EN_SOLICITUDES" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SOLICITUDES">
+              <PropertyRef Name="ID_SOLICITUD" />
+            </Principal>
+            <Dependent Role="PERSONAS_EN_SOLICITUDES">
+              <PropertyRef Name="ID_SOLICITUD" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SOLICITU_RELATIONS_PUERTOS">
+          <End Role="PUERTOS" Type="Self.PUERTOS" Multiplicity="1" />
+          <End Role="SOLICITUDES" Type="Self.SOLICITUDES" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PUERTOS">
+              <PropertyRef Name="ID_PUERTO" />
+            </Principal>
+            <Dependent Role="SOLICITUDES">
+              <PropertyRef Name="ID_PUERTO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SOLICITU_RELATIONS_TIPOS_IN">
+          <End Role="TIPOS_INGRESOS" Type="Self.TIPOS_INGRESOS" Multiplicity="1" />
+          <End Role="SOLICITUDES" Type="Self.SOLICITUDES" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TIPOS_INGRESOS">
+              <PropertyRef Name="ID_TIPO_INGRESO" />
+            </Principal>
+            <Dependent Role="SOLICITUDES">
+              <PropertyRef Name="ID_TIPO_INGRESO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SOLICITU_RELATIONS_USUARIOS">
+          <End Role="USUARIOS" Type="Self.USUARIOS" Multiplicity="1" />
+          <End Role="SOLICITUDES" Type="Self.SOLICITUDES" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="USUARIOS">
+              <PropertyRef Name="ID_USUARIO" />
+            </Principal>
+            <Dependent Role="SOLICITUDES">
+              <PropertyRef Name="ID_USUARIO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_VEHICULO_RELATIONS_TIPOS_VE">
+          <End Role="TIPOS_VEHICULOS" Type="Self.TIPOS_VEHICULOS" Multiplicity="1" />
+          <End Role="VEHICULOS" Type="Self.VEHICULOS" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TIPOS_VEHICULOS">
+              <PropertyRef Name="ID_TIPO_VEHICULO" />
+            </Principal>
+            <Dependent Role="VEHICULOS">
+              <PropertyRef Name="ID_TIPO_VEHICULO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="PERFIL_ADMIN_MENU">
+          <End Role="MENUS" Type="Self.MENUS" Multiplicity="*" />
+          <End Role="PERFILES" Type="Self.PERFILES" Multiplicity="*" />
+        </Association>
+        <Association Name="PERFILES_USUARIOS">
+          <End Role="PERFILES" Type="Self.PERFILES" Multiplicity="*" />
+          <End Role="USUARIOS" Type="Self.USUARIOS" Multiplicity="*" />
+        </Association>
+        <Association Name="PERSONAS_EN_NAVE_PROGRAMADA">
+          <End Role="NAVES_PROGRAMADAS" Type="Self.NAVES_PROGRAMADAS" Multiplicity="0..1" />
+          <End Role="PERSONAS_APROBADAS" Type="Self.PERSONAS_APROBADAS" Multiplicity="*" />
+        </Association>
+        <Association Name="VEHICULOS_EN_EMPRESA">
+          <End Role="EMPRESAS" Type="Self.EMPRESAS" Multiplicity="*" />
+          <End Role="VEHICULOS" Type="Self.VEHICULOS" Multiplicity="*" />
+        </Association>
+        <Association Name="VEHICULOS_EN_SOLICITUDES">
+          <End Role="SOLICITUDES" Type="Self.SOLICITUDES" Multiplicity="*" />
+          <End Role="VEHICULOS" Type="Self.VEHICULOS" Multiplicity="*" />
+        </Association>
+        <EntityContainer Name="CaboFroward2018Entities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="DISPOSITIVOS" EntityType="Self.DISPOSITIVOS" />
+          <EntitySet Name="EMPRESAS" EntityType="Self.EMPRESAS" />
+          <EntitySet Name="LOCACIONES" EntityType="Self.LOCACIONES" />
+          <EntitySet Name="MENUS" EntityType="Self.MENUS" />
+          <EntitySet Name="MOVIMIENTOS" EntityType="Self.MOVIMIENTOS" />
+          <EntitySet Name="MOVIMIENTOS_HISTORICOS" EntityType="Self.MOVIMIENTOS_HISTORICOS" />
+          <EntitySet Name="NACIONALIDADES" EntityType="Self.NACIONALIDADES" />
+          <EntitySet Name="NAVES" EntityType="Self.NAVES" />
+          <EntitySet Name="NAVES_PROGRAMADAS" EntityType="Self.NAVES_PROGRAMADAS" />
+          <EntitySet Name="PERF_US_ADMIN_LOC" EntityType="Self.PERF_US_ADMIN_LOC" />
+          <EntitySet Name="PERFILES" EntityType="Self.PERFILES" />
+          <EntitySet Name="PERSONAS" EntityType="Self.PERSONAS" />
+          <EntitySet Name="PERSONAS_APROBADAS" EntityType="Self.PERSONAS_APROBADAS" />
+          <EntitySet Name="PERSONAS_EN_SOLICITUDES" EntityType="Self.PERSONAS_EN_SOLICITUDES" />
+          <EntitySet Name="PUERTOS" EntityType="Self.PUERTOS" />
+          <EntitySet Name="SOLICITUDES" EntityType="Self.SOLICITUDES" />
+          <EntitySet Name="TIPOS_EMPRESAS" EntityType="Self.TIPOS_EMPRESAS" />
+          <EntitySet Name="TIPOS_INGRESOS" EntityType="Self.TIPOS_INGRESOS" />
+          <EntitySet Name="TIPOS_VEHICULOS" EntityType="Self.TIPOS_VEHICULOS" />
+          <EntitySet Name="USUARIOS" EntityType="Self.USUARIOS" />
+          <EntitySet Name="VEHICULOS" EntityType="Self.VEHICULOS" />
+          <AssociationSet Name="FK_MOVIMIEN_RELATIONS_DISPOSIT" Association="Self.FK_MOVIMIEN_RELATIONS_DISPOSIT">
+            <End Role="DISPOSITIVOS" EntitySet="DISPOSITIVOS" />
+            <End Role="MOVIMIENTOS_HISTORICOS" EntitySet="MOVIMIENTOS_HISTORICOS" />
+          </AssociationSet>
+          <AssociationSet Name="FK_EMPRESAS_RELATIONS_TIPOS_EM" Association="Self.FK_EMPRESAS_RELATIONS_TIPOS_EM">
+            <End Role="TIPOS_EMPRESAS" EntitySet="TIPOS_EMPRESAS" />
+            <End Role="EMPRESAS" EntitySet="EMPRESAS" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SOLICITU_RELATIONS_EMPRESAS" Association="Self.FK_SOLICITU_RELATIONS_EMPRESAS">
+            <End Role="EMPRESAS" EntitySet="EMPRESAS" />
+            <End Role="SOLICITUDES" EntitySet="SOLICITUDES" />
+          </AssociationSet>
+          <AssociationSet Name="FK_LOCACION_REFERENCE_PUERTOS" Association="Self.FK_LOCACION_REFERENCE_PUERTOS">
+            <End Role="PUERTOS" EntitySet="PUERTOS" />
+            <End Role="LOCACIONES" EntitySet="LOCACIONES" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PERFIL_LOCACION" Association="Self.FK_PERFIL_LOCACION">
+            <End Role="LOCACIONES" EntitySet="LOCACIONES" />
+            <End Role="PERF_US_ADMIN_LOC" EntitySet="PERF_US_ADMIN_LOC" />
+          </AssociationSet>
+          <AssociationSet Name="FK_MOVIMIEN_RELATIONS_MOVIMIEN" Association="Self.FK_MOVIMIEN_RELATIONS_MOVIMIEN">
+            <End Role="MOVIMIENTOS" EntitySet="MOVIMIENTOS" />
+            <End Role="MOVIMIENTOS_HISTORICOS" EntitySet="MOVIMIENTOS_HISTORICOS" />
+          </AssociationSet>
+          <AssociationSet Name="FK_MOVIMIEN_RELATIONS_PERSONAS" Association="Self.FK_MOVIMIEN_RELATIONS_PERSONAS">
+            <End Role="PERSONAS_APROBADAS" EntitySet="PERSONAS_APROBADAS" />
+            <End Role="MOVIMIENTOS_HISTORICOS" EntitySet="MOVIMIENTOS_HISTORICOS" />
+          </AssociationSet>
+          <AssociationSet Name="FK_MOVIMIEN_RELATIONS_VEHICULO" Association="Self.FK_MOVIMIEN_RELATIONS_VEHICULO">
+            <End Role="VEHICULOS" EntitySet="VEHICULOS" />
+            <End Role="MOVIMIENTOS_HISTORICOS" EntitySet="MOVIMIENTOS_HISTORICOS" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PERSONAS_RELATIONS_NACIONAL" Association="Self.FK_PERSONAS_RELATIONS_NACIONAL">
+            <End Role="NACIONALIDADES" EntitySet="NACIONALIDADES" />
+            <End Role="PERSONAS" EntitySet="PERSONAS" />
+          </AssociationSet>
+          <AssociationSet Name="FK_NAVES_PR_RELATIONS_NAVES" Association="Self.FK_NAVES_PR_RELATIONS_NAVES">
+            <End Role="NAVES" EntitySet="NAVES" />
+            <End Role="NAVES_PROGRAMADAS" EntitySet="NAVES_PROGRAMADAS" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PERSONAS_RELATIONS_NAVES" Association="Self.FK_PERSONAS_RELATIONS_NAVES">
+            <End Role="NAVES" EntitySet="NAVES" />
+            <End Role="PERSONAS_EN_SOLICITUDES" EntitySet="PERSONAS_EN_SOLICITUDES" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PERF_US__RELATIONS_PERFILES" Association="Self.FK_PERF_US__RELATIONS_PERFILES">
+            <End Role="USUARIOS" EntitySet="USUARIOS" />
+            <End Role="PERF_US_ADMIN_LOC" EntitySet="PERF_US_ADMIN_LOC" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PERF_US_ADMIN_LOC_PERF_US_ADMIN_LOC" Association="Self.FK_PERF_US_ADMIN_LOC_PERF_US_ADMIN_LOC">
+            <End Role="PERF_US_ADMIN_LOC" EntitySet="PERF_US_ADMIN_LOC" />
+            <End Role="PERF_US_ADMIN_LOC1" EntitySet="PERF_US_ADMIN_LOC" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PERSONAS_RELATIONS_PERSONAS" Association="Self.FK_PERSONAS_RELATIONS_PERSONAS">
+            <End Role="PERSONAS" EntitySet="PERSONAS" />
+            <End Role="PERSONAS_EN_SOLICITUDES" EntitySet="PERSONAS_EN_SOLICITUDES" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PERSONAS_RELATIONS_PERSONAS_1" Association="Self.FK_PERSONAS_RELATIONS_PERSONAS_1">
+            <End Role="PERSONAS_EN_SOLICITUDES" EntitySet="PERSONAS_EN_SOLICITUDES" />
+            <End Role="PERSONAS_APROBADAS" EntitySet="PERSONAS_APROBADAS" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PERSONAS_RELATIONS_USUARIOS" Association="Self.FK_PERSONAS_RELATIONS_USUARIOS">
+            <End Role="USUARIOS" EntitySet="USUARIOS" />
+            <End Role="PERSONAS_APROBADAS" EntitySet="PERSONAS_APROBADAS" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PERSONAS_RELATIONS_SOLICITU" Association="Self.FK_PERSONAS_RELATIONS_SOLICITU">
+            <End Role="SOLICITUDES" EntitySet="SOLICITUDES" />
+            <End Role="PERSONAS_EN_SOLICITUDES" EntitySet="PERSONAS_EN_SOLICITUDES" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SOLICITU_RELATIONS_PUERTOS" Association="Self.FK_SOLICITU_RELATIONS_PUERTOS">
+            <End Role="PUERTOS" EntitySet="PUERTOS" />
+            <End Role="SOLICITUDES" EntitySet="SOLICITUDES" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SOLICITU_RELATIONS_TIPOS_IN" Association="Self.FK_SOLICITU_RELATIONS_TIPOS_IN">
+            <End Role="TIPOS_INGRESOS" EntitySet="TIPOS_INGRESOS" />
+            <End Role="SOLICITUDES" EntitySet="SOLICITUDES" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SOLICITU_RELATIONS_USUARIOS" Association="Self.FK_SOLICITU_RELATIONS_USUARIOS">
+            <End Role="USUARIOS" EntitySet="USUARIOS" />
+            <End Role="SOLICITUDES" EntitySet="SOLICITUDES" />
+          </AssociationSet>
+          <AssociationSet Name="FK_VEHICULO_RELATIONS_TIPOS_VE" Association="Self.FK_VEHICULO_RELATIONS_TIPOS_VE">
+            <End Role="TIPOS_VEHICULOS" EntitySet="TIPOS_VEHICULOS" />
+            <End Role="VEHICULOS" EntitySet="VEHICULOS" />
+          </AssociationSet>
+          <AssociationSet Name="PERFIL_ADMIN_MENU" Association="Self.PERFIL_ADMIN_MENU">
+            <End Role="MENUS" EntitySet="MENUS" />
+            <End Role="PERFILES" EntitySet="PERFILES" />
+          </AssociationSet>
+          <AssociationSet Name="PERFILES_USUARIOS" Association="Self.PERFILES_USUARIOS">
+            <End Role="PERFILES" EntitySet="PERFILES" />
+            <End Role="USUARIOS" EntitySet="USUARIOS" />
+          </AssociationSet>
+          <AssociationSet Name="PERSONAS_EN_NAVE_PROGRAMADA" Association="Self.PERSONAS_EN_NAVE_PROGRAMADA">
+            <End Role="NAVES_PROGRAMADAS" EntitySet="NAVES_PROGRAMADAS" />
+            <End Role="PERSONAS_APROBADAS" EntitySet="PERSONAS_APROBADAS" />
+          </AssociationSet>
+          <AssociationSet Name="VEHICULOS_EN_EMPRESA" Association="Self.VEHICULOS_EN_EMPRESA">
+            <End Role="EMPRESAS" EntitySet="EMPRESAS" />
+            <End Role="VEHICULOS" EntitySet="VEHICULOS" />
+          </AssociationSet>
+          <AssociationSet Name="VEHICULOS_EN_SOLICITUDES" Association="Self.VEHICULOS_EN_SOLICITUDES">
+            <End Role="SOLICITUDES" EntitySet="SOLICITUDES" />
+            <End Role="VEHICULOS" EntitySet="VEHICULOS" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PERSONAS_USUARIOS" Association="CaboFroward2018Model.FK_PERSONAS_USUARIOS">
+            <End Role="PERSONAS" EntitySet="PERSONAS" />
+            <End Role="USUARIOS" EntitySet="USUARIOS" />
+          </AssociationSet>
+        </EntityContainer>
+        <Association Name="FK_PERSONAS_USUARIOS">
+          <End Type="CaboFroward2018Model.PERSONAS" Role="PERSONAS" Multiplicity="0..1" />
+          <End Type="CaboFroward2018Model.USUARIOS" Role="USUARIOS" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PERSONAS">
+              <PropertyRef Name="ID_PERSONA" />
+            </Principal>
+            <Dependent Role="USUARIOS">
+              <PropertyRef Name="ID_PERSONA" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="CaboFroward2018ModelStoreContainer" CdmEntityContainer="CaboFroward2018Entities">
+          <EntitySetMapping Name="DISPOSITIVOS">
+            <EntityTypeMapping TypeName="CaboFroward2018Model.DISPOSITIVOS">
+              <MappingFragment StoreEntitySet="DISPOSITIVOS">
+                <ScalarProperty Name="ID_DISPOSITIVO" ColumnName="ID_DISPOSITIVO" />
+                <ScalarProperty Name="NOMBRE" ColumnName="NOMBRE" />
+                <ScalarProperty Name="IP" ColumnName="IP" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="EMPRESAS">
+            <EntityTypeMapping TypeName="CaboFroward2018Model.EMPRESAS">
+              <MappingFragment StoreEntitySet="EMPRESAS">
+                <ScalarProperty Name="INACTIVO" ColumnName="INACTIVO" />
+                <ScalarProperty Name="ID_EMPRESA" ColumnName="ID_EMPRESA" />
+                <ScalarProperty Name="ID_TIPO_EMPRESA" ColumnName="ID_TIPO_EMPRESA" />
+                <ScalarProperty Name="RUT" ColumnName="RUT" />
+                <ScalarProperty Name="DV" ColumnName="DV" />
+                <ScalarProperty Name="NOMBRES" ColumnName="NOMBRES" />
+                <ScalarProperty Name="GIRO" ColumnName="GIRO" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="LOCACIONES">
+            <EntityTypeMapping TypeName="CaboFroward2018Model.LOCACIONES">
+              <MappingFragment StoreEntitySet="LOCACIONES">
+                <ScalarProperty Name="INACTIVO" ColumnName="INACTIVO" />
+                <ScalarProperty Name="ID_LOCACION" ColumnName="ID_LOCACION" />
+                <ScalarProperty Name="ES_INFORMADA" ColumnName="ES_INFORMADA" />
+                <ScalarProperty Name="NOMBRE" ColumnName="NOMBRE" />
+                <ScalarProperty Name="ID_PUERTO" ColumnName="ID_PUERTO" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="MENUS">
+            <EntityTypeMapping TypeName="CaboFroward2018Model.MENUS">
+              <MappingFragment StoreEntitySet="MENUS">
+                <ScalarProperty Name="ORDEN" ColumnName="ORDEN" />
+                <ScalarProperty Name="ID_MENU" ColumnName="ID_MENU" />
+                <ScalarProperty Name="MENU" ColumnName="MENU" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="MOVIMIENTOS">
+            <EntityTypeMapping TypeName="CaboFroward2018Model.MOVIMIENTOS">
+              <MappingFragment StoreEntitySet="MOVIMIENTOS">
+                <ScalarProperty Name="ID_MOVIMIENTO" ColumnName="ID_MOVIMIENTO" />
+                <ScalarProperty Name="NOMBRE" ColumnName="NOMBRE" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="MOVIMIENTOS_HISTORICOS">
+            <EntityTypeMapping TypeName="CaboFroward2018Model.MOVIMIENTOS_HISTORICOS">
+              <MappingFragment StoreEntitySet="MOVIMIENTOS_HISTORICOS">
+                <ScalarProperty Name="COBRAR" ColumnName="COBRAR" />
+                <ScalarProperty Name="ID_MOVIMIENTO" ColumnName="ID_MOVIMIENTO" />
+                <ScalarProperty Name="ID_VEHICULO" ColumnName="ID_VEHICULO" />
+                <ScalarProperty Name="MOV_ID_MOVIMIENTO" ColumnName="MOV_ID_MOVIMIENTO" />
+                <ScalarProperty Name="ID_DISPOSITIVO" ColumnName="ID_DISPOSITIVO" />
+                <ScalarProperty Name="ID_PERSONA_APROBADA" ColumnName="ID_PERSONA_APROBADA" />
+                <ScalarProperty Name="FECHA" ColumnName="FECHA" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="NACIONALIDADES">
+            <EntityTypeMapping TypeName="CaboFroward2018Model.NACIONALIDADES">
+              <MappingFragment StoreEntitySet="NACIONALIDADES">
+                <ScalarProperty Name="ID_NACIONALIDAD" ColumnName="ID_NACIONALIDAD" />
+                <ScalarProperty Name="NACIONALIDAD" ColumnName="NACIONALIDAD" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="NAVES">
+            <EntityTypeMapping TypeName="CaboFroward2018Model.NAVES">
+              <MappingFragment StoreEntitySet="NAVES">
+                <ScalarProperty Name="INACTIVO" ColumnName="INACTIVO" />
+                <ScalarProperty Name="ID_NAVE" ColumnName="ID_NAVE" />
+                <ScalarProperty Name="NOMBRE" ColumnName="NOMBRE" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="NAVES_PROGRAMADAS">
+            <EntityTypeMapping TypeName="CaboFroward2018Model.NAVES_PROGRAMADAS">
+              <MappingFragment StoreEntitySet="NAVES_PROGRAMADAS">
+                <ScalarProperty Name="ID_NAVES_PROGRAMADAS" ColumnName="ID_NAVES_PROGRAMADAS" />
+                <ScalarProperty Name="ID_NAVE" ColumnName="ID_NAVE" />
+                <ScalarProperty Name="FECHA_ARRIBO" ColumnName="FECHA_ARRIBO" />
+                <ScalarProperty Name="FECHA_ZARPE" ColumnName="FECHA_ZARPE" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PERF_US_ADMIN_LOC">
+            <EntityTypeMapping TypeName="CaboFroward2018Model.PERF_US_ADMIN_LOC">
+              <MappingFragment StoreEntitySet="PERF_US_ADMIN_LOC">
+                <ScalarProperty Name="ID_LOCACION" ColumnName="ID_LOCACION" />
+                <ScalarProperty Name="ID_USUARIO" ColumnName="ID_USUARIO" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PERFILES">
+            <EntityTypeMapping TypeName="CaboFroward2018Model.PERFILES">
+              <MappingFragment StoreEntitySet="PERFILES">
+                <ScalarProperty Name="ID_PERFIL" ColumnName="ID_PERFIL" />
+                <ScalarProperty Name="NOMBRE" ColumnName="NOMBRE" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PERSONAS">
+            <EntityTypeMapping TypeName="CaboFroward2018Model.PERSONAS">
+              <MappingFragment StoreEntitySet="PERSONAS">
+                <ScalarProperty Name="FECHAINDUCCION" ColumnName="FECHAINDUCCION" />
+                <ScalarProperty Name="PASAPORTE" ColumnName="PASAPORTE" />
+                <ScalarProperty Name="ID_PERSONA" ColumnName="ID_PERSONA" />
+                <ScalarProperty Name="ID_NACIONALIDAD" ColumnName="ID_NACIONALIDAD" />
+                <ScalarProperty Name="RUT" ColumnName="RUT" />
+                <ScalarProperty Name="DV" ColumnName="DV" />
+                <ScalarProperty Name="NOMBRE" ColumnName="NOMBRE" />
+                <ScalarProperty Name="APELLIDOMATERNO" ColumnName="APELLIDOMATERNO" />
+                <ScalarProperty Name="APELLIDOPATERNO" ColumnName="APELLIDOPATERNO" />
+                <ScalarProperty Name="INACTIVO" ColumnName="INACTIVO" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PERSONAS_APROBADAS">
+            <EntityTypeMapping TypeName="CaboFroward2018Model.PERSONAS_APROBADAS">
+              <MappingFragment StoreEntitySet="PERSONAS_APROBADAS">
+                <ScalarProperty Name="ID_PERSONA_APROBADA" ColumnName="ID_PERSONA_APROBADA" />
+                <ScalarProperty Name="ID_USUARIO" ColumnName="ID_USUARIO" />
+                <ScalarProperty Name="ID_PERSONA_SOLICITUD" ColumnName="ID_PERSONA_SOLICITUD" />
+                <ScalarProperty Name="FECHA_APROBACION" ColumnName="FECHA_APROBACION" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PERSONAS_EN_SOLICITUDES">
+            <EntityTypeMapping TypeName="CaboFroward2018Model.PERSONAS_EN_SOLICITUDES">
+              <MappingFragment StoreEntitySet="PERSONAS_EN_SOLICITUDES">
+                <ScalarProperty Name="ID_PERSONA_SOLICITUD" ColumnName="ID_PERSONA_SOLICITUD" />
+                <ScalarProperty Name="ID_NAVE" ColumnName="ID_NAVE" />
+                <ScalarProperty Name="ID_PERSONA" ColumnName="ID_PERSONA" />
+                <ScalarProperty Name="ID_LOCACION" ColumnName="ID_LOCACION" />
+                <ScalarProperty Name="ID_SOLICITUD" ColumnName="ID_SOLICITUD" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PUERTOS">
+            <EntityTypeMapping TypeName="CaboFroward2018Model.PUERTOS">
+              <MappingFragment StoreEntitySet="PUERTOS">
+                <ScalarProperty Name="ID_PUERTO" ColumnName="ID_PUERTO" />
+                <ScalarProperty Name="NOMBRE" ColumnName="NOMBRE" />
+                <ScalarProperty Name="rut" ColumnName="rut" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SOLICITUDES">
+            <EntityTypeMapping TypeName="CaboFroward2018Model.SOLICITUDES">
+              <MappingFragment StoreEntitySet="SOLICITUDES">
+                <ScalarProperty Name="ID_SOLICITUD" ColumnName="ID_SOLICITUD" />
+                <ScalarProperty Name="ID_TIPO_INGRESO" ColumnName="ID_TIPO_INGRESO" />
+                <ScalarProperty Name="ID_PUERTO" ColumnName="ID_PUERTO" />
+                <ScalarProperty Name="ID_USUARIO" ColumnName="ID_USUARIO" />
+                <ScalarProperty Name="ID_EMPRESA" ColumnName="ID_EMPRESA" />
+                <ScalarProperty Name="FECHA_SOLICITUD" ColumnName="FECHA_SOLICITUD" />
+                <ScalarProperty Name="FECHA_DESDE" ColumnName="FECHA_DESDE" />
+                <ScalarProperty Name="FECHA_HASTA" ColumnName="FECHA_HASTA" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TIPOS_EMPRESAS">
+            <EntityTypeMapping TypeName="CaboFroward2018Model.TIPOS_EMPRESAS">
+              <MappingFragment StoreEntitySet="TIPOS_EMPRESAS">
+                <ScalarProperty Name="ID_TIPO_EMPRESA" ColumnName="ID_TIPO_EMPRESA" />
+                <ScalarProperty Name="NOMBRE" ColumnName="NOMBRE" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TIPOS_INGRESOS">
+            <EntityTypeMapping TypeName="CaboFroward2018Model.TIPOS_INGRESOS">
+              <MappingFragment StoreEntitySet="TIPOS_INGRESOS">
+                <ScalarProperty Name="ID_TIPO_INGRESO" ColumnName="ID_TIPO_INGRESO" />
+                <ScalarProperty Name="NOMBRE" ColumnName="NOMBRE" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TIPOS_VEHICULOS">
+            <EntityTypeMapping TypeName="CaboFroward2018Model.TIPOS_VEHICULOS">
+              <MappingFragment StoreEntitySet="TIPOS_VEHICULOS">
+                <ScalarProperty Name="NUEVO" ColumnName="NUEVO" />
+                <ScalarProperty Name="ID_TIPO_VEHICULO" ColumnName="ID_TIPO_VEHICULO" />
+                <ScalarProperty Name="NOMBRE" ColumnName="NOMBRE" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="USUARIOS">
+            <EntityTypeMapping TypeName="CaboFroward2018Model.USUARIOS">
+              <MappingFragment StoreEntitySet="USUARIOS">
+                <ScalarProperty Name="CLAVE_INICIAL" ColumnName="CLAVE_INICIAL" />
+                <ScalarProperty Name="ID_PERSONA" ColumnName="ID_PERSONA" />
+                <ScalarProperty Name="ID_USUARIO" ColumnName="ID_USUARIO" />
+                <ScalarProperty Name="NOMBRE" ColumnName="NOMBRE" />
+                <ScalarProperty Name="PASSWORD" ColumnName="PASSWORD" />
+                <ScalarProperty Name="TELEFONO" ColumnName="TELEFONO" />
+                <ScalarProperty Name="INACTIVO" ColumnName="INACTIVO" />
+                <ScalarProperty Name="aprueba_nave" ColumnName="aprueba_nave" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="VEHICULOS">
+            <EntityTypeMapping TypeName="CaboFroward2018Model.VEHICULOS">
+              <MappingFragment StoreEntitySet="VEHICULOS">
+                <ScalarProperty Name="ID_VEHICULO" ColumnName="ID_VEHICULO" />
+                <ScalarProperty Name="ID_TIPO_VEHICULO" ColumnName="ID_TIPO_VEHICULO" />
+                <ScalarProperty Name="PATENTE" ColumnName="PATENTE" />
+                <ScalarProperty Name="INACTIVO" ColumnName="INACTIVO" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <AssociationSetMapping Name="PERFIL_ADMIN_MENU" TypeName="CaboFroward2018Model.PERFIL_ADMIN_MENU" StoreEntitySet="PERFIL_ADMIN_MENU">
+            <EndProperty Name="MENUS">
+              <ScalarProperty Name="ID_MENU" ColumnName="ID_MENU" />
+            </EndProperty>
+            <EndProperty Name="PERFILES">
+              <ScalarProperty Name="ID_PERFIL" ColumnName="ID_PERFIL" />
+            </EndProperty>
+          </AssociationSetMapping>
+          <AssociationSetMapping Name="PERFILES_USUARIOS" TypeName="CaboFroward2018Model.PERFILES_USUARIOS" StoreEntitySet="PERFILES_USUARIOS">
+            <EndProperty Name="PERFILES">
+              <ScalarProperty Name="ID_PERFIL" ColumnName="ID_PERFIL" />
+            </EndProperty>
+            <EndProperty Name="USUARIOS">
+              <ScalarProperty Name="ID_USUARIO" ColumnName="ID_USUARIO" />
+            </EndProperty>
+          </AssociationSetMapping>
+          <AssociationSetMapping Name="PERSONAS_EN_NAVE_PROGRAMADA" TypeName="CaboFroward2018Model.PERSONAS_EN_NAVE_PROGRAMADA" StoreEntitySet="PERSONAS_EN_NAVE_PROGRAMADA">
+            <EndProperty Name="NAVES_PROGRAMADAS">
+              <ScalarProperty Name="ID_NAVES_PROGRAMADAS" ColumnName="ID_NAVES_PROGRAMADAS" />
+            </EndProperty>
+            <EndProperty Name="PERSONAS_APROBADAS">
+              <ScalarProperty Name="ID_PERSONA_APROBADA" ColumnName="ID_PERSONA_APROBADA" />
+            </EndProperty>
+          </AssociationSetMapping>
+          <AssociationSetMapping Name="VEHICULOS_EN_EMPRESA" TypeName="CaboFroward2018Model.VEHICULOS_EN_EMPRESA" StoreEntitySet="VEHICULOS_EN_EMPRESA">
+            <EndProperty Name="EMPRESAS">
+              <ScalarProperty Name="ID_EMPRESA" ColumnName="ID_EMPRESA" />
+            </EndProperty>
+            <EndProperty Name="VEHICULOS">
+              <ScalarProperty Name="ID_VEHICULO" ColumnName="ID_VEHICULO" />
+            </EndProperty>
+          </AssociationSetMapping>
+          <AssociationSetMapping Name="VEHICULOS_EN_SOLICITUDES" TypeName="CaboFroward2018Model.VEHICULOS_EN_SOLICITUDES" StoreEntitySet="VEHICULOS_EN_SOLICITUDES">
+            <EndProperty Name="SOLICITUDES">
+              <ScalarProperty Name="ID_SOLICITUD" ColumnName="ID_SOLICITUD" />
+            </EndProperty>
+            <EndProperty Name="VEHICULOS">
+              <ScalarProperty Name="ID_VEHICULO" ColumnName="ID_VEHICULO" />
+            </EndProperty>
+          </AssociationSetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Ninguno" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

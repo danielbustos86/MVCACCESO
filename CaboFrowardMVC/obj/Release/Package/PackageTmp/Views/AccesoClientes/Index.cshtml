@@ -1,0 +1,377 @@
+
+@{
+	ViewBag.Title = "Index";
+	Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@Scripts.Render("~/bundles/AccesoClientes")
+<form id="form1">
+	<div class="row">
+
+		<div class="col-md-6">
+			<h4 style="padding-top:10px;padding-bottom:10px;padding-left:5px;background-color:#F8F8F8">Ingreso</h4>
+
+			<div id="mensaje_exito" class="alert alert-success alert-dismissible fade in">
+				<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+				<strong>Registro Exitoso!</strong> El registro se a creado exitosamente
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="form-horizontal">
+						<div class="col-md-6">
+
+							<label class="control-label" for="rutChofer">ID Entrada </label>
+							<input class="form-control" type="text" id="IdEntradaMov" readonly="readonly">
+
+						</div>
+
+						<div class="col-md-6">
+
+							<button class="btn btn-danger" id="btn_modificar" disabled>Anular Solicitud</button>
+
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+		
+				<div class="row">
+					<div class="col-md-12">
+						<div class="col-md-6">
+
+							<div class="form-group" style="margin-bottom: 5px;">
+								<label class="control-label" for="tipodDOC">Tipo Doc Chofer</label>
+								<select id="tipodDOC" class="form-control">
+
+									<option value="1">Cedula de Identidad</option>
+									<option value="2">Pasaporte</option>
+
+
+								</select>
+							</div>
+						</div>
+
+						<div class="col-md-6">
+							<div class="form-group" style="margin-bottom: 5px;">
+
+								<label class="control-label" for="rutChofer">Estado Induccion</label>
+								<input class="form-control" type="text" id="InduccionEstado" readonly="readonly">
+
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-12">
+					<div class="form-group" style="margin-bottom: 5px;">
+						<label class="control-label" for="rutChofer">Rut/Pasaporte Chofer </label>
+
+						<a href='@Url.Action("Index","AccesoClientes")'><i class="fa fa-edit"></i><b></b><span class="fa arrow"></span></a>
+						<input class="form-control" type="text" id="rutChofer">
+
+					</div>
+				</div>
+
+				<div class="col-md-12 ingreso">
+					<div class="form-group" style="margin-bottom: 5px;">
+						<label class="control-label" for="tipoVeAc">Tipo Vehiculo </label>
+						<select id="tipoVeAc" class="form-control">
+							<option value="0">SELECCIONE</option>
+
+							<option value="1">Vehiculo Menor</option>
+							<option value="2">Vehiculo Mayor</option>
+							<option value="3">Equipo</option>
+
+						</select>
+					</div>
+				</div>
+				<div class="col-md-12 ingreso">
+					<div class="form-group" style="margin-bottom: 5px;">
+
+						<label for="cbx_vehiculo" class="control-label">Vehiculo</label>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-12">
+						<div class="form-group" style="margin-bottom: 5px;">
+
+
+							<div class="col-sm-9">
+								<select id="cbx_vehiculo" class="form-control" style="width: 100%"></select>
+							</div>
+
+							<div class="col-sm-3">
+								<button class="btn btn-primary" id="btn_modificar" disabled>Modificar</button>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="col-md-12">
+					<div class="form-group" style="margin-bottom: 5px;">
+						<label class="control-label" for="NombreChofer">Nombre</label>
+						<input class="form-control" type="text" id="NombreChofer">
+					</div>
+				</div>
+
+				<div class="col-md-12 ingreso Motivo">
+					<div class="form-group" style="margin-bottom: 5px;">
+						<label class="control-label" for="motivoac">Motivo</label>
+						<select id="motivoac" class="form-control" >
+
+
+						</select>
+					</div>
+				</div>
+
+
+				<div class="col-md-12 ingreso">
+					<div class="form-group" style="margin-bottom: 5px;">
+						<label class="control-label" for="rsocial">Razon Social</label>
+						<select id="razonSocial" class="form-control select2-single">
+
+							<option value="0">Seleccione</option>
+
+							@if (ViewData["empresas"] != null)
+				{
+					foreach (var masivo in (List<CaboFrowardMVC.Models.ClientesTTP>)ViewData["empresas"])
+					{
+
+						<option value=@masivo.Id>@masivo.Nombre </option>
+		}
+
+	}
+						</select>
+					</div>
+				</div>
+
+
+				<div class="col-md-12 ingreso">
+					<div class="form-group" style="margin-bottom: 5px;">
+						<label class="control-label" for="rutClienteac">Rut Cliente</label>
+						<select id="rutClienteac" class="form-control select2-single">
+
+							<option value="0">Seleccione</option>
+							@if (ViewData["empresas"] != null)
+				{
+					foreach (var masivo in (List<CaboFrowardMVC.Models.ClientesTTP>)ViewData["empresas"])
+					{
+
+						<option value=@masivo.Id>@masivo.Rut </option>
+
+
+		}
+
+
+
+	}
+
+						</select>
+
+					</div>
+				</div>
+
+
+
+				<div class="col-md-12 ingreso Cobro">
+					<div class="form-group" style="margin-bottom: 5px;">
+						<label class="control-label" for="naveac">Nave</label>
+						<select id="naveac" class="form-control select2-single">
+
+							<option value="0">Seleccione</option>
+
+							@if (ViewData["naves"] != null)
+				{
+					foreach (var masivo in (List<CaboFrowardMVC.Models.NavesTTP>)ViewData["naves"])
+					{
+
+						<option value=@masivo.Id>@masivo.Nombre</option>
+		}
+
+	}
+
+						</select>
+					</div>
+				</div>
+
+				<div class="col-md-12 ingreso Cobro">
+					<div class="form-group" style="margin-bottom: 5px;">
+						<label class="control-label" for="naveac">LANCHA</label>
+						<select id="lanchacbx" class="form-control select2-single">
+
+							<option value="0">Seleccione</option>
+
+							@if (ViewData["lanchas"] != null)
+				{
+					foreach (var masivo in (List<CaboFrowardMVC.Models.NavesTTP>)ViewData["lanchas"])
+					{
+
+
+
+						<option value=@masivo.Id>@masivo.Nombre</option>
+		}
+
+	}
+
+						</select>
+					</div>
+				</div>
+
+				<div class="col-md-12 Cobro">
+					<div class="form-group" style="margin-bottom: 5px;">
+						<label class="control-label" for="pcac">PC</label>
+						<input class="form-control" type="text" id="pcac">
+					</div>
+				</div>
+
+
+				<div class="col-md-12 ingreso Cobro">
+					<div class="form-group" style="margin-bottom: 5px;">
+						<label class="control-label" for="tipopagoac">Tipo de Pago</label>
+						<select id="tipopagoac" class="form-control">
+
+						</select>
+
+
+					</div>
+				</div>
+				<div class="col-md-12 contado">
+					<div class="form-group" style="margin-bottom: 5px;">
+						<label class="control-label" for="tipopagocontado">Tipo de Pago Contado</label>
+						<select id="tipocontado" class="form-control">
+							<option value="0">Seleccione</option>
+							<option value="1">Dia</option>
+							<option value="2">Hora</option>
+						</select>
+
+
+					</div>
+				</div>
+
+				<div class="col-md-12 boleta">
+					<div class="form-group boleta" style="margin-bottom: 5px;">
+						<label class="control-label" for="nboleta">Numero de Boleta</label>
+						<input class="form-control" type="text" id="nboleta">
+					</div>
+				</div>
+				<div class="col-md-12 horas">
+					<div class="form-group boleta" style="margin-bottom: 5px;">
+						<label class="control-label" for="nboleta">Horas</label>
+						<input class="form-control" type="text" id="cantidadhoras" readonly="readonly">
+					</div>
+				</div>
+				<div class="col-md-12 Cobro">
+					<div class="form-group" style="margin-bottom: 5px;">
+						<label class="control-label" for="detalleac">Detalle</label>
+						<select id="detalleac" class="form-control">
+
+							<option value="0">Seleccione</option>
+							<option value="1">Vacio</option>
+							<option value="2">Lleno</option>
+
+						</select>
+
+
+
+					</div>
+				</div>
+				<div class="col-md-12 detalle">
+					<div class="form-group" style="margin-bottom: 5px;">
+						<label class="control-label" for="nguiaac">Numero de Guia</label>
+						<input class="form-control" type="text" id="nguiaac">
+					</div>
+				</div>
+
+				<div class="col-md-12 detalle">
+					<div class="form-group" style="margin-bottom: 5px;">
+						<label class="control-label" for="toneladas">Toneladas</label>
+						<input class="form-control" type="text" id="toneladas">
+					</div>
+				</div>
+
+				<div class="col-md-12 detalle">
+					<div class="form-group" style="margin-bottom: 5px;">
+						<label class="control-label" for="toneladas">Tara</label>
+						<input class="form-control" type="text" id="Tara">
+					</div>
+				</div>
+				<div class="col-md-12 noVisible">
+					<div class="form-group" style="margin-bottom: 5px;">
+
+						<input class="form-control" type="text" id="idSolCliente">
+						<input class="form-control" type="text" id="idperAprob">
+						<input class="form-control" type="text" id="txt_solicitud">
+						<input class="form-control" type="text" id="usuario" value="@TempData["usuario"]" readonly="readonly" style="visibility:hidden">
+						<div class="col-md-8">
+							<div class="form-group" style="margin-bottom: 5px;">
+								<label class="control-label" for="Puerto">Fecha</label>
+								@*<input id="fechainicio" type="text">*@
+								<input class="form-control" type="text" id="fechainicioing" readonly="readonly" value="@TempData["fecha"]">
+
+							</div>
+						</div>
+
+						<div class="col-md-4">
+							<div class="form-group" style="margin-bottom: 5px;">
+								<label class="control-label" for="idac">ID</label>
+
+								<input class="form-control" type="text" id="idac" readonly="readonly">
+
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+			</div>
+		</div>
+</form>
+<div class="col-md-1">
+
+</div>
+<div class="col-md-12">
+
+	<div class="col-md-6">
+		<button id="btnRegistraIng" class="btn btn-default btn-block btn-lg" style="padding-top:25px;padding-bottom:25px" type="button">INGRESO</button>
+	</div>
+	<div class="col-md-6">
+		<button id="btnRegistraSal" class="btn btn-default btn-block btn-lg" style="padding-top:25px;padding-bottom:25px" type="button">SALIDA</button>
+	</div>
+
+</div>
+<div class="col-md-1"></div>
+</div>
+<br />
+
+<div class="modal fade" role="dialog" tabindex="-1" id="ModalPatente">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+				<h4 class="modal-title">Agregar Patente</h4>
+			</div>
+			<div class="modal-body">
+				<div class="form-group">
+					<label class="control-label" for="text-input">Patente </label>
+					<input class="form-control" type="text" name="text-input" id="txtingresaPatentecs">
+
+
+				</div>
+			</div>
+			<div class="modal-footer">
+				<button class="btn btn-default" type="button" data-dismiss="modal">Cerrar</button>
+				<button class="btn btn-primary" type="button" id="btnguardarcs">Guardar</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+@if (TempData["alertMessage"] != null)
+{
+	<label>@TempData["alertMessage"]</label>
+}
+
+

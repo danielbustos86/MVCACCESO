@@ -1,0 +1,184 @@
+﻿
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@Scripts.Render("~/bundles/js_lista_aprobar")
+
+@if (Session["MisMenus"].ToString().Contains("POR_APROBAR"))
+{
+
+    <div class="row">
+        <div class="col-md-12">
+            <h4 id="id_total_listado" style="padding-top:10px;padding-bottom:10px;padding-left:5px;background-color:#F8F8F8">Listar Solicitud</h4>
+        </div>
+    </div>
+    <div class="row">
+
+        <div class="col-md-6">
+            <div class="form-group" style="margin-bottom: 5px;">
+
+                <select id="SelectListApr" class="form-control">
+
+                    <option value="P" selected>Solo Pendientes</option>
+                    <option value="T">Todas</option>
+
+
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="table-responsive">
+            <div class="col-md-12">
+                <div class="table-responsive">
+                    <table id="TablaListadosolic" class="table-striped table-hover table-condensed">
+                        <thead>
+                            <tr>
+                                <th>Id </th>
+                                <th>Fecha Creacion </th>
+                                <th>Empresa </th>
+                                <th>Desde</th>
+                                <th>Hasta</th>
+                                <th>Cant.Tot.Per</th>
+                                <th>Cant.Tot.Aprobados</th>
+                                <th>Detalle</th>
+
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+            </div>
+            <asp:Button ID="Button1" runat="server" Text="Button" style="visibility:hidden" />
+        </div>
+    </div>
+
+
+
+    <div class="modal fade" role="dialog" tabindex="-1" id="ModalDetalle">
+        <div class="modal-dialog modal-lg" style=" width: 80%;" role="document">
+            <div class="modal-content">
+                <div class="modal-header" style="padding-bottom: 3px;padding-top: 3px;">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                    <h4 class="modal-title" id="id_detalle"></h4>
+                </div>
+
+                <div class="modal-body" style="padding-top: 2px; padding-bottom: 5px;">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="col-md-12">
+                                <div class="form-group" style="margin-bottom: 0px;">
+                                    <label class="control-label" for="Puerto">Puerto </label>
+                                    <input class="form-control text-box single-line" id="SelectPuerto" type="text" value="" disabled />
+                                    @*<select id="SelectPuerto" class="form-control"></select>*@
+
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="form-group" style="margin-bottom: 0px;">
+                                    <label class="control-label" for="Puerto">Fecha inicio</label>
+                                    <input class="form-control text-box single-line" id="fechainicio" type="text" value="" disabled />
+                                    @*<input class="form-control" type="datetime-local" id="fechainicio">*@
+
+
+
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group" style="margin-bottom: 0px;">
+                                    <label class="control-label" for="Puerto">Fecha termino</label>
+                                    <input class="form-control text-box single-line" id="fechatermino" type="text" value="" disabled />
+                                    @*<input class="form-control" type="datetime-local" id="fechatermino">*@
+
+
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group" style="margin-bottom: 0px;">
+                                    <label class="control-label" for="Puerto">Tipo de Ingreso </label>
+                                    <input class="form-control text-box single-line" id="SelecttipoIngres" type="text" value="" disabled />
+                                    @*<select id="SelecttipoIngres" class="form-control"></select>*@
+                                </div>
+                            </div>
+
+
+                            <div class="col-md-12">
+                                <div class="form-group" style="margin-bottom: 0px;">
+                                    <label class="control-label" for="Puerto">Empresa</label>
+                                    <input class="form-control text-box single-line" id="SelectEmpresa" type="text" value="" disabled />
+                                    @*<select id="SelectEmpresa" class="form-control"></select>*@
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-1"></div>
+                        <div class="col-md-4" style="padding-top:60px">
+                            <button id="btn_aprobar" class="btn btn-success btn-block btn-lg" style="padding-top:25px;padding-bottom:25px" type="button">APROBAR</button>
+                        </div>
+                        <div class="col-md-1"></div>
+                    </div>
+
+
+
+
+                    <div class="row" style="margin-top: 13px;">
+                        <div class="col-md-7">
+                            <div class="col-md-12">
+                                <div class="table-responsive">
+                                    <table id="tabla_persona" class="table table-striped table-bordered table-hover table-condensed">
+                                        <thead>
+                                            <tr>
+                                                <th><label><input type="checkbox" id="selectAll" />All</label></th>
+                                                <th>Id</th>
+                                                <th>Rut</th>
+                                                <th>Nombre</th>
+                                                <th>Locacion</th>
+                                                <th>Nave</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody></tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="col-md-12">
+                                <div class="table-responsive">
+                                    <table id="tabla_patente" class="table table-striped table-bordered table-hover table-condensed">
+                                        <thead>
+                                            <tr>
+                                                <th>Id</th>
+                                                <th>Patente</th>
+                                                <th>Tipo</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody></tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-default" type="button" data-dismiss="modal" id="btn_close_ver">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+else
+{
+
+    <div class="alert alert-danger alert-dismissible">
+        <strong>Acceso Restringido!</strong> No está autorizado para ver esta página, por seguridad sera redireccionado al Login en <strong> <label id="txt_second">3</label></strong>
+    </div>
+
+    <input type="hidden" id="txt_acceso" value="SIN_ACCESO" />
+
+
+
+}

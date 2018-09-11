@@ -1,0 +1,468 @@
+C:\cabo froward}\CaboFrowardMVC\CaboFrowardMVC\bin\ApplicationInsights.config
+C:\cabo froward}\CaboFrowardMVC\CaboFrowardMVC\bin\CaboFrowardMVC.dll.config
+C:\cabo froward}\CaboFrowardMVC\CaboFrowardMVC\bin\CaboFrowardMVC.dll
+C:\cabo froward}\CaboFrowardMVC\CaboFrowardMVC\bin\CaboFrowardMVC.pdb
+C:\cabo froward}\CaboFrowardMVC\CaboFrowardMVC\bin\roslyn\csc.exe
+C:\cabo froward}\CaboFrowardMVC\CaboFrowardMVC\bin\roslyn\csc.exe.config
+C:\cabo froward}\CaboFrowardMVC\CaboFrowardMVC\bin\roslyn\csc.rsp
+C:\cabo froward}\CaboFrowardMVC\CaboFrowardMVC\bin\roslyn\csi.exe
+C:\cabo froward}\CaboFrowardMVC\CaboFrowardMVC\bin\roslyn\csi.rsp
+C:\cabo froward}\CaboFrowardMVC\CaboFrowardMVC\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\cabo froward}\CaboFrowardMVC\CaboFrowardMVC\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\cabo froward}\CaboFrowardMVC\CaboFrowardMVC\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\cabo froward}\CaboFrowardMVC\CaboFrowardMVC\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\cabo froward}\CaboFrowardMVC\CaboFrowardMVC\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\cabo froward}\CaboFrowardMVC\CaboFrowardMVC\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\cabo froward}\CaboFrowardMVC\CaboFrowardMVC\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\cabo froward}\CaboFrowardMVC\CaboFrowardMVC\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\cabo froward}\CaboFrowardMVC\CaboFrowardMVC\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\cabo froward}\CaboFrowardMVC\CaboFrowardMVC\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\cabo froward}\CaboFrowardMVC\CaboFrowardMVC\bin\roslyn\System.AppContext.dll
+C:\cabo froward}\CaboFrowardMVC\CaboFrowardMVC\bin\roslyn\System.Collections.Immutable.dll
+C:\cabo froward}\CaboFrowardMVC\CaboFrowardMVC\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\cabo froward}\CaboFrowardMVC\CaboFrowardMVC\bin\roslyn\System.IO.FileSystem.dll
+C:\cabo froward}\CaboFrowardMVC\CaboFrowardMVC\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\cabo froward}\CaboFrowardMVC\CaboFrowardMVC\bin\roslyn\System.Reflection.Metadata.dll
+C:\cabo froward}\CaboFrowardMVC\CaboFrowardMVC\bin\roslyn\vbc.exe
+C:\cabo froward}\CaboFrowardMVC\CaboFrowardMVC\bin\roslyn\vbc.exe.config
+C:\cabo froward}\CaboFrowardMVC\CaboFrowardMVC\bin\roslyn\vbc.rsp
+C:\cabo froward}\CaboFrowardMVC\CaboFrowardMVC\bin\roslyn\VBCSCompiler.exe
+C:\cabo froward}\CaboFrowardMVC\CaboFrowardMVC\bin\roslyn\VBCSCompiler.exe.config
+C:\cabo froward}\CaboFrowardMVC\CaboFrowardMVC\bin\Antlr3.Runtime.dll
+C:\cabo froward}\CaboFrowardMVC\CaboFrowardMVC\bin\BOL.dll
+C:\cabo froward}\CaboFrowardMVC\CaboFrowardMVC\bin\DAL.dll
+C:\cabo froward}\CaboFrowardMVC\CaboFrowardMVC\bin\EntityFramework.dll
+C:\cabo froward}\CaboFrowardMVC\CaboFrowardMVC\bin\EntityFramework.SqlServer.dll
+C:\cabo froward}\CaboFrowardMVC\CaboFrowardMVC\bin\Microsoft.AI.Agent.Intercept.dll
+C:\cabo froward}\CaboFrowardMVC\CaboFrowardMVC\bin\Microsoft.AI.DependencyCollector.dll
+C:\cabo froward}\CaboFrowardMVC\CaboFrowardMVC\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\cabo froward}\CaboFrowardMVC\CaboFrowardMVC\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\cabo froward}\CaboFrowardMVC\CaboFrowardMVC\bin\Microsoft.AI.Web.dll
+C:\cabo froward}\CaboFrowardMVC\CaboFrowardMVC\bin\Microsoft.AI.WindowsServer.dll
+C:\cabo froward}\CaboFrowardMVC\CaboFrowardMVC\bin\Microsoft.ApplicationInsights.dll
+C:\cabo froward}\CaboFrowardMVC\CaboFrowardMVC\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\cabo froward}\CaboFrowardMVC\CaboFrowardMVC\bin\Microsoft.Web.Infrastructure.dll
+C:\cabo froward}\CaboFrowardMVC\CaboFrowardMVC\bin\Newtonsoft.Json.dll
+C:\cabo froward}\CaboFrowardMVC\CaboFrowardMVC\bin\System.Web.Helpers.dll
+C:\cabo froward}\CaboFrowardMVC\CaboFrowardMVC\bin\System.Web.Mvc.dll
+C:\cabo froward}\CaboFrowardMVC\CaboFrowardMVC\bin\System.Web.Optimization.dll
+C:\cabo froward}\CaboFrowardMVC\CaboFrowardMVC\bin\System.Web.Razor.dll
+C:\cabo froward}\CaboFrowardMVC\CaboFrowardMVC\bin\System.Web.WebPages.Deployment.dll
+C:\cabo froward}\CaboFrowardMVC\CaboFrowardMVC\bin\System.Web.WebPages.dll
+C:\cabo froward}\CaboFrowardMVC\CaboFrowardMVC\bin\System.Web.WebPages.Razor.dll
+C:\cabo froward}\CaboFrowardMVC\CaboFrowardMVC\bin\WebGrease.dll
+C:\cabo froward}\CaboFrowardMVC\CaboFrowardMVC\bin\BOL.pdb
+C:\cabo froward}\CaboFrowardMVC\CaboFrowardMVC\bin\DAL.pdb
+C:\cabo froward}\CaboFrowardMVC\CaboFrowardMVC\bin\EntityFramework.xml
+C:\cabo froward}\CaboFrowardMVC\CaboFrowardMVC\bin\EntityFramework.SqlServer.xml
+C:\cabo froward}\CaboFrowardMVC\CaboFrowardMVC\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\cabo froward}\CaboFrowardMVC\CaboFrowardMVC\bin\Newtonsoft.Json.xml
+C:\cabo froward}\CaboFrowardMVC\CaboFrowardMVC\bin\System.Web.Helpers.xml
+C:\cabo froward}\CaboFrowardMVC\CaboFrowardMVC\bin\System.Web.Mvc.xml
+C:\cabo froward}\CaboFrowardMVC\CaboFrowardMVC\bin\System.Web.Optimization.xml
+C:\cabo froward}\CaboFrowardMVC\CaboFrowardMVC\bin\System.Web.Razor.xml
+C:\cabo froward}\CaboFrowardMVC\CaboFrowardMVC\bin\System.Web.WebPages.xml
+C:\cabo froward}\CaboFrowardMVC\CaboFrowardMVC\bin\System.Web.WebPages.Deployment.xml
+C:\cabo froward}\CaboFrowardMVC\CaboFrowardMVC\bin\System.Web.WebPages.Razor.xml
+C:\cabo froward}\CaboFrowardMVC\CaboFrowardMVC\bin\Antlr3.Runtime.pdb
+C:\cabo froward}\CaboFrowardMVC\CaboFrowardMVC\bin\Microsoft.ApplicationInsights.xml
+C:\cabo froward}\CaboFrowardMVC\CaboFrowardMVC\bin\Microsoft.AI.DependencyCollector.xml
+C:\cabo froward}\CaboFrowardMVC\CaboFrowardMVC\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\cabo froward}\CaboFrowardMVC\CaboFrowardMVC\bin\Microsoft.AI.WindowsServer.xml
+C:\cabo froward}\CaboFrowardMVC\CaboFrowardMVC\bin\Microsoft.AI.Web.xml
+C:\cabo froward}\CaboFrowardMVC\CaboFrowardMVC\bin\es\System.Web.Helpers.resources.dll
+C:\cabo froward}\CaboFrowardMVC\CaboFrowardMVC\bin\es\System.Web.Mvc.resources.dll
+C:\cabo froward}\CaboFrowardMVC\CaboFrowardMVC\bin\es\System.Web.Optimization.resources.dll
+C:\cabo froward}\CaboFrowardMVC\CaboFrowardMVC\bin\es\System.Web.Razor.resources.dll
+C:\cabo froward}\CaboFrowardMVC\CaboFrowardMVC\bin\es\System.Web.WebPages.resources.dll
+C:\cabo froward}\CaboFrowardMVC\CaboFrowardMVC\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\cabo froward}\CaboFrowardMVC\CaboFrowardMVC\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\cabo froward}\CaboFrowardMVC\CaboFrowardMVC\obj\Release\CaboFrowardMVC.csprojResolveAssemblyReference.cache
+C:\cabo froward}\CaboFrowardMVC\CaboFrowardMVC\obj\Release\CaboFrowardMVC.csproj.CoreCompileInputs.cache
+C:\cabo froward}\CaboFrowardMVC\CaboFrowardMVC\obj\Release\CaboFrowardMVC.csproj.CopyComplete
+C:\cabo froward}\CaboFrowardMVC\CaboFrowardMVC\obj\Release\CaboFrowardMVC.dll
+C:\cabo froward}\CaboFrowardMVC\CaboFrowardMVC\obj\Release\CaboFrowardMVC.pdb
+C:\cabo froward}\CaboFrowardMVC\CaboFrowardMVC\bin\System.Net.Http.Formatting.dll
+C:\cabo froward}\CaboFrowardMVC\CaboFrowardMVC\bin\System.Web.Http.dll
+C:\cabo froward}\CaboFrowardMVC\CaboFrowardMVC\bin\System.Web.Http.WebHost.dll
+C:\cabo froward}\CaboFrowardMVC\CaboFrowardMVC\bin\System.Net.Http.Formatting.xml
+C:\cabo froward}\CaboFrowardMVC\CaboFrowardMVC\bin\System.Web.Http.xml
+C:\cabo froward}\CaboFrowardMVC\CaboFrowardMVC\bin\System.Web.Http.WebHost.xml
+C:\cabo froward}\CaboFrowardMVC\CaboFrowardMVC\bin\es\System.Net.Http.Formatting.resources.dll
+C:\cabo froward}\CaboFrowardMVC\CaboFrowardMVC\bin\es\System.Web.Http.resources.dll
+C:\cabo froward}\CaboFrowardMVC\CaboFrowardMVC\bin\es\System.Web.Http.WebHost.resources.dll
+C:\git\sistema-acceso-web\CaboFrowardMVC\CaboFrowardMVC\bin\ApplicationInsights.config
+C:\git\sistema-acceso-web\CaboFrowardMVC\CaboFrowardMVC\bin\CaboFrowardMVC.dll.config
+C:\git\sistema-acceso-web\CaboFrowardMVC\CaboFrowardMVC\bin\CaboFrowardMVC.dll
+C:\git\sistema-acceso-web\CaboFrowardMVC\CaboFrowardMVC\bin\CaboFrowardMVC.pdb
+C:\git\sistema-acceso-web\CaboFrowardMVC\CaboFrowardMVC\bin\roslyn\csc.exe
+C:\git\sistema-acceso-web\CaboFrowardMVC\CaboFrowardMVC\bin\roslyn\csc.exe.config
+C:\git\sistema-acceso-web\CaboFrowardMVC\CaboFrowardMVC\bin\roslyn\csc.rsp
+C:\git\sistema-acceso-web\CaboFrowardMVC\CaboFrowardMVC\bin\roslyn\csi.exe
+C:\git\sistema-acceso-web\CaboFrowardMVC\CaboFrowardMVC\bin\roslyn\csi.rsp
+C:\git\sistema-acceso-web\CaboFrowardMVC\CaboFrowardMVC\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\git\sistema-acceso-web\CaboFrowardMVC\CaboFrowardMVC\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\git\sistema-acceso-web\CaboFrowardMVC\CaboFrowardMVC\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\git\sistema-acceso-web\CaboFrowardMVC\CaboFrowardMVC\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\git\sistema-acceso-web\CaboFrowardMVC\CaboFrowardMVC\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\git\sistema-acceso-web\CaboFrowardMVC\CaboFrowardMVC\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\git\sistema-acceso-web\CaboFrowardMVC\CaboFrowardMVC\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\git\sistema-acceso-web\CaboFrowardMVC\CaboFrowardMVC\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\git\sistema-acceso-web\CaboFrowardMVC\CaboFrowardMVC\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\git\sistema-acceso-web\CaboFrowardMVC\CaboFrowardMVC\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\git\sistema-acceso-web\CaboFrowardMVC\CaboFrowardMVC\bin\roslyn\System.AppContext.dll
+C:\git\sistema-acceso-web\CaboFrowardMVC\CaboFrowardMVC\bin\roslyn\System.Collections.Immutable.dll
+C:\git\sistema-acceso-web\CaboFrowardMVC\CaboFrowardMVC\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\git\sistema-acceso-web\CaboFrowardMVC\CaboFrowardMVC\bin\roslyn\System.IO.FileSystem.dll
+C:\git\sistema-acceso-web\CaboFrowardMVC\CaboFrowardMVC\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\git\sistema-acceso-web\CaboFrowardMVC\CaboFrowardMVC\bin\roslyn\System.Reflection.Metadata.dll
+C:\git\sistema-acceso-web\CaboFrowardMVC\CaboFrowardMVC\bin\roslyn\vbc.exe
+C:\git\sistema-acceso-web\CaboFrowardMVC\CaboFrowardMVC\bin\roslyn\vbc.exe.config
+C:\git\sistema-acceso-web\CaboFrowardMVC\CaboFrowardMVC\bin\roslyn\vbc.rsp
+C:\git\sistema-acceso-web\CaboFrowardMVC\CaboFrowardMVC\bin\roslyn\VBCSCompiler.exe
+C:\git\sistema-acceso-web\CaboFrowardMVC\CaboFrowardMVC\bin\roslyn\VBCSCompiler.exe.config
+C:\git\sistema-acceso-web\CaboFrowardMVC\CaboFrowardMVC\bin\Antlr3.Runtime.dll
+C:\git\sistema-acceso-web\CaboFrowardMVC\CaboFrowardMVC\bin\BOL.dll
+C:\git\sistema-acceso-web\CaboFrowardMVC\CaboFrowardMVC\bin\DAL.dll
+C:\git\sistema-acceso-web\CaboFrowardMVC\CaboFrowardMVC\bin\EntityFramework.dll
+C:\git\sistema-acceso-web\CaboFrowardMVC\CaboFrowardMVC\bin\EntityFramework.SqlServer.dll
+C:\git\sistema-acceso-web\CaboFrowardMVC\CaboFrowardMVC\bin\Microsoft.AI.Agent.Intercept.dll
+C:\git\sistema-acceso-web\CaboFrowardMVC\CaboFrowardMVC\bin\Microsoft.AI.DependencyCollector.dll
+C:\git\sistema-acceso-web\CaboFrowardMVC\CaboFrowardMVC\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\git\sistema-acceso-web\CaboFrowardMVC\CaboFrowardMVC\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\git\sistema-acceso-web\CaboFrowardMVC\CaboFrowardMVC\bin\Microsoft.AI.Web.dll
+C:\git\sistema-acceso-web\CaboFrowardMVC\CaboFrowardMVC\bin\Microsoft.AI.WindowsServer.dll
+C:\git\sistema-acceso-web\CaboFrowardMVC\CaboFrowardMVC\bin\Microsoft.ApplicationInsights.dll
+C:\git\sistema-acceso-web\CaboFrowardMVC\CaboFrowardMVC\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\git\sistema-acceso-web\CaboFrowardMVC\CaboFrowardMVC\bin\Microsoft.Web.Infrastructure.dll
+C:\git\sistema-acceso-web\CaboFrowardMVC\CaboFrowardMVC\bin\Newtonsoft.Json.dll
+C:\git\sistema-acceso-web\CaboFrowardMVC\CaboFrowardMVC\bin\System.Net.Http.Formatting.dll
+C:\git\sistema-acceso-web\CaboFrowardMVC\CaboFrowardMVC\bin\System.Web.Helpers.dll
+C:\git\sistema-acceso-web\CaboFrowardMVC\CaboFrowardMVC\bin\System.Web.Http.dll
+C:\git\sistema-acceso-web\CaboFrowardMVC\CaboFrowardMVC\bin\System.Web.Http.WebHost.dll
+C:\git\sistema-acceso-web\CaboFrowardMVC\CaboFrowardMVC\bin\System.Web.Mvc.dll
+C:\git\sistema-acceso-web\CaboFrowardMVC\CaboFrowardMVC\bin\System.Web.Optimization.dll
+C:\git\sistema-acceso-web\CaboFrowardMVC\CaboFrowardMVC\bin\System.Web.Razor.dll
+C:\git\sistema-acceso-web\CaboFrowardMVC\CaboFrowardMVC\bin\System.Web.WebPages.Deployment.dll
+C:\git\sistema-acceso-web\CaboFrowardMVC\CaboFrowardMVC\bin\System.Web.WebPages.dll
+C:\git\sistema-acceso-web\CaboFrowardMVC\CaboFrowardMVC\bin\System.Web.WebPages.Razor.dll
+C:\git\sistema-acceso-web\CaboFrowardMVC\CaboFrowardMVC\bin\WebGrease.dll
+C:\git\sistema-acceso-web\CaboFrowardMVC\CaboFrowardMVC\bin\BOL.pdb
+C:\git\sistema-acceso-web\CaboFrowardMVC\CaboFrowardMVC\bin\DAL.pdb
+C:\git\sistema-acceso-web\CaboFrowardMVC\CaboFrowardMVC\bin\EntityFramework.xml
+C:\git\sistema-acceso-web\CaboFrowardMVC\CaboFrowardMVC\bin\EntityFramework.SqlServer.xml
+C:\git\sistema-acceso-web\CaboFrowardMVC\CaboFrowardMVC\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\git\sistema-acceso-web\CaboFrowardMVC\CaboFrowardMVC\bin\Newtonsoft.Json.xml
+C:\git\sistema-acceso-web\CaboFrowardMVC\CaboFrowardMVC\bin\System.Net.Http.Formatting.xml
+C:\git\sistema-acceso-web\CaboFrowardMVC\CaboFrowardMVC\bin\System.Web.Http.xml
+C:\git\sistema-acceso-web\CaboFrowardMVC\CaboFrowardMVC\bin\System.Web.Http.WebHost.xml
+C:\git\sistema-acceso-web\CaboFrowardMVC\CaboFrowardMVC\bin\System.Web.Helpers.xml
+C:\git\sistema-acceso-web\CaboFrowardMVC\CaboFrowardMVC\bin\System.Web.Mvc.xml
+C:\git\sistema-acceso-web\CaboFrowardMVC\CaboFrowardMVC\bin\System.Web.Optimization.xml
+C:\git\sistema-acceso-web\CaboFrowardMVC\CaboFrowardMVC\bin\System.Web.Razor.xml
+C:\git\sistema-acceso-web\CaboFrowardMVC\CaboFrowardMVC\bin\System.Web.WebPages.xml
+C:\git\sistema-acceso-web\CaboFrowardMVC\CaboFrowardMVC\bin\System.Web.WebPages.Deployment.xml
+C:\git\sistema-acceso-web\CaboFrowardMVC\CaboFrowardMVC\bin\System.Web.WebPages.Razor.xml
+C:\git\sistema-acceso-web\CaboFrowardMVC\CaboFrowardMVC\bin\Antlr3.Runtime.pdb
+C:\git\sistema-acceso-web\CaboFrowardMVC\CaboFrowardMVC\bin\Microsoft.ApplicationInsights.xml
+C:\git\sistema-acceso-web\CaboFrowardMVC\CaboFrowardMVC\bin\Microsoft.AI.DependencyCollector.xml
+C:\git\sistema-acceso-web\CaboFrowardMVC\CaboFrowardMVC\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\git\sistema-acceso-web\CaboFrowardMVC\CaboFrowardMVC\bin\Microsoft.AI.WindowsServer.xml
+C:\git\sistema-acceso-web\CaboFrowardMVC\CaboFrowardMVC\bin\Microsoft.AI.Web.xml
+C:\git\sistema-acceso-web\CaboFrowardMVC\CaboFrowardMVC\bin\es\System.Net.Http.Formatting.resources.dll
+C:\git\sistema-acceso-web\CaboFrowardMVC\CaboFrowardMVC\bin\es\System.Web.Http.resources.dll
+C:\git\sistema-acceso-web\CaboFrowardMVC\CaboFrowardMVC\bin\es\System.Web.Http.WebHost.resources.dll
+C:\git\sistema-acceso-web\CaboFrowardMVC\CaboFrowardMVC\bin\es\System.Web.Helpers.resources.dll
+C:\git\sistema-acceso-web\CaboFrowardMVC\CaboFrowardMVC\bin\es\System.Web.Mvc.resources.dll
+C:\git\sistema-acceso-web\CaboFrowardMVC\CaboFrowardMVC\bin\es\System.Web.Optimization.resources.dll
+C:\git\sistema-acceso-web\CaboFrowardMVC\CaboFrowardMVC\bin\es\System.Web.Razor.resources.dll
+C:\git\sistema-acceso-web\CaboFrowardMVC\CaboFrowardMVC\bin\es\System.Web.WebPages.resources.dll
+C:\git\sistema-acceso-web\CaboFrowardMVC\CaboFrowardMVC\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\git\sistema-acceso-web\CaboFrowardMVC\CaboFrowardMVC\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\git\sistema-acceso-web\CaboFrowardMVC\CaboFrowardMVC\obj\Release\CaboFrowardMVC.csprojResolveAssemblyReference.cache
+C:\git\sistema-acceso-web\CaboFrowardMVC\CaboFrowardMVC\obj\Release\CaboFrowardMVC.csproj.CoreCompileInputs.cache
+C:\git\sistema-acceso-web\CaboFrowardMVC\CaboFrowardMVC\obj\Release\CaboFrowardMVC.csproj.CopyComplete
+C:\git\sistema-acceso-web\CaboFrowardMVC\CaboFrowardMVC\obj\Release\CaboFrowardMVC.dll
+C:\git\sistema-acceso-web\CaboFrowardMVC\CaboFrowardMVC\obj\Release\CaboFrowardMVC.pdb
+C:\cabo froward}\yerko\CaboFrowardMVC\bin\ApplicationInsights.config
+C:\cabo froward}\yerko\CaboFrowardMVC\bin\CaboFrowardMVC.dll.config
+C:\cabo froward}\yerko\CaboFrowardMVC\bin\CaboFrowardMVC.dll
+C:\cabo froward}\yerko\CaboFrowardMVC\bin\CaboFrowardMVC.pdb
+C:\cabo froward}\yerko\CaboFrowardMVC\bin\roslyn\csc.exe
+C:\cabo froward}\yerko\CaboFrowardMVC\bin\roslyn\csc.exe.config
+C:\cabo froward}\yerko\CaboFrowardMVC\bin\roslyn\csc.rsp
+C:\cabo froward}\yerko\CaboFrowardMVC\bin\roslyn\csi.exe
+C:\cabo froward}\yerko\CaboFrowardMVC\bin\roslyn\csi.rsp
+C:\cabo froward}\yerko\CaboFrowardMVC\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\cabo froward}\yerko\CaboFrowardMVC\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\cabo froward}\yerko\CaboFrowardMVC\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\cabo froward}\yerko\CaboFrowardMVC\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\cabo froward}\yerko\CaboFrowardMVC\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\cabo froward}\yerko\CaboFrowardMVC\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\cabo froward}\yerko\CaboFrowardMVC\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\cabo froward}\yerko\CaboFrowardMVC\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\cabo froward}\yerko\CaboFrowardMVC\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\cabo froward}\yerko\CaboFrowardMVC\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\cabo froward}\yerko\CaboFrowardMVC\bin\roslyn\System.AppContext.dll
+C:\cabo froward}\yerko\CaboFrowardMVC\bin\roslyn\System.Collections.Immutable.dll
+C:\cabo froward}\yerko\CaboFrowardMVC\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\cabo froward}\yerko\CaboFrowardMVC\bin\roslyn\System.IO.FileSystem.dll
+C:\cabo froward}\yerko\CaboFrowardMVC\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\cabo froward}\yerko\CaboFrowardMVC\bin\roslyn\System.Reflection.Metadata.dll
+C:\cabo froward}\yerko\CaboFrowardMVC\bin\roslyn\vbc.exe
+C:\cabo froward}\yerko\CaboFrowardMVC\bin\roslyn\vbc.exe.config
+C:\cabo froward}\yerko\CaboFrowardMVC\bin\roslyn\vbc.rsp
+C:\cabo froward}\yerko\CaboFrowardMVC\bin\roslyn\VBCSCompiler.exe
+C:\cabo froward}\yerko\CaboFrowardMVC\bin\roslyn\VBCSCompiler.exe.config
+C:\cabo froward}\yerko\CaboFrowardMVC\bin\Antlr3.Runtime.dll
+C:\cabo froward}\yerko\CaboFrowardMVC\bin\BOL.dll
+C:\cabo froward}\yerko\CaboFrowardMVC\bin\DAL.dll
+C:\cabo froward}\yerko\CaboFrowardMVC\bin\EntityFramework.dll
+C:\cabo froward}\yerko\CaboFrowardMVC\bin\EntityFramework.SqlServer.dll
+C:\cabo froward}\yerko\CaboFrowardMVC\bin\Microsoft.AI.Agent.Intercept.dll
+C:\cabo froward}\yerko\CaboFrowardMVC\bin\Microsoft.AI.DependencyCollector.dll
+C:\cabo froward}\yerko\CaboFrowardMVC\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\cabo froward}\yerko\CaboFrowardMVC\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\cabo froward}\yerko\CaboFrowardMVC\bin\Microsoft.AI.Web.dll
+C:\cabo froward}\yerko\CaboFrowardMVC\bin\Microsoft.AI.WindowsServer.dll
+C:\cabo froward}\yerko\CaboFrowardMVC\bin\Microsoft.ApplicationInsights.dll
+C:\cabo froward}\yerko\CaboFrowardMVC\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\cabo froward}\yerko\CaboFrowardMVC\bin\Microsoft.Web.Infrastructure.dll
+C:\cabo froward}\yerko\CaboFrowardMVC\bin\Newtonsoft.Json.dll
+C:\cabo froward}\yerko\CaboFrowardMVC\bin\System.Net.Http.Formatting.dll
+C:\cabo froward}\yerko\CaboFrowardMVC\bin\System.Web.Helpers.dll
+C:\cabo froward}\yerko\CaboFrowardMVC\bin\System.Web.Http.dll
+C:\cabo froward}\yerko\CaboFrowardMVC\bin\System.Web.Http.WebHost.dll
+C:\cabo froward}\yerko\CaboFrowardMVC\bin\System.Web.Mvc.dll
+C:\cabo froward}\yerko\CaboFrowardMVC\bin\System.Web.Optimization.dll
+C:\cabo froward}\yerko\CaboFrowardMVC\bin\System.Web.Razor.dll
+C:\cabo froward}\yerko\CaboFrowardMVC\bin\System.Web.WebPages.Deployment.dll
+C:\cabo froward}\yerko\CaboFrowardMVC\bin\System.Web.WebPages.dll
+C:\cabo froward}\yerko\CaboFrowardMVC\bin\System.Web.WebPages.Razor.dll
+C:\cabo froward}\yerko\CaboFrowardMVC\bin\WebGrease.dll
+C:\cabo froward}\yerko\CaboFrowardMVC\bin\BOL.pdb
+C:\cabo froward}\yerko\CaboFrowardMVC\bin\DAL.pdb
+C:\cabo froward}\yerko\CaboFrowardMVC\bin\EntityFramework.xml
+C:\cabo froward}\yerko\CaboFrowardMVC\bin\EntityFramework.SqlServer.xml
+C:\cabo froward}\yerko\CaboFrowardMVC\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\cabo froward}\yerko\CaboFrowardMVC\bin\Newtonsoft.Json.xml
+C:\cabo froward}\yerko\CaboFrowardMVC\bin\System.Net.Http.Formatting.xml
+C:\cabo froward}\yerko\CaboFrowardMVC\bin\System.Web.Http.xml
+C:\cabo froward}\yerko\CaboFrowardMVC\bin\System.Web.Http.WebHost.xml
+C:\cabo froward}\yerko\CaboFrowardMVC\bin\System.Web.Helpers.xml
+C:\cabo froward}\yerko\CaboFrowardMVC\bin\System.Web.Mvc.xml
+C:\cabo froward}\yerko\CaboFrowardMVC\bin\System.Web.Optimization.xml
+C:\cabo froward}\yerko\CaboFrowardMVC\bin\System.Web.Razor.xml
+C:\cabo froward}\yerko\CaboFrowardMVC\bin\System.Web.WebPages.xml
+C:\cabo froward}\yerko\CaboFrowardMVC\bin\System.Web.WebPages.Deployment.xml
+C:\cabo froward}\yerko\CaboFrowardMVC\bin\System.Web.WebPages.Razor.xml
+C:\cabo froward}\yerko\CaboFrowardMVC\bin\Antlr3.Runtime.pdb
+C:\cabo froward}\yerko\CaboFrowardMVC\bin\Microsoft.ApplicationInsights.xml
+C:\cabo froward}\yerko\CaboFrowardMVC\bin\Microsoft.AI.DependencyCollector.xml
+C:\cabo froward}\yerko\CaboFrowardMVC\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\cabo froward}\yerko\CaboFrowardMVC\bin\Microsoft.AI.WindowsServer.xml
+C:\cabo froward}\yerko\CaboFrowardMVC\bin\Microsoft.AI.Web.xml
+C:\cabo froward}\yerko\CaboFrowardMVC\bin\es\System.Net.Http.Formatting.resources.dll
+C:\cabo froward}\yerko\CaboFrowardMVC\bin\es\System.Web.Http.resources.dll
+C:\cabo froward}\yerko\CaboFrowardMVC\bin\es\System.Web.Http.WebHost.resources.dll
+C:\cabo froward}\yerko\CaboFrowardMVC\bin\es\System.Web.Helpers.resources.dll
+C:\cabo froward}\yerko\CaboFrowardMVC\bin\es\System.Web.Mvc.resources.dll
+C:\cabo froward}\yerko\CaboFrowardMVC\bin\es\System.Web.Optimization.resources.dll
+C:\cabo froward}\yerko\CaboFrowardMVC\bin\es\System.Web.Razor.resources.dll
+C:\cabo froward}\yerko\CaboFrowardMVC\bin\es\System.Web.WebPages.resources.dll
+C:\cabo froward}\yerko\CaboFrowardMVC\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\cabo froward}\yerko\CaboFrowardMVC\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\cabo froward}\yerko\CaboFrowardMVC\obj\Release\CaboFrowardMVC.csprojResolveAssemblyReference.cache
+C:\cabo froward}\yerko\CaboFrowardMVC\obj\Release\CaboFrowardMVC.csproj.CoreCompileInputs.cache
+C:\cabo froward}\yerko\CaboFrowardMVC\obj\Release\CaboFrowardMVC.csproj.CopyComplete
+C:\cabo froward}\yerko\CaboFrowardMVC\obj\Release\CaboFrowardMVC.dll
+C:\cabo froward}\yerko\CaboFrowardMVC\obj\Release\CaboFrowardMVC.pdb
+C:\daniel\ConsultorIt\FROWARD ULTIMOS FUENTES\23052018\CaboFrowardMVC\bin\ApplicationInsights.config
+C:\daniel\ConsultorIt\FROWARD ULTIMOS FUENTES\23052018\CaboFrowardMVC\bin\CaboFrowardMVC.dll.config
+C:\daniel\ConsultorIt\FROWARD ULTIMOS FUENTES\23052018\CaboFrowardMVC\bin\CaboFrowardMVC.dll
+C:\daniel\ConsultorIt\FROWARD ULTIMOS FUENTES\23052018\CaboFrowardMVC\bin\CaboFrowardMVC.pdb
+C:\daniel\ConsultorIt\FROWARD ULTIMOS FUENTES\23052018\CaboFrowardMVC\bin\roslyn\csc.exe
+C:\daniel\ConsultorIt\FROWARD ULTIMOS FUENTES\23052018\CaboFrowardMVC\bin\roslyn\csc.exe.config
+C:\daniel\ConsultorIt\FROWARD ULTIMOS FUENTES\23052018\CaboFrowardMVC\bin\roslyn\csc.rsp
+C:\daniel\ConsultorIt\FROWARD ULTIMOS FUENTES\23052018\CaboFrowardMVC\bin\roslyn\csi.exe
+C:\daniel\ConsultorIt\FROWARD ULTIMOS FUENTES\23052018\CaboFrowardMVC\bin\roslyn\csi.rsp
+C:\daniel\ConsultorIt\FROWARD ULTIMOS FUENTES\23052018\CaboFrowardMVC\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\daniel\ConsultorIt\FROWARD ULTIMOS FUENTES\23052018\CaboFrowardMVC\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\daniel\ConsultorIt\FROWARD ULTIMOS FUENTES\23052018\CaboFrowardMVC\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\daniel\ConsultorIt\FROWARD ULTIMOS FUENTES\23052018\CaboFrowardMVC\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\daniel\ConsultorIt\FROWARD ULTIMOS FUENTES\23052018\CaboFrowardMVC\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\daniel\ConsultorIt\FROWARD ULTIMOS FUENTES\23052018\CaboFrowardMVC\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\daniel\ConsultorIt\FROWARD ULTIMOS FUENTES\23052018\CaboFrowardMVC\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\daniel\ConsultorIt\FROWARD ULTIMOS FUENTES\23052018\CaboFrowardMVC\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\daniel\ConsultorIt\FROWARD ULTIMOS FUENTES\23052018\CaboFrowardMVC\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\daniel\ConsultorIt\FROWARD ULTIMOS FUENTES\23052018\CaboFrowardMVC\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\daniel\ConsultorIt\FROWARD ULTIMOS FUENTES\23052018\CaboFrowardMVC\bin\roslyn\System.AppContext.dll
+C:\daniel\ConsultorIt\FROWARD ULTIMOS FUENTES\23052018\CaboFrowardMVC\bin\roslyn\System.Collections.Immutable.dll
+C:\daniel\ConsultorIt\FROWARD ULTIMOS FUENTES\23052018\CaboFrowardMVC\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\daniel\ConsultorIt\FROWARD ULTIMOS FUENTES\23052018\CaboFrowardMVC\bin\roslyn\System.IO.FileSystem.dll
+C:\daniel\ConsultorIt\FROWARD ULTIMOS FUENTES\23052018\CaboFrowardMVC\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\daniel\ConsultorIt\FROWARD ULTIMOS FUENTES\23052018\CaboFrowardMVC\bin\roslyn\System.Reflection.Metadata.dll
+C:\daniel\ConsultorIt\FROWARD ULTIMOS FUENTES\23052018\CaboFrowardMVC\bin\roslyn\vbc.exe
+C:\daniel\ConsultorIt\FROWARD ULTIMOS FUENTES\23052018\CaboFrowardMVC\bin\roslyn\vbc.exe.config
+C:\daniel\ConsultorIt\FROWARD ULTIMOS FUENTES\23052018\CaboFrowardMVC\bin\roslyn\vbc.rsp
+C:\daniel\ConsultorIt\FROWARD ULTIMOS FUENTES\23052018\CaboFrowardMVC\bin\roslyn\VBCSCompiler.exe
+C:\daniel\ConsultorIt\FROWARD ULTIMOS FUENTES\23052018\CaboFrowardMVC\bin\roslyn\VBCSCompiler.exe.config
+C:\daniel\ConsultorIt\FROWARD ULTIMOS FUENTES\23052018\CaboFrowardMVC\bin\Antlr3.Runtime.dll
+C:\daniel\ConsultorIt\FROWARD ULTIMOS FUENTES\23052018\CaboFrowardMVC\bin\BOL.dll
+C:\daniel\ConsultorIt\FROWARD ULTIMOS FUENTES\23052018\CaboFrowardMVC\bin\DAL.dll
+C:\daniel\ConsultorIt\FROWARD ULTIMOS FUENTES\23052018\CaboFrowardMVC\bin\EntityFramework.dll
+C:\daniel\ConsultorIt\FROWARD ULTIMOS FUENTES\23052018\CaboFrowardMVC\bin\EntityFramework.SqlServer.dll
+C:\daniel\ConsultorIt\FROWARD ULTIMOS FUENTES\23052018\CaboFrowardMVC\bin\Microsoft.AI.Agent.Intercept.dll
+C:\daniel\ConsultorIt\FROWARD ULTIMOS FUENTES\23052018\CaboFrowardMVC\bin\Microsoft.AI.DependencyCollector.dll
+C:\daniel\ConsultorIt\FROWARD ULTIMOS FUENTES\23052018\CaboFrowardMVC\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\daniel\ConsultorIt\FROWARD ULTIMOS FUENTES\23052018\CaboFrowardMVC\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\daniel\ConsultorIt\FROWARD ULTIMOS FUENTES\23052018\CaboFrowardMVC\bin\Microsoft.AI.Web.dll
+C:\daniel\ConsultorIt\FROWARD ULTIMOS FUENTES\23052018\CaboFrowardMVC\bin\Microsoft.AI.WindowsServer.dll
+C:\daniel\ConsultorIt\FROWARD ULTIMOS FUENTES\23052018\CaboFrowardMVC\bin\Microsoft.ApplicationInsights.dll
+C:\daniel\ConsultorIt\FROWARD ULTIMOS FUENTES\23052018\CaboFrowardMVC\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\daniel\ConsultorIt\FROWARD ULTIMOS FUENTES\23052018\CaboFrowardMVC\bin\Microsoft.Web.Infrastructure.dll
+C:\daniel\ConsultorIt\FROWARD ULTIMOS FUENTES\23052018\CaboFrowardMVC\bin\Newtonsoft.Json.dll
+C:\daniel\ConsultorIt\FROWARD ULTIMOS FUENTES\23052018\CaboFrowardMVC\bin\System.Net.Http.Formatting.dll
+C:\daniel\ConsultorIt\FROWARD ULTIMOS FUENTES\23052018\CaboFrowardMVC\bin\System.Web.Helpers.dll
+C:\daniel\ConsultorIt\FROWARD ULTIMOS FUENTES\23052018\CaboFrowardMVC\bin\System.Web.Http.dll
+C:\daniel\ConsultorIt\FROWARD ULTIMOS FUENTES\23052018\CaboFrowardMVC\bin\System.Web.Http.WebHost.dll
+C:\daniel\ConsultorIt\FROWARD ULTIMOS FUENTES\23052018\CaboFrowardMVC\bin\System.Web.Mvc.dll
+C:\daniel\ConsultorIt\FROWARD ULTIMOS FUENTES\23052018\CaboFrowardMVC\bin\System.Web.Optimization.dll
+C:\daniel\ConsultorIt\FROWARD ULTIMOS FUENTES\23052018\CaboFrowardMVC\bin\System.Web.Razor.dll
+C:\daniel\ConsultorIt\FROWARD ULTIMOS FUENTES\23052018\CaboFrowardMVC\bin\System.Web.WebPages.Deployment.dll
+C:\daniel\ConsultorIt\FROWARD ULTIMOS FUENTES\23052018\CaboFrowardMVC\bin\System.Web.WebPages.dll
+C:\daniel\ConsultorIt\FROWARD ULTIMOS FUENTES\23052018\CaboFrowardMVC\bin\System.Web.WebPages.Razor.dll
+C:\daniel\ConsultorIt\FROWARD ULTIMOS FUENTES\23052018\CaboFrowardMVC\bin\WebGrease.dll
+C:\daniel\ConsultorIt\FROWARD ULTIMOS FUENTES\23052018\CaboFrowardMVC\bin\BOL.pdb
+C:\daniel\ConsultorIt\FROWARD ULTIMOS FUENTES\23052018\CaboFrowardMVC\bin\DAL.pdb
+C:\daniel\ConsultorIt\FROWARD ULTIMOS FUENTES\23052018\CaboFrowardMVC\bin\EntityFramework.xml
+C:\daniel\ConsultorIt\FROWARD ULTIMOS FUENTES\23052018\CaboFrowardMVC\bin\EntityFramework.SqlServer.xml
+C:\daniel\ConsultorIt\FROWARD ULTIMOS FUENTES\23052018\CaboFrowardMVC\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\daniel\ConsultorIt\FROWARD ULTIMOS FUENTES\23052018\CaboFrowardMVC\bin\Newtonsoft.Json.xml
+C:\daniel\ConsultorIt\FROWARD ULTIMOS FUENTES\23052018\CaboFrowardMVC\bin\System.Net.Http.Formatting.xml
+C:\daniel\ConsultorIt\FROWARD ULTIMOS FUENTES\23052018\CaboFrowardMVC\bin\System.Web.Http.xml
+C:\daniel\ConsultorIt\FROWARD ULTIMOS FUENTES\23052018\CaboFrowardMVC\bin\System.Web.Http.WebHost.xml
+C:\daniel\ConsultorIt\FROWARD ULTIMOS FUENTES\23052018\CaboFrowardMVC\bin\System.Web.Helpers.xml
+C:\daniel\ConsultorIt\FROWARD ULTIMOS FUENTES\23052018\CaboFrowardMVC\bin\System.Web.Mvc.xml
+C:\daniel\ConsultorIt\FROWARD ULTIMOS FUENTES\23052018\CaboFrowardMVC\bin\System.Web.Optimization.xml
+C:\daniel\ConsultorIt\FROWARD ULTIMOS FUENTES\23052018\CaboFrowardMVC\bin\System.Web.Razor.xml
+C:\daniel\ConsultorIt\FROWARD ULTIMOS FUENTES\23052018\CaboFrowardMVC\bin\System.Web.WebPages.xml
+C:\daniel\ConsultorIt\FROWARD ULTIMOS FUENTES\23052018\CaboFrowardMVC\bin\System.Web.WebPages.Deployment.xml
+C:\daniel\ConsultorIt\FROWARD ULTIMOS FUENTES\23052018\CaboFrowardMVC\bin\System.Web.WebPages.Razor.xml
+C:\daniel\ConsultorIt\FROWARD ULTIMOS FUENTES\23052018\CaboFrowardMVC\bin\Antlr3.Runtime.pdb
+C:\daniel\ConsultorIt\FROWARD ULTIMOS FUENTES\23052018\CaboFrowardMVC\bin\Microsoft.ApplicationInsights.xml
+C:\daniel\ConsultorIt\FROWARD ULTIMOS FUENTES\23052018\CaboFrowardMVC\bin\Microsoft.AI.DependencyCollector.xml
+C:\daniel\ConsultorIt\FROWARD ULTIMOS FUENTES\23052018\CaboFrowardMVC\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\daniel\ConsultorIt\FROWARD ULTIMOS FUENTES\23052018\CaboFrowardMVC\bin\Microsoft.AI.WindowsServer.xml
+C:\daniel\ConsultorIt\FROWARD ULTIMOS FUENTES\23052018\CaboFrowardMVC\bin\Microsoft.AI.Web.xml
+C:\daniel\ConsultorIt\FROWARD ULTIMOS FUENTES\23052018\CaboFrowardMVC\bin\es\System.Net.Http.Formatting.resources.dll
+C:\daniel\ConsultorIt\FROWARD ULTIMOS FUENTES\23052018\CaboFrowardMVC\bin\es\System.Web.Http.resources.dll
+C:\daniel\ConsultorIt\FROWARD ULTIMOS FUENTES\23052018\CaboFrowardMVC\bin\es\System.Web.Http.WebHost.resources.dll
+C:\daniel\ConsultorIt\FROWARD ULTIMOS FUENTES\23052018\CaboFrowardMVC\bin\es\System.Web.Helpers.resources.dll
+C:\daniel\ConsultorIt\FROWARD ULTIMOS FUENTES\23052018\CaboFrowardMVC\bin\es\System.Web.Mvc.resources.dll
+C:\daniel\ConsultorIt\FROWARD ULTIMOS FUENTES\23052018\CaboFrowardMVC\bin\es\System.Web.Optimization.resources.dll
+C:\daniel\ConsultorIt\FROWARD ULTIMOS FUENTES\23052018\CaboFrowardMVC\bin\es\System.Web.Razor.resources.dll
+C:\daniel\ConsultorIt\FROWARD ULTIMOS FUENTES\23052018\CaboFrowardMVC\bin\es\System.Web.WebPages.resources.dll
+C:\daniel\ConsultorIt\FROWARD ULTIMOS FUENTES\23052018\CaboFrowardMVC\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\daniel\ConsultorIt\FROWARD ULTIMOS FUENTES\23052018\CaboFrowardMVC\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\daniel\ConsultorIt\FROWARD ULTIMOS FUENTES\23052018\CaboFrowardMVC\obj\Release\CaboFrowardMVC.csprojResolveAssemblyReference.cache
+C:\daniel\ConsultorIt\FROWARD ULTIMOS FUENTES\23052018\CaboFrowardMVC\obj\Release\CaboFrowardMVC.csproj.CoreCompileInputs.cache
+C:\daniel\ConsultorIt\FROWARD ULTIMOS FUENTES\23052018\CaboFrowardMVC\obj\Release\CaboFrowardMVC.csproj.CopyComplete
+C:\daniel\ConsultorIt\FROWARD ULTIMOS FUENTES\23052018\CaboFrowardMVC\obj\Release\CaboFrowardMVC.dll
+C:\daniel\ConsultorIt\FROWARD ULTIMOS FUENTES\23052018\CaboFrowardMVC\obj\Release\CaboFrowardMVC.pdb
+C:\daniel\ConsultorIt\TTP\Fuente\08062018\08062018\CaboFrowardMVC\bin\ApplicationInsights.config
+C:\daniel\ConsultorIt\TTP\Fuente\08062018\08062018\CaboFrowardMVC\bin\CaboFrowardMVC.dll.config
+C:\daniel\ConsultorIt\TTP\Fuente\08062018\08062018\CaboFrowardMVC\bin\CaboFrowardMVC.dll
+C:\daniel\ConsultorIt\TTP\Fuente\08062018\08062018\CaboFrowardMVC\bin\CaboFrowardMVC.pdb
+C:\daniel\ConsultorIt\TTP\Fuente\08062018\08062018\CaboFrowardMVC\bin\roslyn\csc.exe
+C:\daniel\ConsultorIt\TTP\Fuente\08062018\08062018\CaboFrowardMVC\bin\roslyn\csc.exe.config
+C:\daniel\ConsultorIt\TTP\Fuente\08062018\08062018\CaboFrowardMVC\bin\roslyn\csc.rsp
+C:\daniel\ConsultorIt\TTP\Fuente\08062018\08062018\CaboFrowardMVC\bin\roslyn\csi.exe
+C:\daniel\ConsultorIt\TTP\Fuente\08062018\08062018\CaboFrowardMVC\bin\roslyn\csi.rsp
+C:\daniel\ConsultorIt\TTP\Fuente\08062018\08062018\CaboFrowardMVC\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\daniel\ConsultorIt\TTP\Fuente\08062018\08062018\CaboFrowardMVC\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\daniel\ConsultorIt\TTP\Fuente\08062018\08062018\CaboFrowardMVC\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\daniel\ConsultorIt\TTP\Fuente\08062018\08062018\CaboFrowardMVC\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\daniel\ConsultorIt\TTP\Fuente\08062018\08062018\CaboFrowardMVC\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\daniel\ConsultorIt\TTP\Fuente\08062018\08062018\CaboFrowardMVC\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\daniel\ConsultorIt\TTP\Fuente\08062018\08062018\CaboFrowardMVC\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\daniel\ConsultorIt\TTP\Fuente\08062018\08062018\CaboFrowardMVC\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\daniel\ConsultorIt\TTP\Fuente\08062018\08062018\CaboFrowardMVC\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\daniel\ConsultorIt\TTP\Fuente\08062018\08062018\CaboFrowardMVC\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\daniel\ConsultorIt\TTP\Fuente\08062018\08062018\CaboFrowardMVC\bin\roslyn\System.AppContext.dll
+C:\daniel\ConsultorIt\TTP\Fuente\08062018\08062018\CaboFrowardMVC\bin\roslyn\System.Collections.Immutable.dll
+C:\daniel\ConsultorIt\TTP\Fuente\08062018\08062018\CaboFrowardMVC\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\daniel\ConsultorIt\TTP\Fuente\08062018\08062018\CaboFrowardMVC\bin\roslyn\System.IO.FileSystem.dll
+C:\daniel\ConsultorIt\TTP\Fuente\08062018\08062018\CaboFrowardMVC\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\daniel\ConsultorIt\TTP\Fuente\08062018\08062018\CaboFrowardMVC\bin\roslyn\System.Reflection.Metadata.dll
+C:\daniel\ConsultorIt\TTP\Fuente\08062018\08062018\CaboFrowardMVC\bin\roslyn\vbc.exe
+C:\daniel\ConsultorIt\TTP\Fuente\08062018\08062018\CaboFrowardMVC\bin\roslyn\vbc.exe.config
+C:\daniel\ConsultorIt\TTP\Fuente\08062018\08062018\CaboFrowardMVC\bin\roslyn\vbc.rsp
+C:\daniel\ConsultorIt\TTP\Fuente\08062018\08062018\CaboFrowardMVC\bin\roslyn\VBCSCompiler.exe
+C:\daniel\ConsultorIt\TTP\Fuente\08062018\08062018\CaboFrowardMVC\bin\roslyn\VBCSCompiler.exe.config
+C:\daniel\ConsultorIt\TTP\Fuente\08062018\08062018\CaboFrowardMVC\bin\Antlr3.Runtime.dll
+C:\daniel\ConsultorIt\TTP\Fuente\08062018\08062018\CaboFrowardMVC\bin\BOL.dll
+C:\daniel\ConsultorIt\TTP\Fuente\08062018\08062018\CaboFrowardMVC\bin\DAL.dll
+C:\daniel\ConsultorIt\TTP\Fuente\08062018\08062018\CaboFrowardMVC\bin\EntityFramework.dll
+C:\daniel\ConsultorIt\TTP\Fuente\08062018\08062018\CaboFrowardMVC\bin\EntityFramework.SqlServer.dll
+C:\daniel\ConsultorIt\TTP\Fuente\08062018\08062018\CaboFrowardMVC\bin\ExcelDataReader.dll
+C:\daniel\ConsultorIt\TTP\Fuente\08062018\08062018\CaboFrowardMVC\bin\Microsoft.AI.Agent.Intercept.dll
+C:\daniel\ConsultorIt\TTP\Fuente\08062018\08062018\CaboFrowardMVC\bin\Microsoft.AI.DependencyCollector.dll
+C:\daniel\ConsultorIt\TTP\Fuente\08062018\08062018\CaboFrowardMVC\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\daniel\ConsultorIt\TTP\Fuente\08062018\08062018\CaboFrowardMVC\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\daniel\ConsultorIt\TTP\Fuente\08062018\08062018\CaboFrowardMVC\bin\Microsoft.AI.Web.dll
+C:\daniel\ConsultorIt\TTP\Fuente\08062018\08062018\CaboFrowardMVC\bin\Microsoft.AI.WindowsServer.dll
+C:\daniel\ConsultorIt\TTP\Fuente\08062018\08062018\CaboFrowardMVC\bin\Microsoft.ApplicationInsights.dll
+C:\daniel\ConsultorIt\TTP\Fuente\08062018\08062018\CaboFrowardMVC\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\daniel\ConsultorIt\TTP\Fuente\08062018\08062018\CaboFrowardMVC\bin\Microsoft.Web.Infrastructure.dll
+C:\daniel\ConsultorIt\TTP\Fuente\08062018\08062018\CaboFrowardMVC\bin\Newtonsoft.Json.dll
+C:\daniel\ConsultorIt\TTP\Fuente\08062018\08062018\CaboFrowardMVC\bin\System.Net.Http.Formatting.dll
+C:\daniel\ConsultorIt\TTP\Fuente\08062018\08062018\CaboFrowardMVC\bin\System.Web.Helpers.dll
+C:\daniel\ConsultorIt\TTP\Fuente\08062018\08062018\CaboFrowardMVC\bin\System.Web.Http.dll
+C:\daniel\ConsultorIt\TTP\Fuente\08062018\08062018\CaboFrowardMVC\bin\System.Web.Http.WebHost.dll
+C:\daniel\ConsultorIt\TTP\Fuente\08062018\08062018\CaboFrowardMVC\bin\System.Web.Mvc.dll
+C:\daniel\ConsultorIt\TTP\Fuente\08062018\08062018\CaboFrowardMVC\bin\System.Web.Optimization.dll
+C:\daniel\ConsultorIt\TTP\Fuente\08062018\08062018\CaboFrowardMVC\bin\System.Web.Razor.dll
+C:\daniel\ConsultorIt\TTP\Fuente\08062018\08062018\CaboFrowardMVC\bin\System.Web.WebPages.Deployment.dll
+C:\daniel\ConsultorIt\TTP\Fuente\08062018\08062018\CaboFrowardMVC\bin\System.Web.WebPages.dll
+C:\daniel\ConsultorIt\TTP\Fuente\08062018\08062018\CaboFrowardMVC\bin\System.Web.WebPages.Razor.dll
+C:\daniel\ConsultorIt\TTP\Fuente\08062018\08062018\CaboFrowardMVC\bin\WebGrease.dll
+C:\daniel\ConsultorIt\TTP\Fuente\08062018\08062018\CaboFrowardMVC\bin\BOL.pdb
+C:\daniel\ConsultorIt\TTP\Fuente\08062018\08062018\CaboFrowardMVC\bin\DAL.pdb
+C:\daniel\ConsultorIt\TTP\Fuente\08062018\08062018\CaboFrowardMVC\bin\EntityFramework.xml
+C:\daniel\ConsultorIt\TTP\Fuente\08062018\08062018\CaboFrowardMVC\bin\EntityFramework.SqlServer.xml
+C:\daniel\ConsultorIt\TTP\Fuente\08062018\08062018\CaboFrowardMVC\bin\ExcelDataReader.xml
+C:\daniel\ConsultorIt\TTP\Fuente\08062018\08062018\CaboFrowardMVC\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\daniel\ConsultorIt\TTP\Fuente\08062018\08062018\CaboFrowardMVC\bin\Newtonsoft.Json.xml
+C:\daniel\ConsultorIt\TTP\Fuente\08062018\08062018\CaboFrowardMVC\bin\System.Net.Http.Formatting.xml
+C:\daniel\ConsultorIt\TTP\Fuente\08062018\08062018\CaboFrowardMVC\bin\System.Web.Http.xml
+C:\daniel\ConsultorIt\TTP\Fuente\08062018\08062018\CaboFrowardMVC\bin\System.Web.Http.WebHost.xml
+C:\daniel\ConsultorIt\TTP\Fuente\08062018\08062018\CaboFrowardMVC\bin\System.Web.Helpers.xml
+C:\daniel\ConsultorIt\TTP\Fuente\08062018\08062018\CaboFrowardMVC\bin\System.Web.Mvc.xml
+C:\daniel\ConsultorIt\TTP\Fuente\08062018\08062018\CaboFrowardMVC\bin\System.Web.Optimization.xml
+C:\daniel\ConsultorIt\TTP\Fuente\08062018\08062018\CaboFrowardMVC\bin\System.Web.Razor.xml
+C:\daniel\ConsultorIt\TTP\Fuente\08062018\08062018\CaboFrowardMVC\bin\System.Web.WebPages.xml
+C:\daniel\ConsultorIt\TTP\Fuente\08062018\08062018\CaboFrowardMVC\bin\System.Web.WebPages.Deployment.xml
+C:\daniel\ConsultorIt\TTP\Fuente\08062018\08062018\CaboFrowardMVC\bin\System.Web.WebPages.Razor.xml
+C:\daniel\ConsultorIt\TTP\Fuente\08062018\08062018\CaboFrowardMVC\bin\Antlr3.Runtime.pdb
+C:\daniel\ConsultorIt\TTP\Fuente\08062018\08062018\CaboFrowardMVC\bin\Microsoft.ApplicationInsights.xml
+C:\daniel\ConsultorIt\TTP\Fuente\08062018\08062018\CaboFrowardMVC\bin\Microsoft.AI.DependencyCollector.xml
+C:\daniel\ConsultorIt\TTP\Fuente\08062018\08062018\CaboFrowardMVC\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\daniel\ConsultorIt\TTP\Fuente\08062018\08062018\CaboFrowardMVC\bin\Microsoft.AI.WindowsServer.xml
+C:\daniel\ConsultorIt\TTP\Fuente\08062018\08062018\CaboFrowardMVC\bin\Microsoft.AI.Web.xml
+C:\daniel\ConsultorIt\TTP\Fuente\08062018\08062018\CaboFrowardMVC\bin\es\System.Net.Http.Formatting.resources.dll
+C:\daniel\ConsultorIt\TTP\Fuente\08062018\08062018\CaboFrowardMVC\bin\es\System.Web.Http.resources.dll
+C:\daniel\ConsultorIt\TTP\Fuente\08062018\08062018\CaboFrowardMVC\bin\es\System.Web.Http.WebHost.resources.dll
+C:\daniel\ConsultorIt\TTP\Fuente\08062018\08062018\CaboFrowardMVC\bin\es\System.Web.Helpers.resources.dll
+C:\daniel\ConsultorIt\TTP\Fuente\08062018\08062018\CaboFrowardMVC\bin\es\System.Web.Mvc.resources.dll
+C:\daniel\ConsultorIt\TTP\Fuente\08062018\08062018\CaboFrowardMVC\bin\es\System.Web.Optimization.resources.dll
+C:\daniel\ConsultorIt\TTP\Fuente\08062018\08062018\CaboFrowardMVC\bin\es\System.Web.Razor.resources.dll
+C:\daniel\ConsultorIt\TTP\Fuente\08062018\08062018\CaboFrowardMVC\bin\es\System.Web.WebPages.resources.dll
+C:\daniel\ConsultorIt\TTP\Fuente\08062018\08062018\CaboFrowardMVC\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\daniel\ConsultorIt\TTP\Fuente\08062018\08062018\CaboFrowardMVC\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\daniel\ConsultorIt\TTP\Fuente\08062018\08062018\CaboFrowardMVC\obj\Release\CaboFrowardMVC.csprojResolveAssemblyReference.cache
+C:\daniel\ConsultorIt\TTP\Fuente\08062018\08062018\CaboFrowardMVC\obj\Release\CaboFrowardMVC.csproj.CoreCompileInputs.cache
+C:\daniel\ConsultorIt\TTP\Fuente\08062018\08062018\CaboFrowardMVC\obj\Release\CaboFrowardMVC.csproj.CopyComplete
+C:\daniel\ConsultorIt\TTP\Fuente\08062018\08062018\CaboFrowardMVC\obj\Release\CaboFrowardMVC.dll
+C:\daniel\ConsultorIt\TTP\Fuente\08062018\08062018\CaboFrowardMVC\obj\Release\CaboFrowardMVC.pdb
+C:\daniel\ConsultorIt\TTP\Fuente\08062018\08062018\CaboFrowardMVC\bin\Cargamasiva.xlsx

@@ -1,0 +1,79 @@
+@model IEnumerable<CaboFrowardMVC.Models.VEHICULOS>
+
+@{
+    ViewBag.Title = "Listado Veniculos";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@if (Session["MisMenus"].ToString().Contains("VEHICULOS"))
+{
+    <h4>Listado Veniculos</h4>
+
+    <p>
+        @Html.ActionLink("Crear Nuevo", "Create", null, new { @class = "btn btn-primary btn-xs" })
+    </p>
+
+    Html.BeginForm("Index", "Vehiculos");
+    <div class="form-horizontal">
+        <div class="form-group">
+            <label class="control-label col-md-2">Buscar:</label>
+            <div class="col-md-10">
+                <input type="text" name="inpBuscar" class="form-control"
+                       placeholder="Introduzca patente" />
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <i class="fa fa-refresh" style="color:blue;"></i>
+                <input type="submit" value="Filtrar" class="btn btn-default" id="btngetdata">
+            </div>
+        </div>
+    </div>
+    Html.EndForm();
+    <table class="table table-striped table-bordered table-hover table-condensed">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.PATENTE)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.INACTIVO)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TIPOS_VEHICULOS.NOMBRE)
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.PATENTE)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.INACTIVO)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TIPOS_VEHICULOS.NOMBRE)
+                </td>
+				<td>
+					@Html.ActionLink("Editar", "Edit", new { id = item.ID_VEHICULO }, new { @class = "btn btn-success btn-xs" }) |
+					@Html.ActionLink("Detalle", "Details", new { id = item.ID_VEHICULO }, new { @class = "btn btn-info btn-xs" }) |
+					@Html.ActionLink("Eliminar", "Delete", new { id = item.ID_VEHICULO }, new { @class = "btn btn-danger btn-xs" })
+				</td>
+            </tr>
+        }
+
+    </table>
+    <p>Total Registros: @Model.Count()</p>
+}
+
+else
+{
+
+    <div class="alert alert-danger alert-dismissible">
+        <strong>Acceso Restringido!</strong> No está autorizado para ver esta página, pongase en contacto con el administrador
+    </div>
+
+    <input type="hidden" id="txt_acceso" value="SIN_ACCESO" />
+}

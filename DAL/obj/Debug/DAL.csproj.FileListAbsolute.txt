@@ -1,0 +1,238 @@
+c:\users\yerko.vera\Source\Repos\CaboFrowardMVC\DAL\bin\Debug\DAL.dll
+c:\users\yerko.vera\Source\Repos\CaboFrowardMVC\DAL\bin\Debug\DAL.pdb
+c:\users\yerko.vera\Source\Repos\CaboFrowardMVC\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+c:\users\yerko.vera\Source\Repos\CaboFrowardMVC\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+c:\users\yerko.vera\Source\Repos\CaboFrowardMVC\DAL\obj\Debug\DAL.dll
+c:\users\yerko.vera\Source\Repos\CaboFrowardMVC\DAL\obj\Debug\DAL.pdb
+c:\users\yerko.vera\Source\Repos\CaboFrowardMVC\DAL\bin\Debug\BOL.dll
+c:\users\yerko.vera\Source\Repos\CaboFrowardMVC\DAL\bin\Debug\BOL.pdb
+c:\users\yerko.vera\Source\Repos\CaboFrowardMVC\DAL\obj\Debug\DAL.csproj.CopyComplete
+G:\CaboFrowardMVC\DAL\bin\Debug\DAL.dll
+G:\CaboFrowardMVC\DAL\bin\Debug\DAL.pdb
+G:\CaboFrowardMVC\DAL\bin\Debug\BOL.dll
+G:\CaboFrowardMVC\DAL\bin\Debug\BOL.pdb
+G:\CaboFrowardMVC\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+G:\CaboFrowardMVC\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+G:\CaboFrowardMVC\DAL\obj\Debug\DAL.dll
+G:\CaboFrowardMVC\DAL\obj\Debug\DAL.pdb
+C:\Users\darkiller\Desktop\CaboFrowardMVC\DAL\bin\Debug\DAL.dll
+C:\Users\darkiller\Desktop\CaboFrowardMVC\DAL\bin\Debug\DAL.pdb
+C:\Users\darkiller\Desktop\CaboFrowardMVC\DAL\bin\Debug\BOL.dll
+C:\Users\darkiller\Desktop\CaboFrowardMVC\DAL\bin\Debug\BOL.pdb
+C:\Users\darkiller\Desktop\CaboFrowardMVC\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+C:\Users\darkiller\Desktop\CaboFrowardMVC\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\darkiller\Desktop\CaboFrowardMVC\DAL\obj\Debug\DAL.dll
+C:\Users\darkiller\Desktop\CaboFrowardMVC\DAL\obj\Debug\DAL.pdb
+C:\Users\darkiller\Desktop\CaboFrowardMVC\DAL\bin\Debug\Newtonsoft.Json.dll
+C:\Users\darkiller\Desktop\CaboFrowardMVC\DAL\bin\Debug\Newtonsoft.Json.xml
+D:\consultorit\Cabo Froward\mvc yerko\11.03.2018\CaboFrowardMVC\DAL\bin\Debug\DAL.dll
+D:\consultorit\Cabo Froward\mvc yerko\11.03.2018\CaboFrowardMVC\DAL\bin\Debug\DAL.pdb
+D:\consultorit\Cabo Froward\mvc yerko\11.03.2018\CaboFrowardMVC\DAL\bin\Debug\BOL.dll
+D:\consultorit\Cabo Froward\mvc yerko\11.03.2018\CaboFrowardMVC\DAL\bin\Debug\Newtonsoft.Json.dll
+D:\consultorit\Cabo Froward\mvc yerko\11.03.2018\CaboFrowardMVC\DAL\bin\Debug\BOL.pdb
+D:\consultorit\Cabo Froward\mvc yerko\11.03.2018\CaboFrowardMVC\DAL\bin\Debug\Newtonsoft.Json.xml
+D:\consultorit\Cabo Froward\mvc yerko\11.03.2018\CaboFrowardMVC\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+D:\consultorit\Cabo Froward\mvc yerko\11.03.2018\CaboFrowardMVC\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+D:\consultorit\Cabo Froward\mvc yerko\11.03.2018\CaboFrowardMVC\DAL\obj\Debug\DAL.dll
+D:\consultorit\Cabo Froward\mvc yerko\11.03.2018\CaboFrowardMVC\DAL\obj\Debug\DAL.pdb
+C:\Users\yerko.vera\Downloads\CaboFrowardMVC12032018\CaboFrowardMVC\DAL\bin\Debug\DAL.dll
+C:\Users\yerko.vera\Downloads\CaboFrowardMVC12032018\CaboFrowardMVC\DAL\bin\Debug\DAL.pdb
+C:\Users\yerko.vera\Downloads\CaboFrowardMVC12032018\CaboFrowardMVC\DAL\bin\Debug\BOL.dll
+C:\Users\yerko.vera\Downloads\CaboFrowardMVC12032018\CaboFrowardMVC\DAL\bin\Debug\Newtonsoft.Json.dll
+C:\Users\yerko.vera\Downloads\CaboFrowardMVC12032018\CaboFrowardMVC\DAL\bin\Debug\BOL.pdb
+C:\Users\yerko.vera\Downloads\CaboFrowardMVC12032018\CaboFrowardMVC\DAL\bin\Debug\Newtonsoft.Json.xml
+C:\Users\yerko.vera\Downloads\CaboFrowardMVC12032018\CaboFrowardMVC\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+C:\Users\yerko.vera\Downloads\CaboFrowardMVC12032018\CaboFrowardMVC\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\yerko.vera\Downloads\CaboFrowardMVC12032018\CaboFrowardMVC\DAL\obj\Debug\DAL.csproj.CopyComplete
+C:\Users\yerko.vera\Downloads\CaboFrowardMVC12032018\CaboFrowardMVC\DAL\obj\Debug\DAL.dll
+C:\Users\yerko.vera\Downloads\CaboFrowardMVC12032018\CaboFrowardMVC\DAL\obj\Debug\DAL.pdb
+C:\Users\darkiller\Desktop\Nueva carpeta\CaboFrowardMVC3\CaboFrowardMVC\DAL\bin\Debug\DAL.dll
+C:\Users\darkiller\Desktop\Nueva carpeta\CaboFrowardMVC3\CaboFrowardMVC\DAL\bin\Debug\DAL.pdb
+C:\Users\darkiller\Desktop\Nueva carpeta\CaboFrowardMVC3\CaboFrowardMVC\DAL\bin\Debug\BOL.dll
+C:\Users\darkiller\Desktop\Nueva carpeta\CaboFrowardMVC3\CaboFrowardMVC\DAL\bin\Debug\Newtonsoft.Json.dll
+C:\Users\darkiller\Desktop\Nueva carpeta\CaboFrowardMVC3\CaboFrowardMVC\DAL\bin\Debug\BOL.pdb
+C:\Users\darkiller\Desktop\Nueva carpeta\CaboFrowardMVC3\CaboFrowardMVC\DAL\bin\Debug\Newtonsoft.Json.xml
+C:\Users\darkiller\Desktop\Nueva carpeta\CaboFrowardMVC3\CaboFrowardMVC\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+C:\Users\darkiller\Desktop\Nueva carpeta\CaboFrowardMVC3\CaboFrowardMVC\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\darkiller\Desktop\Nueva carpeta\CaboFrowardMVC3\CaboFrowardMVC\DAL\obj\Debug\DAL.dll
+C:\Users\darkiller\Desktop\Nueva carpeta\CaboFrowardMVC3\CaboFrowardMVC\DAL\obj\Debug\DAL.pdb
+C:\Users\yerko.vera\Downloads\CaboFrowardMVC4\CaboFrowardMVC\DAL\bin\Debug\DAL.dll
+C:\Users\yerko.vera\Downloads\CaboFrowardMVC4\CaboFrowardMVC\DAL\bin\Debug\DAL.pdb
+C:\Users\yerko.vera\Downloads\CaboFrowardMVC4\CaboFrowardMVC\DAL\bin\Debug\BOL.dll
+C:\Users\yerko.vera\Downloads\CaboFrowardMVC4\CaboFrowardMVC\DAL\bin\Debug\Newtonsoft.Json.dll
+C:\Users\yerko.vera\Downloads\CaboFrowardMVC4\CaboFrowardMVC\DAL\bin\Debug\BOL.pdb
+C:\Users\yerko.vera\Downloads\CaboFrowardMVC4\CaboFrowardMVC\DAL\bin\Debug\Newtonsoft.Json.xml
+C:\Users\yerko.vera\Downloads\CaboFrowardMVC4\CaboFrowardMVC\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+C:\Users\yerko.vera\Downloads\CaboFrowardMVC4\CaboFrowardMVC\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\yerko.vera\Downloads\CaboFrowardMVC4\CaboFrowardMVC\DAL\obj\Debug\DAL.csproj.CopyComplete
+C:\Users\yerko.vera\Downloads\CaboFrowardMVC4\CaboFrowardMVC\DAL\obj\Debug\DAL.dll
+C:\Users\yerko.vera\Downloads\CaboFrowardMVC4\CaboFrowardMVC\DAL\obj\Debug\DAL.pdb
+C:\Users\yerko.vera\Downloads\CaboFrowardMVC6+incompleta\CaboFrowardMVC\DAL\bin\Debug\DAL.dll
+C:\Users\yerko.vera\Downloads\CaboFrowardMVC6+incompleta\CaboFrowardMVC\DAL\bin\Debug\DAL.pdb
+C:\Users\yerko.vera\Downloads\CaboFrowardMVC6+incompleta\CaboFrowardMVC\DAL\bin\Debug\BOL.dll
+C:\Users\yerko.vera\Downloads\CaboFrowardMVC6+incompleta\CaboFrowardMVC\DAL\bin\Debug\Newtonsoft.Json.dll
+C:\Users\yerko.vera\Downloads\CaboFrowardMVC6+incompleta\CaboFrowardMVC\DAL\bin\Debug\BOL.pdb
+C:\Users\yerko.vera\Downloads\CaboFrowardMVC6+incompleta\CaboFrowardMVC\DAL\bin\Debug\Newtonsoft.Json.xml
+C:\Users\yerko.vera\Downloads\CaboFrowardMVC6+incompleta\CaboFrowardMVC\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+C:\Users\yerko.vera\Downloads\CaboFrowardMVC6+incompleta\CaboFrowardMVC\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\yerko.vera\Downloads\CaboFrowardMVC6+incompleta\CaboFrowardMVC\DAL\obj\Debug\DAL.csproj.CopyComplete
+C:\Users\yerko.vera\Downloads\CaboFrowardMVC6+incompleta\CaboFrowardMVC\DAL\obj\Debug\DAL.dll
+C:\Users\yerko.vera\Downloads\CaboFrowardMVC6+incompleta\CaboFrowardMVC\DAL\obj\Debug\DAL.pdb
+C:\Users\darkiller\Desktop\CaboFrowardMVC6\CaboFrowardMVC\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+C:\Users\darkiller\Desktop\CaboFrowardMVC6\CaboFrowardMVC\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\darkiller\Desktop\CaboFrowardMVC6\CaboFrowardMVC\DAL\obj\Debug\DAL.dll
+C:\Users\darkiller\Desktop\CaboFrowardMVC6\CaboFrowardMVC\DAL\obj\Debug\DAL.pdb
+C:\Users\darkiller\Desktop\CaboFrowardMVC6\CaboFrowardMVC\DAL\bin\Debug\DAL.dll
+C:\Users\darkiller\Desktop\CaboFrowardMVC6\CaboFrowardMVC\DAL\bin\Debug\DAL.pdb
+C:\Users\darkiller\Desktop\CaboFrowardMVC6\CaboFrowardMVC\DAL\bin\Debug\BOL.dll
+C:\Users\darkiller\Desktop\CaboFrowardMVC6\CaboFrowardMVC\DAL\bin\Debug\Newtonsoft.Json.dll
+C:\Users\darkiller\Desktop\CaboFrowardMVC6\CaboFrowardMVC\DAL\bin\Debug\BOL.pdb
+C:\Users\darkiller\Desktop\CaboFrowardMVC6\CaboFrowardMVC\DAL\bin\Debug\Newtonsoft.Json.xml
+C:\Users\yerko.vera\Desktop\666\CaboFrowardMVC7\CaboFrowardMVC\DAL\bin\Debug\DAL.dll
+C:\Users\yerko.vera\Desktop\666\CaboFrowardMVC7\CaboFrowardMVC\DAL\bin\Debug\DAL.pdb
+C:\Users\yerko.vera\Desktop\666\CaboFrowardMVC7\CaboFrowardMVC\DAL\bin\Debug\BOL.dll
+C:\Users\yerko.vera\Desktop\666\CaboFrowardMVC7\CaboFrowardMVC\DAL\bin\Debug\Newtonsoft.Json.dll
+C:\Users\yerko.vera\Desktop\666\CaboFrowardMVC7\CaboFrowardMVC\DAL\bin\Debug\BOL.pdb
+C:\Users\yerko.vera\Desktop\666\CaboFrowardMVC7\CaboFrowardMVC\DAL\bin\Debug\Newtonsoft.Json.xml
+C:\Users\yerko.vera\Desktop\666\CaboFrowardMVC7\CaboFrowardMVC\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+C:\Users\yerko.vera\Desktop\666\CaboFrowardMVC7\CaboFrowardMVC\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\yerko.vera\Desktop\666\CaboFrowardMVC7\CaboFrowardMVC\DAL\obj\Debug\DAL.csproj.CopyComplete
+C:\Users\yerko.vera\Desktop\666\CaboFrowardMVC7\CaboFrowardMVC\DAL\obj\Debug\DAL.dll
+C:\Users\yerko.vera\Desktop\666\CaboFrowardMVC7\CaboFrowardMVC\DAL\obj\Debug\DAL.pdb
+C:\Users\darkiller\Desktop\CaboFrowardMVC7-incompleto\CaboFrowardMVC7\CaboFrowardMVC\DAL\bin\Debug\DAL.dll
+C:\Users\darkiller\Desktop\CaboFrowardMVC7-incompleto\CaboFrowardMVC7\CaboFrowardMVC\DAL\bin\Debug\DAL.pdb
+C:\Users\darkiller\Desktop\CaboFrowardMVC7-incompleto\CaboFrowardMVC7\CaboFrowardMVC\DAL\bin\Debug\BOL.dll
+C:\Users\darkiller\Desktop\CaboFrowardMVC7-incompleto\CaboFrowardMVC7\CaboFrowardMVC\DAL\bin\Debug\Newtonsoft.Json.dll
+C:\Users\darkiller\Desktop\CaboFrowardMVC7-incompleto\CaboFrowardMVC7\CaboFrowardMVC\DAL\bin\Debug\BOL.pdb
+C:\Users\darkiller\Desktop\CaboFrowardMVC7-incompleto\CaboFrowardMVC7\CaboFrowardMVC\DAL\bin\Debug\Newtonsoft.Json.xml
+C:\Users\darkiller\Desktop\CaboFrowardMVC7-incompleto\CaboFrowardMVC7\CaboFrowardMVC\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+C:\Users\darkiller\Desktop\CaboFrowardMVC7-incompleto\CaboFrowardMVC7\CaboFrowardMVC\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\darkiller\Desktop\CaboFrowardMVC7-incompleto\CaboFrowardMVC7\CaboFrowardMVC\DAL\obj\Debug\DAL.dll
+C:\Users\darkiller\Desktop\CaboFrowardMVC7-incompleto\CaboFrowardMVC7\CaboFrowardMVC\DAL\obj\Debug\DAL.pdb
+C:\Users\yerko.vera\Desktop\CaboFrowardMVC7-incompleto\CaboFrowardMVC7\CaboFrowardMVC\DAL\bin\Debug\DAL.dll
+C:\Users\yerko.vera\Desktop\CaboFrowardMVC7-incompleto\CaboFrowardMVC7\CaboFrowardMVC\DAL\bin\Debug\DAL.pdb
+C:\Users\yerko.vera\Desktop\CaboFrowardMVC7-incompleto\CaboFrowardMVC7\CaboFrowardMVC\DAL\bin\Debug\BOL.dll
+C:\Users\yerko.vera\Desktop\CaboFrowardMVC7-incompleto\CaboFrowardMVC7\CaboFrowardMVC\DAL\bin\Debug\Newtonsoft.Json.dll
+C:\Users\yerko.vera\Desktop\CaboFrowardMVC7-incompleto\CaboFrowardMVC7\CaboFrowardMVC\DAL\bin\Debug\BOL.pdb
+C:\Users\yerko.vera\Desktop\CaboFrowardMVC7-incompleto\CaboFrowardMVC7\CaboFrowardMVC\DAL\bin\Debug\Newtonsoft.Json.xml
+C:\Users\yerko.vera\Desktop\CaboFrowardMVC7-incompleto\CaboFrowardMVC7\CaboFrowardMVC\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+C:\Users\yerko.vera\Desktop\CaboFrowardMVC7-incompleto\CaboFrowardMVC7\CaboFrowardMVC\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\yerko.vera\Desktop\CaboFrowardMVC7-incompleto\CaboFrowardMVC7\CaboFrowardMVC\DAL\obj\Debug\DAL.csproj.CopyComplete
+C:\Users\yerko.vera\Desktop\CaboFrowardMVC7-incompleto\CaboFrowardMVC7\CaboFrowardMVC\DAL\obj\Debug\DAL.dll
+C:\Users\yerko.vera\Desktop\CaboFrowardMVC7-incompleto\CaboFrowardMVC7\CaboFrowardMVC\DAL\obj\Debug\DAL.pdb
+C:\Users\darkiller\Desktop\ultimo\CaboFrowardMVC8  (Salidas)\CaboFrowardMVC\DAL\bin\Debug\DAL.dll
+C:\Users\darkiller\Desktop\ultimo\CaboFrowardMVC8  (Salidas)\CaboFrowardMVC\DAL\bin\Debug\DAL.pdb
+C:\Users\darkiller\Desktop\ultimo\CaboFrowardMVC8  (Salidas)\CaboFrowardMVC\DAL\bin\Debug\BOL.dll
+C:\Users\darkiller\Desktop\ultimo\CaboFrowardMVC8  (Salidas)\CaboFrowardMVC\DAL\bin\Debug\Newtonsoft.Json.dll
+C:\Users\darkiller\Desktop\ultimo\CaboFrowardMVC8  (Salidas)\CaboFrowardMVC\DAL\bin\Debug\BOL.pdb
+C:\Users\darkiller\Desktop\ultimo\CaboFrowardMVC8  (Salidas)\CaboFrowardMVC\DAL\bin\Debug\Newtonsoft.Json.xml
+C:\Users\darkiller\Desktop\ultimo\CaboFrowardMVC8  (Salidas)\CaboFrowardMVC\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+C:\Users\darkiller\Desktop\ultimo\CaboFrowardMVC8  (Salidas)\CaboFrowardMVC\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\darkiller\Desktop\ultimo\CaboFrowardMVC8  (Salidas)\CaboFrowardMVC\DAL\obj\Debug\DAL.dll
+C:\Users\darkiller\Desktop\ultimo\CaboFrowardMVC8  (Salidas)\CaboFrowardMVC\DAL\obj\Debug\DAL.pdb
+C:\Users\yerko.vera\Desktop\666\CaboFrowardMVC9\CaboFrowardMVC\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+C:\Users\yerko.vera\Desktop\666\CaboFrowardMVC9\CaboFrowardMVC\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\yerko.vera\Desktop\666\CaboFrowardMVC9\CaboFrowardMVC\DAL\obj\Debug\DAL.dll
+C:\Users\yerko.vera\Desktop\666\CaboFrowardMVC9\CaboFrowardMVC\DAL\obj\Debug\DAL.pdb
+C:\Users\yerko.vera\Desktop\666\CaboFrowardMVC9\CaboFrowardMVC\DAL\bin\Debug\DAL.dll
+C:\Users\yerko.vera\Desktop\666\CaboFrowardMVC9\CaboFrowardMVC\DAL\bin\Debug\DAL.pdb
+C:\Users\yerko.vera\Desktop\666\CaboFrowardMVC9\CaboFrowardMVC\DAL\bin\Debug\BOL.dll
+C:\Users\yerko.vera\Desktop\666\CaboFrowardMVC9\CaboFrowardMVC\DAL\bin\Debug\Newtonsoft.Json.dll
+C:\Users\yerko.vera\Desktop\666\CaboFrowardMVC9\CaboFrowardMVC\DAL\bin\Debug\BOL.pdb
+C:\Users\yerko.vera\Desktop\666\CaboFrowardMVC9\CaboFrowardMVC\DAL\bin\Debug\Newtonsoft.Json.xml
+C:\Users\yerko.vera\Desktop\666\CaboFrowardMVC9\CaboFrowardMVC\DAL\obj\Debug\DAL.csproj.CopyComplete
+C:\Users\yerko.vera\Desktop\666\CaboFrowardMVC 9(login revisar)\CaboFrowardMVC\DAL\bin\Debug\DAL.dll
+C:\Users\yerko.vera\Desktop\666\CaboFrowardMVC 9(login revisar)\CaboFrowardMVC\DAL\bin\Debug\DAL.pdb
+C:\Users\yerko.vera\Desktop\666\CaboFrowardMVC 9(login revisar)\CaboFrowardMVC\DAL\bin\Debug\BOL.dll
+C:\Users\yerko.vera\Desktop\666\CaboFrowardMVC 9(login revisar)\CaboFrowardMVC\DAL\bin\Debug\Newtonsoft.Json.dll
+C:\Users\yerko.vera\Desktop\666\CaboFrowardMVC 9(login revisar)\CaboFrowardMVC\DAL\bin\Debug\BOL.pdb
+C:\Users\yerko.vera\Desktop\666\CaboFrowardMVC 9(login revisar)\CaboFrowardMVC\DAL\bin\Debug\Newtonsoft.Json.xml
+C:\Users\yerko.vera\Desktop\666\CaboFrowardMVC 9(login revisar)\CaboFrowardMVC\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+C:\Users\yerko.vera\Desktop\666\CaboFrowardMVC 9(login revisar)\CaboFrowardMVC\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\yerko.vera\Desktop\666\CaboFrowardMVC 9(login revisar)\CaboFrowardMVC\DAL\obj\Debug\DAL.csproj.CopyComplete
+C:\Users\yerko.vera\Desktop\666\CaboFrowardMVC 9(login revisar)\CaboFrowardMVC\DAL\obj\Debug\DAL.dll
+C:\Users\yerko.vera\Desktop\666\CaboFrowardMVC 9(login revisar)\CaboFrowardMVC\DAL\obj\Debug\DAL.pdb
+C:\Users\darkiller\Desktop\ultimo\CaboFrowardMVC9 (Locaciones incompleto)\CaboFrowardMVC\DAL\bin\Debug\DAL.dll
+C:\Users\darkiller\Desktop\ultimo\CaboFrowardMVC9 (Locaciones incompleto)\CaboFrowardMVC\DAL\bin\Debug\DAL.pdb
+C:\Users\darkiller\Desktop\ultimo\CaboFrowardMVC9 (Locaciones incompleto)\CaboFrowardMVC\DAL\bin\Debug\BOL.dll
+C:\Users\darkiller\Desktop\ultimo\CaboFrowardMVC9 (Locaciones incompleto)\CaboFrowardMVC\DAL\bin\Debug\Newtonsoft.Json.dll
+C:\Users\darkiller\Desktop\ultimo\CaboFrowardMVC9 (Locaciones incompleto)\CaboFrowardMVC\DAL\bin\Debug\BOL.pdb
+C:\Users\darkiller\Desktop\ultimo\CaboFrowardMVC9 (Locaciones incompleto)\CaboFrowardMVC\DAL\bin\Debug\Newtonsoft.Json.xml
+C:\Users\darkiller\Desktop\ultimo\CaboFrowardMVC9 (Locaciones incompleto)\CaboFrowardMVC\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+C:\Users\darkiller\Desktop\ultimo\CaboFrowardMVC9 (Locaciones incompleto)\CaboFrowardMVC\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\darkiller\Desktop\ultimo\CaboFrowardMVC9 (Locaciones incompleto)\CaboFrowardMVC\DAL\obj\Debug\DAL.dll
+C:\Users\darkiller\Desktop\ultimo\CaboFrowardMVC9 (Locaciones incompleto)\CaboFrowardMVC\DAL\obj\Debug\DAL.pdb
+D:\consultorit\Cabo Froward\mvc yerko\25.03.2018\CaboFrowardMVC\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+D:\consultorit\Cabo Froward\mvc yerko\25.03.2018\CaboFrowardMVC\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+D:\consultorit\Cabo Froward\mvc yerko\25.03.2018\CaboFrowardMVC\DAL\obj\Debug\DAL.dll
+D:\consultorit\Cabo Froward\mvc yerko\25.03.2018\CaboFrowardMVC\DAL\obj\Debug\DAL.pdb
+D:\consultorit\Cabo Froward\mvc yerko\25.03.2018\CaboFrowardMVC\DAL\bin\Debug\DAL.dll
+D:\consultorit\Cabo Froward\mvc yerko\25.03.2018\CaboFrowardMVC\DAL\bin\Debug\DAL.pdb
+D:\consultorit\Cabo Froward\mvc yerko\25.03.2018\CaboFrowardMVC\DAL\bin\Debug\BOL.dll
+D:\consultorit\Cabo Froward\mvc yerko\25.03.2018\CaboFrowardMVC\DAL\bin\Debug\Newtonsoft.Json.dll
+D:\consultorit\Cabo Froward\mvc yerko\25.03.2018\CaboFrowardMVC\DAL\bin\Debug\BOL.pdb
+D:\consultorit\Cabo Froward\mvc yerko\25.03.2018\CaboFrowardMVC\DAL\bin\Debug\Newtonsoft.Json.xml
+C:\Users\yerko.vera\Downloads\29.03.2018\25.03.2018\CaboFrowardMVC\DAL\bin\Debug\DAL.dll
+C:\Users\yerko.vera\Downloads\29.03.2018\25.03.2018\CaboFrowardMVC\DAL\bin\Debug\DAL.pdb
+C:\Users\yerko.vera\Downloads\29.03.2018\25.03.2018\CaboFrowardMVC\DAL\bin\Debug\BOL.dll
+C:\Users\yerko.vera\Downloads\29.03.2018\25.03.2018\CaboFrowardMVC\DAL\bin\Debug\Newtonsoft.Json.dll
+C:\Users\yerko.vera\Downloads\29.03.2018\25.03.2018\CaboFrowardMVC\DAL\bin\Debug\BOL.pdb
+C:\Users\yerko.vera\Downloads\29.03.2018\25.03.2018\CaboFrowardMVC\DAL\bin\Debug\Newtonsoft.Json.xml
+C:\Users\yerko.vera\Downloads\29.03.2018\25.03.2018\CaboFrowardMVC\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+C:\Users\yerko.vera\Downloads\29.03.2018\25.03.2018\CaboFrowardMVC\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\yerko.vera\Downloads\29.03.2018\25.03.2018\CaboFrowardMVC\DAL\obj\Debug\DAL.csproj.CopyComplete
+C:\Users\yerko.vera\Downloads\29.03.2018\25.03.2018\CaboFrowardMVC\DAL\obj\Debug\DAL.dll
+C:\Users\yerko.vera\Downloads\29.03.2018\25.03.2018\CaboFrowardMVC\DAL\obj\Debug\DAL.pdb
+C:\cabo froward}\CaboFrowardMVC\DAL\bin\Debug\DAL.dll
+C:\cabo froward}\CaboFrowardMVC\DAL\bin\Debug\DAL.pdb
+C:\cabo froward}\CaboFrowardMVC\DAL\bin\Debug\BOL.dll
+C:\cabo froward}\CaboFrowardMVC\DAL\bin\Debug\Newtonsoft.Json.dll
+C:\cabo froward}\CaboFrowardMVC\DAL\bin\Debug\BOL.pdb
+C:\cabo froward}\CaboFrowardMVC\DAL\bin\Debug\Newtonsoft.Json.xml
+C:\cabo froward}\CaboFrowardMVC\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+C:\cabo froward}\CaboFrowardMVC\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\cabo froward}\CaboFrowardMVC\DAL\obj\Debug\DAL.csproj.CopyComplete
+C:\cabo froward}\CaboFrowardMVC\DAL\obj\Debug\DAL.dll
+C:\cabo froward}\CaboFrowardMVC\DAL\obj\Debug\DAL.pdb
+C:\git\sistema-acceso-web\CaboFrowardMVC\DAL\bin\Debug\DAL.dll
+C:\git\sistema-acceso-web\CaboFrowardMVC\DAL\bin\Debug\DAL.pdb
+C:\git\sistema-acceso-web\CaboFrowardMVC\DAL\bin\Debug\BOL.dll
+C:\git\sistema-acceso-web\CaboFrowardMVC\DAL\bin\Debug\Newtonsoft.Json.dll
+C:\git\sistema-acceso-web\CaboFrowardMVC\DAL\bin\Debug\BOL.pdb
+C:\git\sistema-acceso-web\CaboFrowardMVC\DAL\bin\Debug\Newtonsoft.Json.xml
+C:\git\sistema-acceso-web\CaboFrowardMVC\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+C:\git\sistema-acceso-web\CaboFrowardMVC\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\git\sistema-acceso-web\CaboFrowardMVC\DAL\obj\Debug\DAL.csproj.CopyComplete
+C:\git\sistema-acceso-web\CaboFrowardMVC\DAL\obj\Debug\DAL.dll
+C:\git\sistema-acceso-web\CaboFrowardMVC\DAL\obj\Debug\DAL.pdb
+C:\Users\yerko.vera\Desktop\CaboFrowardMVC\DAL\bin\Debug\DAL.dll
+C:\Users\yerko.vera\Desktop\CaboFrowardMVC\DAL\bin\Debug\DAL.pdb
+C:\Users\yerko.vera\Desktop\CaboFrowardMVC\DAL\bin\Debug\BOL.dll
+C:\Users\yerko.vera\Desktop\CaboFrowardMVC\DAL\bin\Debug\Newtonsoft.Json.dll
+C:\Users\yerko.vera\Desktop\CaboFrowardMVC\DAL\bin\Debug\BOL.pdb
+C:\Users\yerko.vera\Desktop\CaboFrowardMVC\DAL\bin\Debug\Newtonsoft.Json.xml
+C:\Users\yerko.vera\Desktop\CaboFrowardMVC\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+C:\Users\yerko.vera\Desktop\CaboFrowardMVC\DAL\obj\Debug\DAL.dll
+C:\Users\yerko.vera\Desktop\CaboFrowardMVC\DAL\obj\Debug\DAL.pdb
+C:\daniel\ConsultorIt\FROWARD ULTIMOS FUENTES\23052018\DAL\bin\Debug\DAL.dll
+C:\daniel\ConsultorIt\FROWARD ULTIMOS FUENTES\23052018\DAL\bin\Debug\DAL.pdb
+C:\daniel\ConsultorIt\FROWARD ULTIMOS FUENTES\23052018\DAL\bin\Debug\BOL.dll
+C:\daniel\ConsultorIt\FROWARD ULTIMOS FUENTES\23052018\DAL\bin\Debug\Newtonsoft.Json.dll
+C:\daniel\ConsultorIt\FROWARD ULTIMOS FUENTES\23052018\DAL\bin\Debug\BOL.pdb
+C:\daniel\ConsultorIt\FROWARD ULTIMOS FUENTES\23052018\DAL\bin\Debug\Newtonsoft.Json.xml
+C:\daniel\ConsultorIt\FROWARD ULTIMOS FUENTES\23052018\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+C:\daniel\ConsultorIt\FROWARD ULTIMOS FUENTES\23052018\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\daniel\ConsultorIt\FROWARD ULTIMOS FUENTES\23052018\DAL\obj\Debug\DAL.csproj.CopyComplete
+C:\daniel\ConsultorIt\FROWARD ULTIMOS FUENTES\23052018\DAL\obj\Debug\DAL.dll
+C:\daniel\ConsultorIt\FROWARD ULTIMOS FUENTES\23052018\DAL\obj\Debug\DAL.pdb
+C:\daniel\ConsultorIt\TTP\Fuente\08062018\08062018\DAL\bin\Debug\DAL.dll
+C:\daniel\ConsultorIt\TTP\Fuente\08062018\08062018\DAL\bin\Debug\DAL.pdb
+C:\daniel\ConsultorIt\TTP\Fuente\08062018\08062018\DAL\bin\Debug\BOL.dll
+C:\daniel\ConsultorIt\TTP\Fuente\08062018\08062018\DAL\bin\Debug\Newtonsoft.Json.dll
+C:\daniel\ConsultorIt\TTP\Fuente\08062018\08062018\DAL\bin\Debug\BOL.pdb
+C:\daniel\ConsultorIt\TTP\Fuente\08062018\08062018\DAL\bin\Debug\Newtonsoft.Json.xml
+C:\daniel\ConsultorIt\TTP\Fuente\08062018\08062018\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+C:\daniel\ConsultorIt\TTP\Fuente\08062018\08062018\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\daniel\ConsultorIt\TTP\Fuente\08062018\08062018\DAL\obj\Debug\DAL.csproj.CopyComplete
+C:\daniel\ConsultorIt\TTP\Fuente\08062018\08062018\DAL\obj\Debug\DAL.dll
+C:\daniel\ConsultorIt\TTP\Fuente\08062018\08062018\DAL\obj\Debug\DAL.pdb

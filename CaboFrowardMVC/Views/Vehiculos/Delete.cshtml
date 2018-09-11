@@ -1,0 +1,66 @@
+@model CaboFrowardMVC.Models.VEHICULOS
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@if (Session["MisMenus"].ToString().Contains("VEHICULOS"))
+{
+
+    <h2>Eliminar</h2>
+
+    <h3>Esta seguro de eliminar el registro?</h3>
+    <div>
+        <h4>VEHICULOS</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.PATENTE)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.PATENTE)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.INACTIVO)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.INACTIVO)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.TIPOS_VEHICULOS.NOMBRE)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.TIPOS_VEHICULOS.NOMBRE)
+            </dd>
+
+        </dl>
+
+        @using (Html.BeginForm())
+        {
+            @Html.AntiForgeryToken()
+
+            <div class="form-actions no-color">
+                <input type="submit" value="Eliminar" class="btn btn-primary" /> |
+                @Html.ActionLink("Volver", "Index")
+            </div>
+        }
+    </div>
+
+
+}
+
+else
+{
+
+    <div class="alert alert-danger alert-dismissible">
+        <strong>Acceso Restringido!</strong> No está autorizado para ver esta página, pongase en contacto con el administrador
+    </div>
+
+    <input type="hidden" id="txt_acceso" value="SIN_ACCESO" />
+}

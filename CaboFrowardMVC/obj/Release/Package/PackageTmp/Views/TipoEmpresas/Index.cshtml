@@ -1,0 +1,48 @@
+﻿@model IEnumerable<CaboFrowardMVC.Models.TIPOS_EMPRESAS>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@if (Session["MisMenus"].ToString().Contains("TIPOS_DE_EMPRESA"))
+{
+
+
+    <h2>TIPOS DE EMPRESAS</h2>
+
+    <p>
+        @Html.ActionLink("Nuevo", "Create")
+    </p>
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.NOMBRE)
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.NOMBRE)
+                </td>
+                <td>
+                    @Html.ActionLink("Editar", "Edit", new { id = item.ID_TIPO_EMPRESA }) |
+                    @Html.ActionLink("Detalle", "Details", new { id = item.ID_TIPO_EMPRESA }) |
+                    @Html.ActionLink("Borrar", "Delete", new { id = item.ID_TIPO_EMPRESA })
+                </td>
+            </tr>
+        }
+
+    </table>
+}
+
+else
+{
+
+
+    <div id="mensajeok" class="alert alert-danger alert-dismissible fade in">
+        <strong>Acceso Restringido!</strong> No está autorizado para ver esta página, pongase en contacto con el administrador
+    </div>
+}

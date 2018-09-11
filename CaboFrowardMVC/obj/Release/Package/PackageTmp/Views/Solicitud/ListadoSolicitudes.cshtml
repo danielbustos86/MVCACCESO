@@ -1,0 +1,44 @@
+@model CaboFrowardMVC.Models.SolicitudProgramada
+
+@{
+	ViewBag.Title = "ListadoSolicitudes";
+	Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@Scripts.Render("~/bundles/js_solicitud")
+<h2>ListadoSolicitudes</h2>
+
+<table class="table table-striped table-bordered table-hover table-condensed">
+	<tr>
+		<th>
+			ID SOLICITUD
+		</th>
+		<th>
+			@Html.DisplayNameFor(model => model.Id)
+		</th>
+		<th>
+			@Html.DisplayNameFor(model => model.IdPuerto)
+		</th>
+		<th></th>
+	</tr>
+
+	@foreach (var item in Model)
+	{
+		<tr>
+			<td>
+				@Html.DisplayFor(modelItem => item.PATENTE)
+			</td>
+			<td>
+				@Html.DisplayFor(modelItem => item.INACTIVO)
+			</td>
+			<td>
+				@Html.DisplayFor(modelItem => item.TIPOS_VEHICULOS.NOMBRE)
+			</td>
+			<td>
+				@Html.ActionLink("Editar", "Edit", new { id = item.ID_VEHICULO }, new { @class = "btn btn-success btn-xs" }) |
+				@Html.ActionLink("Detalle", "Details", new { id = item.ID_VEHICULO }, new { @class = "btn btn-info btn-xs" }) |
+				@Html.ActionLink("Eliminar", "Delete", new { id = item.ID_VEHICULO }, new { @class = "btn btn-danger btn-xs" })
+			</td>
+		</tr>
+	}
+
+</table>

@@ -1,0 +1,61 @@
+@model IEnumerable<CaboFrowardMVC.Models.Masivo>
+@{
+	ViewBag.Title = "ListaRegistros";
+	Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>ListaRegistros</h2>
+
+@if (ViewData["IngresoCliente"] != null)
+{
+
+<table class="table">
+
+	<tr>
+		<th>
+			ID Solicitud
+		</th>
+		<th>
+			Fecha Desde
+		</th>
+		<th>
+			Fecha Hasta
+		</th>
+		<th>
+			Rut Empresa
+		</th>
+		<th>
+			Nombre Empresa
+		</th>
+		<th>
+			Patente
+		</th>
+		<th>
+			Motivo
+		</th>
+		<th>
+			Chofer
+		</th>
+
+
+	</tr>
+
+	@foreach (var masivo in (List<CaboFrowardMVC.Models.Masivo>)ViewData["IngresoCliente"])
+	{
+
+		@:<tr>
+		<td>@masivo.Rut </td>
+		<td>@masivo.Dv </td>
+		<td>@masivo.pasaporte </td>
+		<td>@masivo.Nombre</td>
+		<td>@masivo.ApellidoPat</td>
+		<td>@masivo.ApellidoMat</td>
+		<td>@masivo.DescripcionLocacion</td>
+		<td>@masivo.Observacion</td>
+
+		@:</tr>
+	}
+
+</table>
+
+		}

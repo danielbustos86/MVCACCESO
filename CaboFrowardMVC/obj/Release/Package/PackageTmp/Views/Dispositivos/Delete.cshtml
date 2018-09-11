@@ -1,0 +1,57 @@
+@model CaboFrowardMVC.Models.DISPOSITIVOS
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+@if (Session["MisMenus"].ToString().Contains("DISPOSITIVOS"))
+{
+
+    <h2>Delete</h2>
+
+    <h3>Esta seguro de borrar el registro?</h3>
+    <div>
+        <h4>DISPOSITIVOS</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.NOMBRE)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.NOMBRE)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.IP)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.IP)
+            </dd>
+
+        </dl>
+
+        @using (Html.BeginForm())
+        {
+            @Html.AntiForgeryToken()
+
+            <div class="form-actions no-color">
+                <input type="submit" value="Eliminar" class="btn btn-danger" /> |
+                @Html.ActionLink("Volver", "Index")
+            </div>
+        }
+    </div>
+}
+else
+{
+
+
+    <div class="alert alert-danger alert-dismissible">
+        <strong>Acceso Restringido!</strong> No está autorizado para ver esta página, pongase en contacto con el administrador
+    </div>
+
+    <input type="hidden" id="txt_acceso" value="SIN_ACCESO" />
+}

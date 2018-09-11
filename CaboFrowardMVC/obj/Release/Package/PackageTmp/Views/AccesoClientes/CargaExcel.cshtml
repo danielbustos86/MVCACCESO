@@ -1,0 +1,157 @@
+@model IEnumerable<CaboFrowardMVC.Models.Masivo>
+@{
+	ViewBag.Title = "CargaExcel";
+	Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+<div class="row">
+
+	<div class="col-md-12">
+		<h4 style="padding-top:10px;padding-bottom:10px;padding-left:5px;background-color:#F8F8F8">Cargar Excel </h4>
+	
+	</div>
+
+		
+
+
+
+
+		@using (Html.BeginForm("CargaExcel", "AccesoClientes", FormMethod.Post, new { enctype = "multipart/form-data" }))
+		{@Html.AntiForgeryToken()// si tienes el decorador [ValidateAntiForgeryToken] en tu accion del controlador
+
+		if (Session["MisMenus"].ToString().Contains("CARGA_MASIVA"))
+		{
+
+
+			<div class="col-md-12">
+				<div class="form-group" style="margin-bottom: 5px;">
+
+
+
+					<input type="File" name="file" id="file" value="Selecciona el archivo" />
+				</div>
+			</div>
+			<div class="col-md-12">
+				<div class="form-group" style="margin-bottom: 5px;">
+
+					<input type="submit" value="Subir archivo" class="btn btn-primary" />
+					@Html.ActionLink("Descargar", "DescargarArchivo",null, new { @class = "btn btn-primary" })
+				</div>
+			</div>
+
+		}
+		else
+		{
+			<div class="alert alert-danger alert-dismissible">
+				<strong>Acceso Restringido!</strong> No está autorizado para ver esta página, pongase en contacto con el administrador
+			</div>
+
+			<input type="hidden" id="txt_acceso" value="SIN_ACCESO" />
+
+		}
+	}
+		<div class="modal fade" role="dialog" tabindex="-1" id="ModalEMpresa">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+						<h4 class="modal-title">Buscar Empresa</h4>
+					</div>
+					<div class="modal-body">
+						<div class="form-group">
+							<label class="control-label" for="text-input">Rut </label>
+							<input class="form-control" type="text" name="RutBuscador" id="RutBuscador">
+
+							<label class="control-label" for="text-input">Nombre</label>
+							<input class="form-control" type="text" name="NombreEmpresaBusca" id="NombreEmpresaBusca">
+							<div id="MostrarEmpresas">
+
+								<div class="table-responsive">
+
+									<table id="tablaEmpresaCs" class="table table-striped ColumnTable"></table>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button class="btn btn-default" type="button" data-dismiss="modal">Close</button>
+						<button class="btn btn-primary" type="button" id="BtnBuscarEmpresa">Buscar</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		@if (TempData["alertMessage"] != null)
+		{
+			<label>@TempData["alertMessage"]</label>
+		}
+
+
+		@if (ViewData["personas"] != null)
+		{
+			<table class="table">
+
+				<tr>
+					<th>
+						RUT
+					</th>
+					<th>
+						DV
+					</th>
+					<th>
+						Pasaporte
+					</th>
+					<th>
+						Nombre
+					</th>
+					<th>
+						Apellido Paterno
+					</th>
+					<th>
+						Apellido Materno
+					</th>
+					<th>
+						Locacion
+					</th>
+					<th>
+						Observacion
+					</th>
+
+
+				</tr>
+
+				@foreach (var masivo in (List<CaboFrowardMVC.Models.Masivo>)ViewData["personas"])
+				{
+
+
+					if (masivo.Observacion.Contains("REGISTRO EXITOSO"))
+					{
+						@:<tr bgcolor="A7FF98">
+						}
+						else
+						{
+							@:<tr bgcolor="E9835D">
+						}
+
+
+
+						<td>@masivo.Rut </td>
+						<td>@masivo.Dv </td>
+						<td>@masivo.pasaporte </td>
+						<td>@masivo.Nombre</td>
+						<td>@masivo.ApellidoPat</td>
+						<td>@masivo.ApellidoMat</td>
+						<td>@masivo.DescripcionLocacion</td>
+						<td>@masivo.Observacion</td>
+
+						@:</tr>
+				}
+
+			</table>
+
+		}
+
+
+	</div>

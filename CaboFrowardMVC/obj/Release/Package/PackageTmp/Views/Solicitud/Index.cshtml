@@ -1,0 +1,396 @@
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@Scripts.Render("~/bundles/js_solicitud")
+
+
+
+@if (Session["MisMenus"].ToString().Contains("CREAR_SOLICITUD"))
+{
+
+
+
+    <div class="row">
+        <div id="mensajeok" class="alert alert-success alert-dismissible fade in">
+            <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+            <strong>Solicitud Creada!</strong> Tu solicitud ha sido creada,puedes revisarla en opcion Listar Solicitud.
+        </div>
+
+		<div class="col-md-6">
+			<h4 style="padding-top:10px;padding-bottom:10px;padding-left:5px;background-color:#F8F8F8">Crear Solicitud</h4>
+
+			<div class="col-md-12">
+				<div class="form-group" style="margin-bottom: 5px;">
+					<label class="control-label" for="Puerto">Puerto </label>
+					<select id="SelectPuerto" class="form-control"></select>
+				</div>
+			</div>
+
+			<div class="col-md-6">
+				<div class="form-group" style="margin-bottom: 5px;">
+					<label class="control-label" for="Puerto">Fecha inicio</label>
+					@*<input id="fechainicio" type="text">*@
+					<input class="form-control" type="text" id="fechainicio">
+
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="form-group" style="margin-bottom: 5px;">
+					<label class="control-label" for="Puerto">Fecha termino</label>
+
+					<input class="form-control" type="text" id="fechatermino">
+				</div>
+			</div>
+			<div class="col-md-12">
+				<div class="form-group" style="margin-bottom: 5px;">
+					<label class="control-label" for="Puerto">Tipo de Ingreso </label>
+					<select id="SelecttipoIngres" class="form-control"></select>
+				</div>
+			</div>
+
+
+			<div class="col-md-12">
+				<div class="form-group" style="margin-bottom: 5px;">
+					<label class="control-label" for="Puerto">Empresa</label>
+					<select id="SelectEmpresa" class="form-control select2-single"></select>
+				</div>
+
+
+			</div>
+
+			<div class="col-xs-3 ResetDer" hidden>
+				<label class="control-label" for="Puerto">&nbsp</label>
+				<button id="btn_busca_emp" type="button" class="btn btn-primary btn-block"> Buscar</button>
+			</div>
+
+		</div>
+        <div class="col-md-1"></div>
+        <div class="col-md-4" style="padding-top:60px">
+            <button id="btncrearsoli" class="btn btn-success btn-block btn-lg" style="padding-top:25px;padding-bottom:25px" type="button">CREAR SOLICITUD</button>
+        </div>
+        <div class="col-md-1"></div>
+    </div>
+    <!--ROW CABECERA-->
+    <!--ROW PERSONAL-->
+    <div class="row">
+        <div class="col-md-6">
+            <h4 style="padding-top:10px;padding-bottom:10px;padding-left:5px;background-color:#F8F8F8">Personal </h4>
+            <div class="form-group" style="margin-bottom: 5px;">
+                <div id="divpersona" class="col-xs-9 ResetIzq">
+                    <input class="form-control" type="text" id="txtrutcs" placeholder="rut ej:777777-7" />
+
+                </div>
+
+
+                <div class="col-xs-3 ResetDer">
+                    <button id="btn_busca_rut" type="button" class="btn btn-primary btn-block"> Buscar</button>
+                </div>
+            </div>
+            <div class="form-group" style="margin-bottom: 10px;">
+
+                <div id="divpasaporte" class="col-xs-9 ResetIzq">
+                    <label class="control-label" for="Puerto">&nbsp</label>
+                    <input class="form-control" type="text" id="txtpasaporte1" placeholder="pasaporte:A212111" />
+
+                </div>
+
+
+                <div class="col-xs-3 ResetDer">
+                    <label class="control-label" for="Puerto">&nbsp</label>
+                    <button id="btn_busca_pasp" type="button" class="btn btn-primary btn-block"> Buscar</button>
+                </div>
+            </div>
+            <br />
+            <br />
+            <div class="col-md-6">
+                <label class="control-label" for="Puerto">&nbsp</label>
+                <button id="btn_locacion" type="button" class="btn btn-primary btn-block">Locacion</button>
+            </div>
+            <div class="col-md-6">
+                <label class="control-label" for="Puerto">&nbsp</label>
+                <button id="btn_nave" type="button" class="btn btn-primary btn-block">Nave</button>
+            </div>
+        </div>
+        <!--Tabla lista Personal-->
+
+
+        <div class="col-md-6">
+            <h4 style="padding-top:10px;padding-bottom:10px;padding-left:5px;background-color:#F8F8F8">En Solicitud </h4>
+            <div class="form-group">
+                <div class="table-responsive">
+                    <table id="TABlAPERSONACS" class="table table-striped table-bordered table-hover table-condensed">
+                        <thead>
+                            <tr>
+                                <th>
+                                    <label><input type="checkbox" id="selectAll" />All</label>
+                                </th>
+                                <th>ID</th>
+                                <th>RUT</th>
+                                <th>NOMBRE</th>
+                                <th>LOCACION</th>
+                                <th>NAVE</th>
+                                <th>QUITAR</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <!--Tabla Lista Personal-->
+    </div>
+    <hr />
+    <!--Row Vehiculo-->
+    <div class="row">
+        <div class="col-md-6">
+            <h4 style="padding-top:10px;padding-bottom:10px;padding-left:5px;background-color:#F8F8F8">Vehiculos </h4>
+
+            <div id="div_supervisor" class="col-xs-9 ResetIzq">
+                <input class="form-control" type="text" id="txtPatentecs" placeholder="Patente" />
+            </div>
+
+            <div class="col-xs-3 ResetDer">
+                <button id="btn_buscar_patente" type="button" class="btn btn-primary btn-block">
+                    Buscar
+                </button>
+            </div>
+        </div>
+        <br />
+        <br />
+        <div class="col-md-6">
+            <h4 style="padding-top:10px;padding-bottom:10px;padding-left:5px;background-color:#F8F8F8">En solicitud </h4>
+            <div class="table-responsive">
+                <table id="TABlAVEHICULOCS" class="table table-striped table-bordered table-hover table-condensed">
+                    <thead>
+                        <tr>
+                            <th>ID </th>
+                            <th>PATENTE </th>
+                            <th>TIPO </th>
+                            <th>QUITAR </th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+                <!--MODAL-->
+                @*<div class="form-group" align="right">
+                        <button class="btn btn-primary" type="button" data-toggle="modal" data-target="#myModal">+</button>
+                    </div>*@
+            </div>
+        </div>
+    </div>
+
+    <!--row vehiculo-->
+    <!--MODAL EMPRESA-->
+    <div class="modal fade" role="dialog" tabindex="-1" id="ModalEMpresa">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                    <h4 class="modal-title">Buscar Empresa</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label class="control-label" for="text-input">Rut </label>
+                        <input class="form-control" type="text" name="RutBuscador" id="RutBuscador">
+
+                        <label class="control-label" for="text-input">Nombre</label>
+                        <input class="form-control" type="text" name="NombreEmpresaBusca" id="NombreEmpresaBusca">
+                        <div id="MostrarEmpresas">
+
+                            <div class="table-responsive">
+
+                                <table id="tablaEmpresaCs" class="table table-striped ColumnTable"></table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-default" type="button" data-dismiss="modal">Close</button>
+                    <button class="btn btn-primary" type="button" id="BtnBuscarEmpresa">Buscar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--MODAL EMPRESA-->
+    <!--MODAL LOCACION-->
+    <div class="modal fade" role="dialog" tabindex="-1" id="ModalLocacion">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                    <h4 class="modal-title">Asignar Locacion</h4>
+                </div>
+
+                <div class="modal-body">
+
+                    <div class="form-group">
+                        <label class="control-label" for="text-input">Codigo</label>
+                        <input class="form-control" type="text" name="CodigoBuscador" id="CodigoLocacionCS">
+                        <label class="control-label" for="text-input">Nombre</label>
+                        <input class="form-control" type="text" name="Nombrelocacioncs" id="Nombrelocacioncs">
+
+                        <div class="table-responsive">
+                            <table id="tablalocacionescs" class="table table-striped ColumnTable"></table>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <button class="btn btn-default" type="button" data-dismiss="modal">Close</button>
+                    <button class="btn btn-primary" type="button" id="btn_buscarloca">Buscar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--MODAL LOCACION-->
+    <!-- MODAL PATENTE-->
+    <div class="modal fade" role="dialog" tabindex="-1" id="myModal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                    <h4 class="modal-title">¡Patente no registrada!</h4>
+                </div>
+
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label class="control-label" for="text-input">Patente </label>
+                        <input class="form-control" type="text" name="text-input" id="txtingresaPatentecs">
+                        <label class="control-label" for="text-input">Tipo </label>
+                        <select id="selecttvcs" class="form-control"></select>
+
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-default" type="button" data-dismiss="modal">Cerrar</button>
+                    <button class="btn btn-primary" type="button" id="btnguardarcs">Guardar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- MODAL PATENTE-->
+    <!-- MODAL NAVE-->
+    <div class="modal fade" role="dialog" tabindex="-1" id="ModalNave">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                    <h4 class="modal-title">Naves</h4>
+                </div>
+
+                <div class="modal-body">
+
+
+
+                    <div class="form-group">
+                        <label class="control-label" for="text-input">Codigo </label>
+                        <input class="form-control" type="text" name="text-input" id="txtcodigoNavecs">
+                        <label class="control-label" for="text-input">Nombre</label>
+                        <input class="form-control" type="text" name="text-input" id="txtNombreNavecs">
+
+
+                        <div class="table-responsive">
+
+                            <table id="tablaNaveCs" class="table table-striped ColumnTable"></table>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-default" type="button" data-dismiss="modal">Cerrar</button>
+                    <button class="btn btn-primary" type="button" id="btnbuscarnave">Buscar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- MODAL NAVE-->
+    <!-- MODAL PERSONA-->
+    <div class="modal fade" role="dialog" tabindex="-1" id="ModalPersonacs">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                    <h4 class="modal-title">Rut No Registrado</h4>
+                </div>
+
+				<div class="modal-body">
+					<div class="col-md-12">
+						<label class="control-label" for="text-input">Nacionalidad</label>
+						<select id="selectnac" class="form-control"></select>
+					</div>
+					<div class="col-md-9">
+						<label class="control-label" for="text-input">RUT </label>
+						<input class="form-control" type="number" name="text-input" id="txtpersonarutcs">
+					</div>
+					<div class="col-md-3">
+						<label class="control-label" for="text-input">DV </label>
+						<input class="form-control" type="text" name="text-input" id="txtdvcs">
+					</div>
+					<div class="col-md-12">
+						<label class="control-label" for="text-input">Nombre </label>
+						<input class="form-control" type="text" name="text-input" id="txtnombrecs">
+					</div>
+					<div class="col-md-12">
+						<label class="control-label" for="text-input">Apellido Paterno </label>
+						<input class="form-control" type="text" name="text-input" id="txtapepatercs">
+					</div>
+					<div class="col-md-12">
+						<label class="control-label" for="text-input">Apellido Materno </label>
+						<input class="form-control" type="text" name="text-input" id="txtapematcs">
+					</div>
+					<div class="col-md-12">
+						<label class="control-label" for="text-input">Pasaporte </label>
+						<input class="form-control" type="text" name="text-input" id="txtpasaporte">
+					</div>
+					<div class="col-md-12">
+						<label class="control-label" for="text-input">Fecha Induccion </label>
+						<input class="form-control" type="date" name="text-input" id="txtfechaInduccion">
+					</div>
+					<div>&nbsp;</div>
+				</div>
+				<div class="modal-footer">
+					<button class="btn btn-default" type="button" data-dismiss="modal">Cerrar</button>
+					<button class="btn btn-primary" type="button" id="btnguardarpercs">Guardar</button>
+				</div>
+                <div>&nbsp;</div>
+			</div>
+        </div>
+    </div>
+    <!-- MODAL PERSONA-->
+    <!-- MODAL PROBLEMAS-->
+    <div class="modal fade" role="dialog" tabindex="-1" id="ModalProblemas">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                    <h4 class="modal-title">Ya existen en solicitud</h4>
+                </div>
+
+                <div class="modal-body">
+                    <div class="form-group">
+
+                        <div class="table-responsive">
+                            <table id="tablaProblema" class="table table-striped ColumnTable table_errores"></table>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-default" type="button" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+}
+
+else
+{
+    <div class="alert alert-danger alert-dismissible">
+        <strong>Acceso Restringido!</strong> No está autorizado para ver esta página, pongase en contacto con el administrador
+    </div>
+
+    <input type="hidden" id="txt_acceso" value="SIN_ACCESO" />
+}

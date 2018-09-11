@@ -1,0 +1,114 @@
+
+@{
+	ViewBag.Title = "Reporte";
+	Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@Scripts.Render("~/bundles/ReporteAcceso")
+
+<div class="row">
+	<br>
+	<div class="col-md-8">
+		<div class="col-md-1">
+		</div>
+		<div class="col-md-4">
+			<button id="btnreporteCli" class="btn btn-success btn-block btn-md" type="button">BUSCAR</button>
+		</div>
+
+
+		<div class="col-md-4">
+			<button id="btnexp3" class="btn btn-primary btn-block btn-md" type="button">EXPORTAR</button>
+		</div>
+
+
+		<br>
+		<br>
+		<div class="col-md-6">
+			<br>
+	
+			<div class="form-group" style="margin-bottom: 5px;">
+				<label class="control-label" for="Puerto">Fecha inicio</label>
+				@*<input id="fechainicio" type="text">*@
+				<input class="form-control" type="text" id="fechainicio">
+
+			</div>
+		</div>
+		<div class="col-md-6">
+			<br>
+			<div class="form-group" style="margin-bottom: 5px;">
+				<label class="control-label" for="Puerto">Fecha termino</label>
+
+				<input class="form-control" type="text" id="fechatermino">
+			</div>
+		</div>
+
+
+
+	</div>
+
+</div>
+<div class="col-md-12">
+
+	<h4 style="padding-top:10px;padding-bottom:10px;padding-left:5px;background-color:#F8F8F8"></h4>
+</div>
+
+<br>
+<div class="row">
+	<div class="col-md-12">
+		<div class="CONTENIDOTABLA">
+			<div class="table-responsive">
+				<table style="font-size:10px" id="tabla_reporte3" class="table table-striped">
+					<thead>
+						<tr>
+							@*		 		 TONELADAS ENTRADA	TONELADAS SALIDA	PC*@
+
+							<th>ID</th>
+							<th>FECHA_ENTRADA</th>
+							<th>FECHA_SALIDA</th>
+							<th>TIPO VEHICULO</th>
+							<th>PATENTE</th>
+							<th>RUT</th>
+							<th>NOMBRE</th>
+							<th>CLIENTE/RAZON SOCIAL</th>
+							<th>RUT CLIENTE</th>
+							<th>MOTIVO</th>
+							<th>TIPO PAGO</th>
+							<th>BOLETA</th>
+							<th>DETALLE ENTRADA </th>
+							<th>DETALLE SALIDA</th>
+							<th>NAVE</th>
+							<th>LANCHA</th>
+							<th>GUIA ENTRADA</th>
+							<th>GUIA SALIDA</th>
+							<th>
+								TARA ENTRADA
+							</th>
+							<th>
+								TONELADAS ENTRADA
+							</th>
+							<th>
+								TARA SALIDA
+							</th>
+
+							<th>
+								TONELADAS SALIDA
+							</th>
+
+							<th>
+								PC
+							</th>
+							<th>
+								HORAS EN PUERTO
+							</th>
+							<th>
+								COBRAR
+							</th>
+
+						</tr>
+					</thead>
+					<tbody id="cuerpoTP1"></tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+</div>

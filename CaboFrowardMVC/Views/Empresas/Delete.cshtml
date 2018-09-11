@@ -1,0 +1,73 @@
+@model CaboFrowardMVC.Models.EMPRESAS
+
+@{
+    ViewBag.Title = "Eliminar";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@if (Session["MisMenus"].ToString().Contains("EMPRESAS"))
+{
+
+    <h2>Delete</h2>
+
+    <h3>Esta seguro de eliminar el registro?</h3>
+    <div>
+        <h4>EMPRESAS</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.RUT)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.RUT)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.DV)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.DV)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.NOMBRES)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.NOMBRES)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.GIRO)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.GIRO)
+            </dd>
+
+        </dl>
+
+        @using (Html.BeginForm())
+        {
+            @Html.AntiForgeryToken()
+
+            <div class="form-actions no-color">
+                <input type="submit" value="Eliminar" class="btn btn-danger" /> |
+                @Html.ActionLink("Volver", "Index")
+            </div>
+        }
+    </div>
+
+
+}
+else
+{
+
+
+    <div class="alert alert-danger alert-dismissible">
+        <strong>Acceso Restringido!</strong> No está autorizado para ver esta página, pongase en contacto con el administrador
+    </div>
+
+    <input type="hidden" id="txt_acceso" value="SIN_ACCESO" />
+}

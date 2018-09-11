@@ -1,0 +1,128 @@
+c:\users\yerko.vera\Source\Repos\CaboFrowardMVC\BOL\bin\Debug\BOL.dll
+c:\users\yerko.vera\Source\Repos\CaboFrowardMVC\BOL\bin\Debug\BOL.pdb
+c:\users\yerko.vera\Source\Repos\CaboFrowardMVC\BOL\obj\Debug\BOL.csprojResolveAssemblyReference.cache
+c:\users\yerko.vera\Source\Repos\CaboFrowardMVC\BOL\obj\Debug\BOL.csproj.CoreCompileInputs.cache
+c:\users\yerko.vera\Source\Repos\CaboFrowardMVC\BOL\obj\Debug\BOL.dll
+c:\users\yerko.vera\Source\Repos\CaboFrowardMVC\BOL\obj\Debug\BOL.pdb
+G:\CaboFrowardMVC\BOL\bin\Debug\BOL.dll
+G:\CaboFrowardMVC\BOL\bin\Debug\BOL.pdb
+G:\CaboFrowardMVC\BOL\obj\Debug\BOL.csprojResolveAssemblyReference.cache
+G:\CaboFrowardMVC\BOL\obj\Debug\BOL.csproj.CoreCompileInputs.cache
+G:\CaboFrowardMVC\BOL\obj\Debug\BOL.dll
+G:\CaboFrowardMVC\BOL\obj\Debug\BOL.pdb
+C:\Users\darkiller\Desktop\CaboFrowardMVC\BOL\bin\Debug\BOL.dll
+C:\Users\darkiller\Desktop\CaboFrowardMVC\BOL\bin\Debug\BOL.pdb
+C:\Users\darkiller\Desktop\CaboFrowardMVC\BOL\obj\Debug\BOL.csproj.CoreCompileInputs.cache
+C:\Users\darkiller\Desktop\CaboFrowardMVC\BOL\obj\Debug\BOL.dll
+C:\Users\darkiller\Desktop\CaboFrowardMVC\BOL\obj\Debug\BOL.pdb
+C:\Users\darkiller\Desktop\CaboFrowardMVC\BOL\obj\Debug\BOL.csprojResolveAssemblyReference.cache
+D:\consultorit\Cabo Froward\mvc yerko\11.03.2018\CaboFrowardMVC\BOL\bin\Debug\BOL.dll
+D:\consultorit\Cabo Froward\mvc yerko\11.03.2018\CaboFrowardMVC\BOL\bin\Debug\BOL.pdb
+D:\consultorit\Cabo Froward\mvc yerko\11.03.2018\CaboFrowardMVC\BOL\obj\Debug\BOL.csproj.CoreCompileInputs.cache
+D:\consultorit\Cabo Froward\mvc yerko\11.03.2018\CaboFrowardMVC\BOL\obj\Debug\BOL.dll
+D:\consultorit\Cabo Froward\mvc yerko\11.03.2018\CaboFrowardMVC\BOL\obj\Debug\BOL.pdb
+C:\Users\yerko.vera\Downloads\CaboFrowardMVC12032018\CaboFrowardMVC\BOL\bin\Debug\BOL.dll
+C:\Users\yerko.vera\Downloads\CaboFrowardMVC12032018\CaboFrowardMVC\BOL\bin\Debug\BOL.pdb
+C:\Users\yerko.vera\Downloads\CaboFrowardMVC12032018\CaboFrowardMVC\BOL\obj\Debug\BOL.csprojResolveAssemblyReference.cache
+C:\Users\yerko.vera\Downloads\CaboFrowardMVC12032018\CaboFrowardMVC\BOL\obj\Debug\BOL.csproj.CoreCompileInputs.cache
+C:\Users\yerko.vera\Downloads\CaboFrowardMVC12032018\CaboFrowardMVC\BOL\obj\Debug\BOL.dll
+C:\Users\yerko.vera\Downloads\CaboFrowardMVC12032018\CaboFrowardMVC\BOL\obj\Debug\BOL.pdb
+C:\Users\darkiller\Desktop\Nueva carpeta\CaboFrowardMVC3\CaboFrowardMVC\BOL\bin\Debug\BOL.dll
+C:\Users\darkiller\Desktop\Nueva carpeta\CaboFrowardMVC3\CaboFrowardMVC\BOL\bin\Debug\BOL.pdb
+C:\Users\darkiller\Desktop\Nueva carpeta\CaboFrowardMVC3\CaboFrowardMVC\BOL\obj\Debug\BOL.csprojResolveAssemblyReference.cache
+C:\Users\darkiller\Desktop\Nueva carpeta\CaboFrowardMVC3\CaboFrowardMVC\BOL\obj\Debug\BOL.csproj.CoreCompileInputs.cache
+C:\Users\darkiller\Desktop\Nueva carpeta\CaboFrowardMVC3\CaboFrowardMVC\BOL\obj\Debug\BOL.dll
+C:\Users\darkiller\Desktop\Nueva carpeta\CaboFrowardMVC3\CaboFrowardMVC\BOL\obj\Debug\BOL.pdb
+C:\Users\yerko.vera\Downloads\CaboFrowardMVC4\CaboFrowardMVC\BOL\bin\Debug\BOL.dll
+C:\Users\yerko.vera\Downloads\CaboFrowardMVC4\CaboFrowardMVC\BOL\bin\Debug\BOL.pdb
+C:\Users\yerko.vera\Downloads\CaboFrowardMVC4\CaboFrowardMVC\BOL\obj\Debug\BOL.csprojResolveAssemblyReference.cache
+C:\Users\yerko.vera\Downloads\CaboFrowardMVC4\CaboFrowardMVC\BOL\obj\Debug\BOL.csproj.CoreCompileInputs.cache
+C:\Users\yerko.vera\Downloads\CaboFrowardMVC4\CaboFrowardMVC\BOL\obj\Debug\BOL.dll
+C:\Users\yerko.vera\Downloads\CaboFrowardMVC4\CaboFrowardMVC\BOL\obj\Debug\BOL.pdb
+C:\Users\yerko.vera\Downloads\CaboFrowardMVC6+incompleta\CaboFrowardMVC\BOL\bin\Debug\BOL.dll
+C:\Users\yerko.vera\Downloads\CaboFrowardMVC6+incompleta\CaboFrowardMVC\BOL\bin\Debug\BOL.pdb
+C:\Users\yerko.vera\Downloads\CaboFrowardMVC6+incompleta\CaboFrowardMVC\BOL\obj\Debug\BOL.csprojResolveAssemblyReference.cache
+C:\Users\yerko.vera\Downloads\CaboFrowardMVC6+incompleta\CaboFrowardMVC\BOL\obj\Debug\BOL.csproj.CoreCompileInputs.cache
+C:\Users\yerko.vera\Downloads\CaboFrowardMVC6+incompleta\CaboFrowardMVC\BOL\obj\Debug\BOL.dll
+C:\Users\yerko.vera\Downloads\CaboFrowardMVC6+incompleta\CaboFrowardMVC\BOL\obj\Debug\BOL.pdb
+C:\Users\darkiller\Desktop\CaboFrowardMVC6\CaboFrowardMVC\BOL\obj\Debug\BOL.csprojResolveAssemblyReference.cache
+C:\Users\darkiller\Desktop\CaboFrowardMVC6\CaboFrowardMVC\BOL\obj\Debug\BOL.csproj.CoreCompileInputs.cache
+C:\Users\darkiller\Desktop\CaboFrowardMVC6\CaboFrowardMVC\BOL\obj\Debug\BOL.dll
+C:\Users\darkiller\Desktop\CaboFrowardMVC6\CaboFrowardMVC\BOL\obj\Debug\BOL.pdb
+C:\Users\darkiller\Desktop\CaboFrowardMVC6\CaboFrowardMVC\BOL\bin\Debug\BOL.dll
+C:\Users\darkiller\Desktop\CaboFrowardMVC6\CaboFrowardMVC\BOL\bin\Debug\BOL.pdb
+C:\Users\yerko.vera\Desktop\666\CaboFrowardMVC7\CaboFrowardMVC\BOL\bin\Debug\BOL.dll
+C:\Users\yerko.vera\Desktop\666\CaboFrowardMVC7\CaboFrowardMVC\BOL\bin\Debug\BOL.pdb
+C:\Users\yerko.vera\Desktop\666\CaboFrowardMVC7\CaboFrowardMVC\BOL\obj\Debug\BOL.csprojResolveAssemblyReference.cache
+C:\Users\yerko.vera\Desktop\666\CaboFrowardMVC7\CaboFrowardMVC\BOL\obj\Debug\BOL.csproj.CoreCompileInputs.cache
+C:\Users\yerko.vera\Desktop\666\CaboFrowardMVC7\CaboFrowardMVC\BOL\obj\Debug\BOL.dll
+C:\Users\yerko.vera\Desktop\666\CaboFrowardMVC7\CaboFrowardMVC\BOL\obj\Debug\BOL.pdb
+C:\Users\darkiller\Desktop\CaboFrowardMVC7-incompleto\CaboFrowardMVC7\CaboFrowardMVC\BOL\bin\Debug\BOL.dll
+C:\Users\darkiller\Desktop\CaboFrowardMVC7-incompleto\CaboFrowardMVC7\CaboFrowardMVC\BOL\bin\Debug\BOL.pdb
+C:\Users\darkiller\Desktop\CaboFrowardMVC7-incompleto\CaboFrowardMVC7\CaboFrowardMVC\BOL\obj\Debug\BOL.csprojResolveAssemblyReference.cache
+C:\Users\darkiller\Desktop\CaboFrowardMVC7-incompleto\CaboFrowardMVC7\CaboFrowardMVC\BOL\obj\Debug\BOL.csproj.CoreCompileInputs.cache
+C:\Users\darkiller\Desktop\CaboFrowardMVC7-incompleto\CaboFrowardMVC7\CaboFrowardMVC\BOL\obj\Debug\BOL.dll
+C:\Users\darkiller\Desktop\CaboFrowardMVC7-incompleto\CaboFrowardMVC7\CaboFrowardMVC\BOL\obj\Debug\BOL.pdb
+C:\Users\yerko.vera\Desktop\CaboFrowardMVC7-incompleto\CaboFrowardMVC7\CaboFrowardMVC\BOL\bin\Debug\BOL.dll
+C:\Users\yerko.vera\Desktop\CaboFrowardMVC7-incompleto\CaboFrowardMVC7\CaboFrowardMVC\BOL\bin\Debug\BOL.pdb
+C:\Users\yerko.vera\Desktop\CaboFrowardMVC7-incompleto\CaboFrowardMVC7\CaboFrowardMVC\BOL\obj\Debug\BOL.csprojResolveAssemblyReference.cache
+C:\Users\yerko.vera\Desktop\CaboFrowardMVC7-incompleto\CaboFrowardMVC7\CaboFrowardMVC\BOL\obj\Debug\BOL.csproj.CoreCompileInputs.cache
+C:\Users\yerko.vera\Desktop\CaboFrowardMVC7-incompleto\CaboFrowardMVC7\CaboFrowardMVC\BOL\obj\Debug\BOL.dll
+C:\Users\yerko.vera\Desktop\CaboFrowardMVC7-incompleto\CaboFrowardMVC7\CaboFrowardMVC\BOL\obj\Debug\BOL.pdb
+C:\Users\yerko.vera\Desktop\666\CaboFrowardMVC9\CaboFrowardMVC\BOL\bin\Debug\BOL.dll
+C:\Users\yerko.vera\Desktop\666\CaboFrowardMVC9\CaboFrowardMVC\BOL\bin\Debug\BOL.pdb
+C:\Users\yerko.vera\Desktop\666\CaboFrowardMVC9\CaboFrowardMVC\BOL\obj\Debug\BOL.csprojResolveAssemblyReference.cache
+C:\Users\yerko.vera\Desktop\666\CaboFrowardMVC9\CaboFrowardMVC\BOL\obj\Debug\BOL.csproj.CoreCompileInputs.cache
+C:\Users\yerko.vera\Desktop\666\CaboFrowardMVC9\CaboFrowardMVC\BOL\obj\Debug\BOL.dll
+C:\Users\yerko.vera\Desktop\666\CaboFrowardMVC9\CaboFrowardMVC\BOL\obj\Debug\BOL.pdb
+C:\Users\yerko.vera\Desktop\666\CaboFrowardMVC 9(login revisar)\CaboFrowardMVC\BOL\bin\Debug\BOL.dll
+C:\Users\yerko.vera\Desktop\666\CaboFrowardMVC 9(login revisar)\CaboFrowardMVC\BOL\bin\Debug\BOL.pdb
+C:\Users\yerko.vera\Desktop\666\CaboFrowardMVC 9(login revisar)\CaboFrowardMVC\BOL\obj\Debug\BOL.csprojResolveAssemblyReference.cache
+C:\Users\yerko.vera\Desktop\666\CaboFrowardMVC 9(login revisar)\CaboFrowardMVC\BOL\obj\Debug\BOL.csproj.CoreCompileInputs.cache
+C:\Users\yerko.vera\Desktop\666\CaboFrowardMVC 9(login revisar)\CaboFrowardMVC\BOL\obj\Debug\BOL.dll
+C:\Users\yerko.vera\Desktop\666\CaboFrowardMVC 9(login revisar)\CaboFrowardMVC\BOL\obj\Debug\BOL.pdb
+C:\Users\darkiller\Desktop\ultimo\CaboFrowardMVC9 (Locaciones incompleto)\CaboFrowardMVC\BOL\bin\Debug\BOL.dll
+C:\Users\darkiller\Desktop\ultimo\CaboFrowardMVC9 (Locaciones incompleto)\CaboFrowardMVC\BOL\bin\Debug\BOL.pdb
+C:\Users\darkiller\Desktop\ultimo\CaboFrowardMVC9 (Locaciones incompleto)\CaboFrowardMVC\BOL\obj\Debug\BOL.csproj.CoreCompileInputs.cache
+C:\Users\darkiller\Desktop\ultimo\CaboFrowardMVC9 (Locaciones incompleto)\CaboFrowardMVC\BOL\obj\Debug\BOL.dll
+C:\Users\darkiller\Desktop\ultimo\CaboFrowardMVC9 (Locaciones incompleto)\CaboFrowardMVC\BOL\obj\Debug\BOL.pdb
+C:\Users\darkiller\Desktop\ultimo\CaboFrowardMVC9 (Locaciones incompleto)\CaboFrowardMVC\BOL\obj\Debug\BOL.csprojResolveAssemblyReference.cache
+D:\consultorit\Cabo Froward\mvc yerko\25.03.2018\CaboFrowardMVC\BOL\bin\Debug\BOL.dll
+D:\consultorit\Cabo Froward\mvc yerko\25.03.2018\CaboFrowardMVC\BOL\bin\Debug\BOL.pdb
+D:\consultorit\Cabo Froward\mvc yerko\25.03.2018\CaboFrowardMVC\BOL\obj\Debug\BOL.csproj.CoreCompileInputs.cache
+D:\consultorit\Cabo Froward\mvc yerko\25.03.2018\CaboFrowardMVC\BOL\obj\Debug\BOL.dll
+D:\consultorit\Cabo Froward\mvc yerko\25.03.2018\CaboFrowardMVC\BOL\obj\Debug\BOL.pdb
+D:\consultorit\Cabo Froward\mvc yerko\25.03.2018\CaboFrowardMVC\BOL\obj\Debug\BOL.csprojResolveAssemblyReference.cache
+C:\Users\yerko.vera\Downloads\29.03.2018\25.03.2018\CaboFrowardMVC\BOL\bin\Debug\BOL.dll
+C:\Users\yerko.vera\Downloads\29.03.2018\25.03.2018\CaboFrowardMVC\BOL\bin\Debug\BOL.pdb
+C:\Users\yerko.vera\Downloads\29.03.2018\25.03.2018\CaboFrowardMVC\BOL\obj\Debug\BOL.csprojResolveAssemblyReference.cache
+C:\Users\yerko.vera\Downloads\29.03.2018\25.03.2018\CaboFrowardMVC\BOL\obj\Debug\BOL.csproj.CoreCompileInputs.cache
+C:\Users\yerko.vera\Downloads\29.03.2018\25.03.2018\CaboFrowardMVC\BOL\obj\Debug\BOL.dll
+C:\Users\yerko.vera\Downloads\29.03.2018\25.03.2018\CaboFrowardMVC\BOL\obj\Debug\BOL.pdb
+C:\cabo froward}\CaboFrowardMVC\BOL\bin\Debug\BOL.dll
+C:\cabo froward}\CaboFrowardMVC\BOL\bin\Debug\BOL.pdb
+C:\cabo froward}\CaboFrowardMVC\BOL\obj\Debug\BOL.csproj.CoreCompileInputs.cache
+C:\cabo froward}\CaboFrowardMVC\BOL\obj\Debug\BOL.dll
+C:\cabo froward}\CaboFrowardMVC\BOL\obj\Debug\BOL.pdb
+C:\git\sistema-acceso-web\CaboFrowardMVC\BOL\bin\Debug\BOL.dll
+C:\git\sistema-acceso-web\CaboFrowardMVC\BOL\bin\Debug\BOL.pdb
+C:\git\sistema-acceso-web\CaboFrowardMVC\BOL\obj\Debug\BOL.csproj.CoreCompileInputs.cache
+C:\git\sistema-acceso-web\CaboFrowardMVC\BOL\obj\Debug\BOL.dll
+C:\git\sistema-acceso-web\CaboFrowardMVC\BOL\obj\Debug\BOL.pdb
+C:\Users\yerko.vera\Desktop\CaboFrowardMVC\BOL\bin\Debug\BOL.dll
+C:\Users\yerko.vera\Desktop\CaboFrowardMVC\BOL\bin\Debug\BOL.pdb
+C:\Users\yerko.vera\Desktop\CaboFrowardMVC\BOL\obj\Debug\BOL.csprojResolveAssemblyReference.cache
+C:\Users\yerko.vera\Desktop\CaboFrowardMVC\BOL\obj\Debug\BOL.dll
+C:\Users\yerko.vera\Desktop\CaboFrowardMVC\BOL\obj\Debug\BOL.pdb
+C:\daniel\ConsultorIt\FROWARD ULTIMOS FUENTES\23052018\BOL\bin\Debug\BOL.dll
+C:\daniel\ConsultorIt\FROWARD ULTIMOS FUENTES\23052018\BOL\bin\Debug\BOL.pdb
+C:\daniel\ConsultorIt\FROWARD ULTIMOS FUENTES\23052018\BOL\obj\Debug\BOL.csprojResolveAssemblyReference.cache
+C:\daniel\ConsultorIt\FROWARD ULTIMOS FUENTES\23052018\BOL\obj\Debug\BOL.csproj.CoreCompileInputs.cache
+C:\daniel\ConsultorIt\FROWARD ULTIMOS FUENTES\23052018\BOL\obj\Debug\BOL.dll
+C:\daniel\ConsultorIt\FROWARD ULTIMOS FUENTES\23052018\BOL\obj\Debug\BOL.pdb
+C:\daniel\ConsultorIt\TTP\Fuente\08062018\08062018\BOL\bin\Debug\BOL.dll
+C:\daniel\ConsultorIt\TTP\Fuente\08062018\08062018\BOL\bin\Debug\BOL.pdb
+C:\daniel\ConsultorIt\TTP\Fuente\08062018\08062018\BOL\obj\Debug\BOL.csproj.CoreCompileInputs.cache
+C:\daniel\ConsultorIt\TTP\Fuente\08062018\08062018\BOL\obj\Debug\BOL.dll
+C:\daniel\ConsultorIt\TTP\Fuente\08062018\08062018\BOL\obj\Debug\BOL.pdb
+C:\daniel\ConsultorIt\TTP\Fuente\08062018\08062018\BOL\obj\Debug\BOL.csprojResolveAssemblyReference.cache

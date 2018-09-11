@@ -1,0 +1,60 @@
+@model IEnumerable<CaboFrowardMVC.Models.DISPOSITIVOS>
+
+@{
+
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+@if (Session["MisMenus"].ToString().Contains("DISPOSITIVOS"))
+{
+
+
+    <h4>Listado Dispositivos</h4>
+
+    <p>
+        @Html.ActionLink("Crear Nuevo", "Create", null, new { @class = "btn btn-primary btn-xs" })
+    </p>
+    <table class="table table-striped table-bordered table-hover table-condensed">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.NOMBRE)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IP)
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.NOMBRE)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.IP)
+                </td>
+				<td>
+					@Html.ActionLink("Editar", "Edit", new { id = item.ID_DISPOSITIVO }, new { @class = "btn btn-success btn-xs" }) |
+					@Html.ActionLink("Detalle", "Details", new { id = item.ID_DISPOSITIVO }, new { @class = "btn btn-info btn-xs" }) |
+					@Html.ActionLink("Eliminar", "Delete", new { id = item.ID_DISPOSITIVO }, new { @class = "btn btn-danger btn-xs" }) |
+				</td>
+            </tr>
+        }
+
+    </table>
+    <p>Total Registros: @Model.Count()</p>
+}
+else
+{
+
+
+
+    <div class="alert alert-danger alert-dismissible">
+        <strong>Acceso Restringido!</strong> No está autorizado para ver esta página, pongase en contacto con el administrador
+    </div>
+
+    <input type="hidden" id="txt_acceso" value="SIN_ACCESO" />
+}
